@@ -14,7 +14,7 @@ const dayDiff = (a:string,b:string) => (Date.parse(a)-Date.parse(b))/86400000;
 export function needsRecheck(j:Job,today=dayNow()):boolean {
  return [j.last_checked_at,...j.sources.map(s=>s.checked_at),...j.evidence.map(e=>e.checked_at),j.commute.checked_at].some(d=>!!d&&dayDiff(today,d)>30);
 }
-export function reviewNeedsRecheck(j:ReviewCandidate,today=dayNow()):boolean {
+export function reviewNeedsRecheck(j:Pick<ReviewCandidate,'checked_at'|'facts'>,today=dayNow()):boolean {
  return [j.checked_at,...(j.facts??[]).map(f=>f.checked_at)].some(d=>dayDiff(today,d)>30);
 }
 function safeURL(url:string) {try {const u=new URL(url);return u.protocol==='https:' && !u.username && !u.password && !/(^localhost$|^127\.|^\[::1\]$|\.(invalid|test|localhost)$)/.test(u.hostname);} catch{return false;}}
@@ -49,5 +49,5 @@ export function parseReviews(input:unknown,today=dayNow()):ReviewData {
  if(input.updated_at>today||new Set(input.candidates.map(j=>j.id)).size!==input.candidates.length)throw Error('確認待ちデータの確認日時・IDが不正です。');
  if(input.candidates.some(j=>!safeURL(j.url)||j.checked_at>today||j.checked_at>input.updated_at))throw Error('確認待ちデータの原典・確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.facts?.map(f=>f.field)).size!==(j.facts?.length??0)||j.facts?.some(f=>!safeURL(f.url)||f.checked_at>j.checked_at)))throw Error('候補の条件・根拠の確認日が不正です。');
- return {...input,candidates:input.candidates.filter(j=>completeConditions(j.facts)&&(!j.valid_through||j.valid_through>=today))};
+ return {...input,candidates:input.candidates.filter(j=>(j.status==='review'?completeConditions(j.facts):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
 }

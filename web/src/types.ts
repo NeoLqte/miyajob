@@ -15,5 +15,5 @@ export interface Job {
 }
 export interface PublicData {schema_version:1;updated_at:string|null;collection_status:'not_collected'|'research_in_progress'|'verified_export';jobs:Job[]}
 export interface ReviewFact {field:'salary'|'location'|'employment'|'hours'|'holidays'|'commute';text:string;url:string;checked_at:string;confirmed?:boolean}
-export interface ReviewCandidate {id:string;company:string;title:string;category:'software'|'infrastructure'|'internal_it'|'it_support';address:string;url:string;checked_at:string;stage:'detail_review'|'discovery';reasons:string[];summary:string;status:'review';valid_through:string|null;facts?:ReviewFact[]}
+export interface ReviewCandidate {id:string;company:string;title:string;category:'software'|'infrastructure'|'internal_it'|'it_support';address:string;url:string;checked_at:string;stage:'detail_review'|'discovery';reasons:string[];summary:string;status:'review'|'discovery';discovery_verified?:boolean;regions?:string[];valid_through:string|null;facts?:ReviewFact[]}
 export interface ReviewData {schema_version:1;updated_at:string;candidates:ReviewCandidate[]}

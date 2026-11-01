@@ -1,16 +1,44 @@
 import {test,expect} from '@playwright/test';
 import {dataset} from '../src/test/fixtures';
 
+test('discovery and all-candidate views preserve unknowns, source links and combined filters',async({page,isMobile})=>{
+ await page.goto('./');
+ const data=await (await page.request.get(new URL('review-jobs.json',page.url()).toString())).json();
+ const discovery=data.candidates.filter((j:{status:string})=>j.status==='discovery');
+ const verified=await (await page.request.get(new URL('jobs.json',page.url()).toString())).json();
+ await page.getByRole('button',{name:`未審査・新規候補 ${discovery.length}件`,exact:true}).click();
+ await expect(page.locator('.research-card')).toHaveCount(discovery.length);
+ await expect(page.locator('.workspace')).toBeHidden();
+ expect(await page.locator('.research-card').getByRole('link',{name:/原典を見る/}).count()).toBe(discovery.length);
+ expect(await page.locator('.fact-unknown').count()).toBeGreaterThan(0);
+ await page.getByLabel('候補の勤務地',{exact:true}).selectOption('浜松市浜名区');
+ await page.getByLabel('IT職種',{exact:true}).selectOption('software');
+ const expected=discovery.filter((j:{regions:string[];category:string})=>j.regions.includes('浜松市浜名区')&&j.category==='software');
+ await expect(page.locator('.research-card')).toHaveCount(expected.length);
+ await page.getByLabel('候補の並び順',{exact:true}).selectOption('monthly');
+ await page.getByRole('button',{name:'候補の絞り込みをクリア'}).click();
+ await page.getByRole('button',{name:`すべての候補 ${data.candidates.length+verified.jobs.length}件`,exact:true}).click();
+ await expect(page.locator('.research-card')).toHaveCount(data.candidates.length+verified.jobs.length);
+ await page.getByLabel('確認状態',{exact:true}).selectOption('eligible');
+ await expect(page.locator('.research-card')).toHaveCount(verified.jobs.length);
+ await page.getByLabel('確認状態',{exact:true}).selectOption('discovery');
+ await expect(page.locator('.research-card')).toHaveCount(discovery.length);
+ await page.locator('.research-content').scrollIntoViewIfNeeded();
+ await page.screenshot({path:`../artifacts/discovery-${isMobile?'mobile':'desktop'}.png`});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+});
+
 test('real IT review queue is separate, searchable and explains pending reasons',async({page,isMobile})=>{
  await page.goto('./');
  const response=await page.request.get(new URL('review-jobs.json',page.url()).toString());
  const data=await response.json();
+ data.candidates=data.candidates.filter((j:{status:string})=>j.status==='review');
  await page.getByRole('button',{name:`保留・確認待ち ${data.candidates.length}件`}).click();
  await expect(page.locator('.workspace')).toBeHidden();
  await expect(page.locator('.research-card')).toHaveCount(data.candidates.length);
  await expect(page.locator('.research-card').first().locator('.review-facts dt')).toHaveCount(6);
  await expect(page.locator('.research-card').first().getByRole('link',{name:/給与の根拠/})).toBeVisible();
- await expect(page.getByText(/応募可能とは未確認/)).toBeVisible();
+ await expect(page.locator('.candidate-warning').first()).toBeVisible();
  await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
  for(const candidate of data.candidates){
   for(const field of ['salary','location','employment','holidays','hours']) expect(candidate.facts.some((f:{field:string;confirmed:boolean})=>f.field===field&&f.confirmed)).toBe(true);

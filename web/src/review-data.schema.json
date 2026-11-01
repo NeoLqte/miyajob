@@ -95,10 +95,25 @@
           "type": "string"
         },
         "status": {
-          "const": "review",
           "default": "review",
+          "enum": [
+            "review",
+            "discovery"
+          ],
           "title": "Status",
           "type": "string"
+        },
+        "discovery_verified": {
+          "default": false,
+          "title": "Discovery Verified",
+          "type": "boolean"
+        },
+        "regions": {
+          "items": {
+            "type": "string"
+          },
+          "title": "Regions",
+          "type": "array"
         },
         "valid_through": {
           "anyOf": [

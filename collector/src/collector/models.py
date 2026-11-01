@@ -158,7 +158,9 @@ class ReviewCandidate(Model):
     stage: Literal['detail_review', 'discovery']
     reasons: list[str] = Field(min_length=1)
     summary: str = Field(min_length=1, max_length=600)
-    status: Literal['review'] = 'review'
+    status: Literal['review', 'discovery'] = 'review'
+    discovery_verified: bool = False
+    regions: list[str] = Field(default_factory=list)
     valid_through: date | None = None
     facts: list[ReviewFact] = Field(default_factory=list)
     _url = field_validator('url')(public_url)

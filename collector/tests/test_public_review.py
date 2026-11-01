@@ -94,3 +94,32 @@ def test_verified_export_requires_five_conditions(job,profile,field):
     assert len(public_payload([job],TODAY,profile).jobs)==1
     job.listing_facts=[f for f in job.listing_facts if f.field!=field]
     assert not public_payload([job],TODAY,profile).jobs
+
+
+def test_discovery_is_separate_and_requires_explicit_minimum_check(tmp_path,job):
+    job.eligibility.status='review'
+    path,candidate=prepare(tmp_path,job)
+    candidate.status='discovery';candidate.stage='discovery'
+    candidate.facts=[];candidate.regions=['浜松市浜名区'];candidate.discovery_verified=True
+    def export():
+        path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
+        return review_payload(tmp_path,[job],TODAY).candidates
+    assert len(export())==1
+    candidate.discovery_verified=False
+    assert not export()
+    candidate.discovery_verified=True;candidate.company=job.company='社名非公開'
+    assert not export()
+    candidate.company=job.company='TEST ONLY'
+    candidate.regions=[]
+    assert not export()
+    candidate.regions=['浜松市浜名区'];job.eligibility.status='rejected'
+    assert not export()
+
+
+def test_eligible_with_missing_conditions_can_only_be_discovery(tmp_path,job):
+    path,candidate=prepare(tmp_path,job)
+    job.listing_facts=[]
+    candidate.facts=[];candidate.status='discovery';candidate.stage='discovery'
+    candidate.discovery_verified=True;candidate.regions=['浜松市浜名区']
+    path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
+    assert len(review_payload(tmp_path,[job],TODAY).candidates)==1

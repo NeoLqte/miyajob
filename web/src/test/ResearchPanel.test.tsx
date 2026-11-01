@@ -10,7 +10,7 @@ it('separates unverified candidates, explains reasons and supports search',async
  const callback=vi.fn(),user=userEvent.setup();render(<ResearchPanel verifiedCount={4} onModeChange={callback} initialData={data}/>);
  await user.click(await screen.findByRole('button',{name:'保留・確認待ち 1件'}));
  expect(callback).toHaveBeenLastCalledWith(true);
- expect(screen.getByText(/応募可能とは未確認/)).toBeVisible();
+ expect(screen.getAllByText(/応募可能とは未確認/)[0]).toBeVisible();
  expect(within(screen.getByRole('article')).getByText('TEST ONLY 配属先')).toBeVisible();
  await user.type(screen.getByPlaceholderText('候補の会社・職種・保留理由'),'no match');
  expect(screen.queryByRole('article')).not.toBeInTheDocument();

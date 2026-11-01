@@ -4,7 +4,13 @@ from pathlib import Path
 import json
 
 from .models import ReviewCandidate, ReviewData, IT_CATEGORIES
-from .listing import complete_conditions
+from .listing import complete_conditions, complete_job
+
+def visible_candidate(candidate):
+    if candidate.status == 'review':
+        return complete_conditions(candidate.facts)
+    return (candidate.stage == 'discovery' and candidate.discovery_verified
+            and bool(candidate.regions) and not any(s in candidate.company for s in ('非公開', '未確認')))
 
 
 def validate_review(data: ReviewData, today: date):
@@ -14,7 +20,7 @@ def validate_review(data: ReviewData, today: date):
         raise ValueError('invalid_or_expired_review_candidate')
     if any(len({f.field for f in j.facts}) != len(j.facts) or any(f.checked_at > j.checked_at for f in j.facts) for j in data.candidates):
         raise ValueError('invalid_review_facts')
-    if any(not complete_conditions(j.facts) for j in data.candidates):
+    if any(not visible_candidate(j) for j in data.candidates):
         raise ValueError('incomplete_listing_conditions')
     return data
 
@@ -28,7 +34,9 @@ def review_payload(root: Path, jobs, today: date):
     accepted = []
     for candidate in candidates:
         job = records.get(candidate.id)
-        if not job or job.eligibility.status != 'review' or job.category not in IT_CATEGORIES or job.recruitment.status == 'closed':
+        if not job or job.eligibility.status == 'rejected' or job.category not in IT_CATEGORIES or job.recruitment.status == 'closed':
+            continue
+        if job.eligibility.status == 'eligible' and (complete_job(job) or candidate.status != 'discovery'):
             continue
         deadline = job.recruitment.valid_through
         if deadline and deadline < today:
@@ -42,6 +50,6 @@ def review_payload(root: Path, jobs, today: date):
             candidate.valid_through = min(deadline, candidate.valid_through) if candidate.valid_through else deadline
         if candidate.valid_through and candidate.valid_through < today:
             continue
-        if complete_conditions(candidate.facts):
+        if visible_candidate(candidate):
             accepted.append(candidate)
     return validate_review(ReviewData(updated_at=today, candidates=accepted), today)
