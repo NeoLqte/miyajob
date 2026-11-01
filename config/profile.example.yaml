@@ -1,0 +1,16 @@
+# Copy to profile.yaml locally. Do not commit real personal attributes.
+# any requirements need explicit employer evidence; null never means yes.
+attributes:
+  graduated: null
+  graduation_date: null
+  education: null
+  it_years: null
+  employment_history: null
+  age: null
+  drivers_license: null
+  license_restriction: null
+  other_qualifications: null
+  relocation: null
+  travel: null
+  start_date: null
+maximum_minutes: 45

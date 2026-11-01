@@ -1,0 +1,754 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "updated_at": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Updated At"
+    },
+    "collection_status": {
+      "default": "not_collected",
+      "enum": [
+        "not_collected",
+        "research_in_progress",
+        "verified_export"
+      ],
+      "title": "Collection Status",
+      "type": "string"
+    },
+    "jobs": {
+      "items": {
+        "$ref": "#/definitions/Job"
+      },
+      "title": "Jobs",
+      "type": "array"
+    }
+  },
+  "title": "PublicData",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "updated_at",
+    "collection_status",
+    "jobs"
+  ],
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "Commute": {
+      "additionalProperties": false,
+      "properties": {
+        "minutes": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Minutes"
+        },
+        "status": {
+          "default": "unverified",
+          "enum": [
+            "verified",
+            "local_verified",
+            "unverified",
+            "remote_verified"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "provider": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Provider"
+        },
+        "checked_at": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Checked At"
+        },
+        "route_assumptions": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Route Assumptions"
+        }
+      },
+      "title": "Commute",
+      "type": "object",
+      "required": [
+        "minutes",
+        "status",
+        "provider",
+        "checked_at",
+        "route_assumptions"
+      ]
+    },
+    "Eligibility": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "review",
+          "enum": [
+            "eligible",
+            "review",
+            "rejected"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "graduate_eligibility": {
+          "default": "unknown",
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ],
+          "title": "Graduate Eligibility",
+          "type": "string"
+        },
+        "professional_experience": {
+          "default": "unknown",
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ],
+          "title": "Professional Experience",
+          "type": "string"
+        },
+        "requirements": {
+          "items": {
+            "$ref": "#/definitions/Requirement"
+          },
+          "title": "Requirements",
+          "type": "array"
+        }
+      },
+      "title": "Eligibility",
+      "type": "object",
+      "required": [
+        "status",
+        "graduate_eligibility",
+        "professional_experience",
+        "requirements"
+      ]
+    },
+    "Evidence": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "field": {
+          "minLength": 1,
+          "title": "Field",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "quote_or_locator": {
+          "maxLength": 240,
+          "minLength": 1,
+          "title": "Quote Or Locator",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "conclusion": {
+          "enum": [
+            "pass",
+            "fail",
+            "unknown"
+          ],
+          "title": "Conclusion",
+          "type": "string"
+        },
+        "method": {
+          "enum": [
+            "official_page",
+            "job_board",
+            "direct_confirmation",
+            "other"
+          ],
+          "title": "Method",
+          "type": "string"
+        },
+        "notes": {
+          "default": "",
+          "maxLength": 500,
+          "title": "Notes",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "field",
+        "url",
+        "quote_or_locator",
+        "checked_at",
+        "conclusion",
+        "method",
+        "notes"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "Job": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "company": {
+          "minLength": 1,
+          "title": "Company",
+          "type": "string"
+        },
+        "employer": {
+          "minLength": 1,
+          "title": "Employer",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "category": {
+          "default": "other",
+          "enum": [
+            "software",
+            "infrastructure",
+            "internal_it",
+            "it_support",
+            "technical",
+            "office",
+            "other"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "recruitment_track": {
+          "minLength": 1,
+          "title": "Recruitment Track",
+          "type": "string"
+        },
+        "employment_type": {
+          "default": "unknown",
+          "enum": [
+            "full_time_regular",
+            "contract",
+            "part_time",
+            "dispatch",
+            "unknown"
+          ],
+          "title": "Employment Type",
+          "type": "string"
+        },
+        "description": {
+          "default": "",
+          "maxLength": 1200,
+          "title": "Description",
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/Location"
+        },
+        "commute": {
+          "$ref": "#/definitions/Commute"
+        },
+        "pay": {
+          "$ref": "#/definitions/Pay"
+        },
+        "workstyle": {
+          "$ref": "#/definitions/Workstyle"
+        },
+        "eligibility": {
+          "$ref": "#/definitions/Eligibility"
+        },
+        "recruitment": {
+          "$ref": "#/definitions/Recruitment"
+        },
+        "sources": {
+          "items": {
+            "$ref": "#/definitions/Source"
+          },
+          "title": "Sources",
+          "type": "array"
+        },
+        "evidence": {
+          "items": {
+            "$ref": "#/definitions/Evidence"
+          },
+          "title": "Evidence",
+          "type": "array"
+        },
+        "first_seen_at": {
+          "format": "date",
+          "title": "First Seen At",
+          "type": "string"
+        },
+        "last_checked_at": {
+          "format": "date",
+          "title": "Last Checked At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "company",
+        "employer",
+        "title",
+        "category",
+        "recruitment_track",
+        "employment_type",
+        "description",
+        "location",
+        "commute",
+        "pay",
+        "workstyle",
+        "eligibility",
+        "recruitment",
+        "sources",
+        "evidence",
+        "first_seen_at",
+        "last_checked_at"
+      ],
+      "title": "Job",
+      "type": "object"
+    },
+    "Location": {
+      "additionalProperties": false,
+      "properties": {
+        "address": {
+          "default": "",
+          "title": "Address",
+          "type": "string"
+        },
+        "region": {
+          "default": "unknown",
+          "title": "Region",
+          "type": "string"
+        },
+        "region_band": {
+          "anyOf": [
+            {
+              "maximum": 5,
+              "minimum": 1,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Region Band"
+        },
+        "is_fixed": {
+          "default": false,
+          "title": "Is Fixed",
+          "type": "boolean"
+        },
+        "remote_policy": {
+          "default": "unknown",
+          "enum": [
+            "full",
+            "hybrid",
+            "none",
+            "unknown"
+          ],
+          "title": "Remote Policy",
+          "type": "string"
+        },
+        "residence_verified": {
+          "default": false,
+          "title": "Residence Verified",
+          "type": "boolean"
+        }
+      },
+      "title": "Location",
+      "type": "object",
+      "required": [
+        "address",
+        "region",
+        "region_band",
+        "is_fixed",
+        "remote_policy",
+        "residence_verified"
+      ]
+    },
+    "Pay": {
+      "additionalProperties": false,
+      "properties": {
+        "monthly_base_min_jpy": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Monthly Base Min Jpy"
+        },
+        "monthly_total_min_jpy": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Monthly Total Min Jpy"
+        },
+        "annual_min_jpy": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Annual Min Jpy"
+        },
+        "annual_basis": {
+          "default": "unknown",
+          "enum": [
+            "guaranteed",
+            "estimated",
+            "unknown"
+          ],
+          "title": "Annual Basis",
+          "type": "string"
+        },
+        "bonus": {
+          "default": "unknown",
+          "title": "Bonus",
+          "type": "string"
+        },
+        "fixed_overtime": {
+          "default": "unknown",
+          "title": "Fixed Overtime",
+          "type": "string"
+        },
+        "allowances": {
+          "default": "unknown",
+          "title": "Allowances",
+          "type": "string"
+        }
+      },
+      "title": "Pay",
+      "type": "object",
+      "required": [
+        "monthly_base_min_jpy",
+        "monthly_total_min_jpy",
+        "annual_min_jpy",
+        "annual_basis",
+        "bonus",
+        "fixed_overtime",
+        "allowances"
+      ]
+    },
+    "Recruitment": {
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "default": "unverified",
+          "enum": [
+            "active",
+            "closed",
+            "unverified"
+          ],
+          "title": "Status",
+          "type": "string"
+        },
+        "valid_through": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valid Through"
+        },
+        "date_posted": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Date Posted"
+        }
+      },
+      "title": "Recruitment",
+      "type": "object",
+      "required": [
+        "status",
+        "valid_through",
+        "date_posted"
+      ]
+    },
+    "Requirement": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "title": "Field",
+          "type": "string"
+        },
+        "operator": {
+          "enum": [
+            "any",
+            "eq",
+            "gte",
+            "lte",
+            "in",
+            "between"
+          ],
+          "title": "Operator",
+          "type": "string"
+        },
+        "value": {
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "number"
+            },
+            {
+              "type": "boolean"
+            },
+            {
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Value"
+        },
+        "description": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Description",
+          "type": "string"
+        },
+        "evidence_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Evidence Ids",
+          "type": "array"
+        }
+      },
+      "required": [
+        "field",
+        "operator",
+        "value",
+        "description",
+        "evidence_ids"
+      ],
+      "title": "Requirement",
+      "type": "object"
+    },
+    "Source": {
+      "additionalProperties": false,
+      "properties": {
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "original_url": {
+          "title": "Original Url",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "official",
+            "job_board",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "original_url",
+        "kind",
+        "checked_at"
+      ],
+      "title": "Source",
+      "type": "object"
+    },
+    "Workstyle": {
+      "additionalProperties": false,
+      "properties": {
+        "annual_holidays": {
+          "anyOf": [
+            {
+              "maximum": 366,
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Annual Holidays"
+        },
+        "overtime_hours_month": {
+          "anyOf": [
+            {
+              "minimum": 0,
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Overtime Hours Month"
+        },
+        "flex": {
+          "default": "unknown",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "title": "Flex",
+          "type": "string"
+        },
+        "transfer": {
+          "default": "unknown",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "title": "Transfer",
+          "type": "string"
+        },
+        "car_commute": {
+          "default": "unknown",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "title": "Car Commute",
+          "type": "string"
+        },
+        "parking": {
+          "default": "unknown",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "title": "Parking",
+          "type": "string"
+        },
+        "client_site": {
+          "default": "unknown",
+          "enum": [
+            "yes",
+            "no",
+            "unknown"
+          ],
+          "title": "Client Site",
+          "type": "string"
+        }
+      },
+      "title": "Workstyle",
+      "type": "object",
+      "required": [
+        "annual_holidays",
+        "overtime_hours_month",
+        "flex",
+        "transfer",
+        "car_commute",
+        "parking",
+        "client_site"
+      ]
+    }
+  }
+}
