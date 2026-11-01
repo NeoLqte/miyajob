@@ -201,6 +201,19 @@
           "title": "Checked At",
           "type": "string"
         },
+        "valid_through": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valid Through"
+        },
         "conclusion": {
           "enum": [
             "pass",

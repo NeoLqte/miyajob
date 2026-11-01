@@ -65,7 +65,7 @@ def test_known_failure(job, profile):
     (lambda j:setattr(j.recruitment,"valid_through",TODAY-timedelta(days=1)),"rejected"),
     (lambda j:setattr(j,"sources",[]),"review"),
     (lambda j:setattr(j,"evidence",[]),"review"),
-    (lambda j:setattr(j,"last_checked_at",TODAY-timedelta(days=31)),"review"),
+    (lambda j:setattr(j,"last_checked_at",TODAY-timedelta(days=31)),"review"),  # source newer than job: invalid chronology
     (lambda j:setattr(j.evidence[0],"checked_at",TODAY+timedelta(days=1)),"review"),
     (lambda j:setattr(j.evidence[0],"url","https://www.github.com/unrelated"),"review"),
     (lambda j:setattr(j.commute,"route_assumptions",None),"review"),
@@ -79,6 +79,44 @@ def test_publication_gates(job, profile, tmp_path, change, expected):
 def test_conflicting_sources(job,profile):
     job.evidence.append(job.evidence[0].model_copy(update={"id":"conflict","conclusion":"fail"}))
     assert audit(job,profile,TODAY).status == "review"
+
+
+def test_old_verified_facts_remain_but_expiring_evidence_does_not(job, profile):
+    old = TODAY - timedelta(days=90)
+    job.last_checked_at = job.first_seen_at = old
+    job.commute.checked_at = old
+    for source in job.sources:
+        source.checked_at = old
+    for evidence in job.evidence:
+        evidence.checked_at = old
+    assert audit(job, profile, TODAY).status == "eligible"
+    job.evidence[0].valid_through = TODAY - timedelta(days=1)
+    decision = audit(job, profile, TODAY)
+    assert decision.status == "review" and "evidence_expired" in decision.reasons
+
+
+def test_preferences_are_not_publication_requirements(job, profile):
+    job.category = "other"
+    job.pay.monthly_base_min_jpy = 150000
+    job.workstyle.annual_holidays = 90
+    job.workstyle.overtime_hours_month = 40
+    job.workstyle.transfer = "yes"
+    job.location.remote_policy = "none"
+    assert audit(job, profile, TODAY).status == "eligible"
+
+
+def test_additional_basic_skill_requires_evidence_and_confirmed_attribute(job, profile):
+    from collector.models import Requirement
+    evidence = job.evidence[0].model_copy(update={'id':'pc', 'field':'pc_basic'})
+    job.evidence.append(evidence)
+    job.eligibility.requirements.append(Requirement(field='pc_basic', operator='eq', value=True, description='TEST ONLY PC input required', evidence_ids=['pc']))
+    assert audit(job, profile, TODAY).status == 'review'
+    profile.attributes['pc_basic'] = False
+    assert audit(job, profile, TODAY).status == 'rejected'
+    profile.attributes['pc_basic'] = True
+    assert audit(job, profile, TODAY).status == 'eligible'
+    job.evidence.remove(evidence)
+    assert audit(job, profile, TODAY).status == 'review'
 
 
 def test_missing_requirement_evidence(job,profile):

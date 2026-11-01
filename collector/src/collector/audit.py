@@ -1,8 +1,8 @@
 """Fail closed: flags supplied by an extractor never authorize publication."""
-from datetime import date, timedelta
+from datetime import date
 from dataclasses import dataclass
 
-from .models import DIMENSIONS, MANDATORY_EVIDENCE, Job, Profile
+from .models import DIMENSIONS, SUPPORTED_REQUIREMENTS, MANDATORY_EVIDENCE, Job, Profile
 
 
 @dataclass
@@ -43,18 +43,19 @@ def audit(job: Job, profile: Profile | None = None, today: date | None = None) -
         reasons.append("missing_source")
     if job.last_checked_at > today or job.first_seen_at > today or job.first_seen_at > job.last_checked_at:
         reasons.append("invalid_job_dates")
-    if today - job.last_checked_at > timedelta(days=30):
-        reasons.append("stale_verification")
     for s in job.sources:
-        if s.checked_at > today or s.checked_at > job.last_checked_at or today - s.checked_at > timedelta(days=30):
+        if s.checked_at > today or s.checked_at > job.last_checked_at:
             reasons.append("invalid_source_date")
 
     def evidence_ok(e, field):
         return (e.field == field and e.conclusion == "pass" and e.url in sources
-                and today - timedelta(days=30) <= e.checked_at <= today
+                and e.checked_at <= today
+                and (e.valid_through is None or today <= e.valid_through)
                 and e.checked_at <= job.last_checked_at and e.checked_at <= sources[e.url].checked_at)
 
     fields = set(MANDATORY_EVIDENCE) | {r.field for r in job.eligibility.requirements}
+    if any(e.valid_through and e.valid_through < today for e in job.evidence if e.field in fields):
+        reasons.append("evidence_expired")
     for field in fields:
         relevant = [e for e in job.evidence if e.field == field]
         # Conflicting evidence is never silently overridden by a newer source.
@@ -69,7 +70,7 @@ def audit(job: Job, profile: Profile | None = None, today: date | None = None) -
         if field not in covered:
             reasons.append(f"unchecked_requirement:{field}")
     for r in requirements:
-        if r.field not in DIMENSIONS:
+        if r.field not in SUPPORTED_REQUIREMENTS:
             reasons.append(f"unsupported_requirement:{r.field}")
         if not r.evidence_ids or not all(i in ids and evidence_ok(ids[i], r.field) for i in r.evidence_ids):
             reasons.append(f"requirement_evidence:{r.field}")
@@ -93,7 +94,7 @@ def audit(job: Job, profile: Profile | None = None, today: date | None = None) -
         reasons.append("location_unverified")
     c = job.commute
     maximum = min(45, profile.maximum_minutes) if profile else 45
-    if not c.provider or not c.checked_at or not c.route_assumptions or not today - timedelta(days=30) <= c.checked_at <= min(today, job.last_checked_at):
+    if not c.provider or not c.checked_at or not c.route_assumptions or not c.checked_at <= min(today, job.last_checked_at):
         reasons.append("route_evidence_missing")
     if c.status == "verified":
         if c.minutes is None:

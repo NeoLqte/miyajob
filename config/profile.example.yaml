@@ -13,4 +13,7 @@ attributes:
   relocation: null
   travel: null
   start_date: null
+  pc_basic: null
+  programming_basics: null
+  science_education: null
 maximum_minutes: 45

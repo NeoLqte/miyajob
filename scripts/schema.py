@@ -10,6 +10,9 @@ def require_all(node):
     if isinstance(node, dict):
         if "properties" in node:
             node["required"] = list(node["properties"])
+            # Additive expiry support must also accept older verified exports.
+            if node.get('title') == 'Evidence':
+                node['required'].remove('valid_through')
         for child in node.values():
             require_all(child)
     elif isinstance(node, list):

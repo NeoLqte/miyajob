@@ -1,6 +1,6 @@
 export type Tri = 'yes'|'no'|'unknown';
 export type Category = 'software'|'infrastructure'|'internal_it'|'it_support'|'technical'|'office'|'other';
-export interface Evidence {id:string;field:string;url:string;quote_or_locator:string;checked_at:string;conclusion:'pass'|'fail'|'unknown';method:'official_page'|'job_board'|'direct_confirmation'|'other';notes:string}
+export interface Evidence {id:string;field:string;url:string;quote_or_locator:string;checked_at:string;valid_through?:string|null;conclusion:'pass'|'fail'|'unknown';method:'official_page'|'job_board'|'direct_confirmation'|'other';notes:string}
 export interface Requirement {field:string;operator:'any'|'eq'|'gte'|'lte'|'in'|'between';value:string|number|boolean|string[]|null;description:string;evidence_ids:string[]}
 export interface Job {
  id:string;company:string;employer:string;title:string;category:Category;recruitment_track:string;employment_type:'full_time_regular'|'contract'|'part_time'|'dispatch'|'unknown';description:string;

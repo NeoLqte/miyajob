@@ -6,11 +6,14 @@ from pathlib import Path
 
 from .export import validate_public
 from .pipeline import update
+from .review import report
+from .models import Profile
+import yaml
 
 
 def main():
     parser = argparse.ArgumentParser(description="MiyaJob: verified publication, private evidence")
-    parser.add_argument("command", choices=["update", "validate"])
+    parser.add_argument("command", choices=["update", "validate", "report"])
     parser.add_argument("--root", type=Path, default=Path.cwd())
     parser.add_argument("--profile", type=Path, default=Path("config/profile.yaml"))
     parser.add_argument("--sources", type=Path)
@@ -19,7 +22,10 @@ def main():
     args = parser.parse_args()
     today = datetime.now(ZoneInfo("Asia/Tokyo")).date()
     try:
-        if args.command == "validate":
+        if args.command == "report":
+            profile = Profile.model_validate(yaml.safe_load(args.profile.read_text(encoding='utf-8-sig'))) if args.profile.exists() else None
+            print(json.dumps(report(args.root, today, profile), ensure_ascii=False))
+        elif args.command == "validate":
             data = validate_public(args.root / "web/public/jobs.json", today)
             print(json.dumps({"public_valid":True,"count":len(data.jobs)}))
         else:

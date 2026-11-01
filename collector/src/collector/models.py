@@ -7,6 +7,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 Tri = Literal["yes", "no", "unknown"]
 Category = Literal["software", "infrastructure", "internal_it", "it_support", "technical", "office", "other"]
 DIMENSIONS = ("graduated", "graduation_date", "education", "it_years", "employment_history", "age", "drivers_license", "license_restriction", "other_qualifications", "relocation", "travel", "start_date")
+SUPPORTED_REQUIREMENTS = (*DIMENSIONS, "pc_basic", "science_education", "programming_basics")
 MANDATORY_EVIDENCE = ("existence", "employment", "requirements_complete", "location", "commute", "recruitment", "reuse")
 
 
@@ -27,6 +28,7 @@ class Evidence(Model):
     url: str
     quote_or_locator: str = Field(min_length=1, max_length=240)
     checked_at: date
+    valid_through: date | None = None
     conclusion: Literal["pass", "fail", "unknown"]
     method: Literal["official_page", "job_board", "direct_confirmation", "other"]
     notes: str = Field(default="", max_length=500)

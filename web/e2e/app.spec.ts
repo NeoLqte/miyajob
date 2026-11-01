@@ -1,5 +1,18 @@
 import {test,expect} from '@playwright/test';
 import {dataset} from '../src/test/fixtures';
+
+test('old verification warns in list and comparison; expired evidence stays hidden',async({page})=>{
+ const data=dataset(2);
+ for(const job of data.jobs){job.first_seen_at=job.last_checked_at='2026-01-01';job.commute.checked_at='2026-01-01';job.sources.forEach(s=>s.checked_at='2026-01-01');job.evidence.forEach(e=>e.checked_at='2026-01-01');}
+ data.jobs[1].evidence[0].valid_through='2026-01-31';
+ await page.route('**/jobs.json',route=>route.fulfill({json:data}));
+ await page.goto('./');
+ await expect(page.locator('.job-card')).toHaveCount(1);
+ await expect(page.locator('.job-card .freshness-warning')).toBeVisible();
+ await page.locator('.card-top input').check();
+ await page.getByRole('button',{name:/条件を比較する/}).click();
+ await expect(page.getByRole('dialog').locator('.freshness-warning')).toBeVisible();
+});
 test('empty export is honest; theme and filters work',async({page,isMobile})=>{
  await page.route('**/jobs.json',route=>route.fulfill({json:{schema_version:1,updated_at:null,collection_status:'not_collected',jobs:[]}}));
  await page.goto('./');await expect(page.getByRole('heading',{name:'条件に合う求人は現在ありません'})).toBeVisible();

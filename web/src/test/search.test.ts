@@ -1,11 +1,17 @@
 import {describe,it,expect} from 'vitest';
 import {fixture,dataset} from './fixtures';
 import {defaults,readFilters,writeFilters,selectJobs,recommendation} from '../search';
-import {parseData} from '../data';
+import {parseData,publishable,needsRecheck} from '../data';
 describe('publication defense',()=>{
+ it('keeps old verified data with a recheck warning, but hides expired evidence and deadlines',()=>{
+  const j=fixture();j.first_seen_at=j.last_checked_at='2026-01-01';j.commute.checked_at='2026-01-01';j.sources.forEach(s=>s.checked_at='2026-01-01');j.evidence.forEach(e=>e.checked_at='2026-01-01');
+  expect(publishable(j,'2026-11-01')).toBe(true);expect(needsRecheck(j,'2026-11-01')).toBe(true);
+  j.evidence[0].valid_through='2026-10-31';expect(publishable(j,'2026-11-01')).toBe(false);
+  j.evidence[0].valid_through=null;j.recruitment.valid_through='2026-10-31';expect(publishable(j,'2026-11-01')).toBe(false);
+ });
  it('rejects malformed data and hides unchecked eligibility',()=>{expect(()=>parseData({jobs:[]})).toThrow();const d=dataset();d.jobs[0].eligibility.status='review';expect(parseData(d).jobs).toHaveLength(0);});
  it.each(['sources','evidence'] as const)('hides missing %s',key=>{const d=dataset();d.jobs[0][key]=[];expect(parseData(d).jobs).toHaveLength(0);});
- it('hides stale, closed and unverified route records',()=>{const d=dataset(3);d.jobs[0].last_checked_at='2000-01-01';d.jobs[1].recruitment.status='closed';d.jobs[2].commute.status='unverified';expect(parseData(d).jobs).toHaveLength(0);});
+ it('hides invalid chronology, closed and unverified route records',()=>{const d=dataset(3);d.jobs[0].last_checked_at='2000-01-01';d.jobs[1].recruitment.status='closed';d.jobs[2].commute.status='unverified';expect(parseData(d).jobs).toHaveLength(0);});
  it('rejects additional profile keys and unsafe URLs',()=>{expect(()=>parseData({...dataset(),profile:{age:23}})).toThrow();const d=dataset();d.jobs[0].sources[0].url='javascript:alert(1)';expect(parseData(d).jobs).toHaveLength(0);});
 });
 describe('filters and sorting',()=>{
