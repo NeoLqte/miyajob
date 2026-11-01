@@ -1,6 +1,1158 @@
 {
   "schema_version": 1,
   "updated_at": "2026-11-01",
-  "collection_status": "research_in_progress",
-  "jobs": []
+  "collection_status": "verified_export",
+  "jobs": [
+    {
+      "id": "1881bdad2ba222433346",
+      "company": "アオイテック株式会社",
+      "employer": "アオイテック株式会社",
+      "title": "社内SE（未経験・既卒対象）",
+      "category": "internal_it",
+      "recruitment_track": "中途・未経験者",
+      "employment_type": "full_time_regular",
+      "description": "社内ネットワークの構築・保守、PC設定、社内システム改善、セキュリティ対策。本社の情報システム業務で、学校・独学でのIT学習も対象。8:30〜17:20。残業は「ほぼなし」と記載されるが数値不明。年収例は3年目のため初年度保証額に換算しない。",
+      "location": {
+        "address": "静岡県浜松市中央区東三方町162-1",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 22.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通の予測を手動確認）",
+        "checked_at": "2026-11-01",
+        "route_assumptions": "公共の参考地点・宮口駅から本社。2026-11-02(月)8:30到着、車、国道362号経由8.9km、通常16〜22分。ソート・分数フィルターは予測範囲の上限22分を使用。2026-11-01確認。自宅発の実走計測ではなく、実際の起点・当日の渋滞で変動する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": null,
+        "monthly_total_min_jpy": 220000,
+        "annual_min_jpy": null,
+        "annual_basis": "unknown",
+        "bonus": "年2回。2024年度実績5.2か月分（将来の支給保証ではない）。",
+        "fixed_overtime": "unknown",
+        "allowances": "月給220,000〜250,000円に諸手当を別途支給。基本給・固定残業代の内訳は未記載。"
+      },
+      "workstyle": {
+        "annual_holidays": 116,
+        "overtime_hours_month": null,
+        "flex": "unknown",
+        "transfer": "no",
+        "car_commute": "yes",
+        "parking": "yes",
+        "client_site": "no"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "any",
+            "value": null,
+            "description": "既卒者を明示的に歓迎",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "any",
+            "value": null,
+            "description": "既卒可。卒業年度の限定は設けられていない。",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "in",
+            "value": [
+              "university",
+              "graduate",
+              "junior_college",
+              "vocational"
+            ],
+            "description": "専門・短大卒以上",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "ITの実務経験は必須でない。学校・独学での学習経験も対象。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "就業歴の必須条件なし。既卒・未経験者の応募可。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "lte",
+            "value": 32.0,
+            "description": "32歳以下（長期キャリア形成のため）",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に普通免許の必須指定なし",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に運転免許区分の必須指定なし",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "専門資格の必須指定なし。専門知識は入社後の教育対象。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "本社勤務、転勤なし",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "募集要項に特定の出張・夜勤対応の必須指定なし。日勤の本社社内SE。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の必須指定なし。入社日は選考時に確認。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "original_url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/index.php",
+          "original_url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/index.php",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://www.aoitec.co.jp/",
+          "original_url": "https://www.aoitec.co.jp/",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8104+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E4%B8%89%E6%96%B9%E7%94%BA%EF%BC%91%EF%BC%96%EF%BC%92%E2%88%92%EF%BC%91/@34.8037793,137.7110448,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b207b0b55a4e5:0x81e507ffc545ff7f!2m2!1d137.7305289!2d34.7785889!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "original_url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8104+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E4%B8%89%E6%96%B9%E7%94%BA%EF%BC%91%EF%BC%96%EF%BC%92%E2%88%92%EF%BC%91/@34.8037793,137.7110448,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b207b0b55a4e5:0x81e507ffc545ff7f!2m2!1d137.7305289!2d34.7785889!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "kind": "other",
+          "checked_at": "2026-11-01"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "社内SEの具体的な職務・企業名・本社所在地を確認",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "募集情報 > 就業形態：正社員",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格欄を全文確認。学歴、32歳以下、既卒・経験不問を個別照合。学習を企業での実務経験に換算しない。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "勤務情報・勤務地について > 東三方町162-1の本社勤務、転勤なし",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8104+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E4%B8%89%E6%96%B9%E7%94%BA%EF%BC%91%EF%BC%96%EF%BC%92%E2%88%92%EF%BC%91/@34.8037793,137.7110448,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b207b0b55a4e5:0x81e507ffc545ff7f!2m2!1d137.7305289!2d34.7785889!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "quote_or_locator": "車経路 > 11月2日(月)8:30到着 > 国道362号、8.9km、通常16〜22分",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/index.php",
+          "quote_or_locator": "現行募集3件の一覧に社内SEを掲載。詳細ページへのリンクと当該職種の応募受付導線を確認。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "公表された条件の事実だけを短い独自要約とリンクで紹介。原文全文・画像・ロゴは転載しない。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 既卒・第二新卒歓迎",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 既卒・第二新卒歓迎",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 専門・短大卒以上",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 経験不問、職場情報 > 学校・独学でのIT学習者にも対応",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 経験不問・既卒歓迎",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格 > 32歳以下",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格欄の全項目",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格欄の全項目",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格欄・職場情報 > 専門知識は入社後に学べる",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "勤務情報 > 勤務地、勤務地について > 転勤なし",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "お仕事内容・時間 > 8:30〜17:20、本社勤務",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "quote_or_locator": "資格・応募情報の全項目",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        }
+      ],
+      "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-01"
+    },
+    {
+      "id": "7a8f094d6ab6b9b7b91e",
+      "company": "株式会社ジリオン浜松",
+      "employer": "株式会社ジリオン浜松",
+      "title": "業務系アプリケーションソフトウェア設計・開発（未経験者枠）",
+      "category": "software",
+      "recruitment_track": "新規採用（未経験者）",
+      "employment_type": "full_time_regular",
+      "description": "企業向け業務アプリの開発・テストから経験を積む未経験者枠。応募資格欄は特段の条件なし。勤務地は浜松本社。顧客先での作業もあるため、その頻度・常駐有無は応募前に確認。2年目以降のフレックスは希望に応じた対応。",
+      "location": {
+        "address": "静岡県浜松市中央区根洗町1431",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 22.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通の予測を手動確認）",
+        "checked_at": "2026-11-01",
+        "route_assumptions": "公共の参考地点・宮口駅から浜松本社。2026-11-02(月)8:30到着、車、国道362号ともくれん通り経由8.9km、通常16〜22分。ソート・分数フィルターは予測範囲の上限22分を使用。2026-11-01確認。自宅発の実走計測ではなく、実際の起点・当日の渋滞で変動する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": null,
+        "monthly_total_min_jpy": 236340,
+        "annual_min_jpy": null,
+        "annual_basis": "unknown",
+        "bonus": "年2回（7月・12月）。2年目以降は夏季分が年俸に含まれ、冬季分は実績査定。",
+        "fixed_overtime": "unknown",
+        "allowances": "交通費全額支給。給与の基本給・固定残業代の内訳は未記載。"
+      },
+      "workstyle": {
+        "annual_holidays": null,
+        "overtime_hours_month": null,
+        "flex": "unknown",
+        "transfer": "unknown",
+        "car_commute": "unknown",
+        "parking": "unknown",
+        "client_site": "unknown"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に卒業見込み限定などの制限なし（資格欄は特段の条件なし）",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に卒業年度の限定なし（未経験者枠）",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に学歴の限定なし。給与は最終学歴別。",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠。経験者向けの実務3年以上という別枠とは区別。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に就業歴条件なし。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に年齢の限定なし。",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "普通免許は推奨要件。必須ではない。",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "推奨する普通免許はAT限定・取得見込みも可。",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に専門資格の必須指定なし。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "当該未経験者枠の勤務地は浜松本社。転居を応募条件にしていない。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に特定の出張・夜勤対応指定なし。顧客先作業は仕事内容として明記。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の指定なし。採用時期は選考時に確認。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://www.zillion.co.jp/recruit/",
+          "original_url": "https://www.zillion.co.jp/recruit/",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "original_url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "kind": "other",
+          "checked_at": "2026-11-01"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者）の職種・所在地",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "新規採用（未経験者） > 雇用形態：正社員",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "未経験者枠の応募資格を全文確認。応募資格自体に特段の条件なしと明記。経験者向け別枠の条件と混同しない。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "未経験者枠 > 勤務地：浜松（本社所在地）。所在地：根洗町1431。顧客先作業は業務内容に別記。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "quote_or_locator": "車経路 > 11月2日(月)8:30到着 > 国道362号ともくれん通り、8.9km、通常16〜22分",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "採用ページ冒頭の随時募集告知と、未経験者枠の現行募集要項・問い合わせ導線を確認。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "公表済みの募集条件を独自に短く要約して原典へリンク。全文・画像・ロゴは転載しない。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        }
+      ],
+      "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-01"
+    },
+    {
+      "id": "a39741d22c11c2bb1f10",
+      "company": "株式会社リキシステム",
+      "employer": "株式会社リキシステム",
+      "title": "SE・プログラマー（新卒・既卒採用）",
+      "category": "software",
+      "recruitment_track": "2027新卒・卒業後概ね3年以内",
+      "employment_type": "full_time_regular",
+      "description": "製造業向けなどの業務Webシステム・アプリの開発、テスト、保守。未経験者向け約1年の研修あり。本社勤務。残業9.2時間は2025年度の全社平均。入社時期は採用先に要確認。",
+      "location": {
+        "address": "静岡県浜松市中央区初生町1254-14",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 24.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通の予測を手動確認）",
+        "checked_at": "2026-11-01",
+        "route_assumptions": "公共の参考地点・宮口駅から本社。2026-11-02(月)8:30到着、車、国道362号経由10.3km、通常18〜24分。ソート・分数フィルターは予測範囲の上限24分を使用。2026-11-01確認。自宅発の実走計測ではなく、実際の起点・当日の渋滞で変動する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": 200000,
+        "monthly_total_min_jpy": 216000,
+        "annual_min_jpy": null,
+        "annual_basis": "unknown",
+        "bonus": "年2回（6月・12月）、金額不明",
+        "fixed_overtime": "月10時間分16,000円を含む。超過分は追加支給。",
+        "allowances": "通勤手当は月15,000円まで"
+      },
+      "workstyle": {
+        "annual_holidays": 120,
+        "overtime_hours_month": 9.2,
+        "flex": "yes",
+        "transfer": "unknown",
+        "car_commute": "yes",
+        "parking": "yes",
+        "client_site": "unknown"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "eq",
+            "value": true,
+            "description": "卒業済みの応募者も対象（卒業後概ね3年以内）",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "between",
+            "value": [
+              "2023-11",
+              "2026-11"
+            ],
+            "description": "卒業後概ね3年以内の既卒者を対象。確認日時点で3年以内を照合。",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "in",
+            "value": [
+              "university",
+              "graduate",
+              "junior_college",
+              "technical_college",
+              "vocational"
+            ],
+            "description": "大学・大学院・短大・高専・専門学校の卒業者が対象",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "実務未経験でも応募可能。研修制度を確認。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "既卒枠の応募資格に職務経験の必須条件は設けられていない。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格の年齢条件は卒業時期の条件とは別に設けられていない。",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に運転免許の必須指定なし",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に免許区分の必須指定なし",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "応募時に専門資格の取得は要求されていない",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "本社勤務。採用データで転居を伴う転勤なしを確認。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に特定の出張・夜勤対応の必須指定なし。業務内容は原典参照。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の必須指定なし。入社日は選考時に確認。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "original_url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://job.mynavi.jp/27/pc/search/corp265744/outline.html",
+          "original_url": "https://job.mynavi.jp/27/pc/search/corp265744/outline.html",
+          "kind": "job_board",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://job.mynavi.jp/27/pc/search/corp265744/recruiting_course27028819/recruiting_course.html?site_preference=pc",
+          "original_url": "https://job.mynavi.jp/27/pc/search/corp265744/recruiting_course27028819/recruiting_course.html?site_preference=pc",
+          "kind": "job_board",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8112+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%88%9D%E7%94%9F%E7%94%BA%EF%BC%91%EF%BC%92%EF%BC%95%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%94+%E3%83%AA%E3%82%AD%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/@34.8011818,137.7046969,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20844111fc87:0xb2cc81ce532cc1d9!2m2!1d137.7179644!2d34.7720542!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "original_url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8112+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%88%9D%E7%94%9F%E7%94%BA%EF%BC%91%EF%BC%92%EF%BC%95%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%94+%E3%83%AA%E3%82%AD%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/@34.8011818,137.7046969,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20844111fc87:0xb2cc81ce532cc1d9!2m2!1d137.7179644!2d34.7720542!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "kind": "other",
+          "checked_at": "2026-11-01"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "新卒採用情報 > 業務内容・雇用形態・所在地",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "募集要項 > 正社員",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "募集要項の応募資格とFAQを全文確認。学歴・既卒時期と未経験者の受入を個別に照合。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "勤務地 > 本社、初生町1254-14",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8112+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E5%88%9D%E7%94%9F%E7%94%BA%EF%BC%91%EF%BC%92%EF%BC%95%EF%BC%94%E2%88%92%EF%BC%91%EF%BC%94+%E3%83%AA%E3%82%AD%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0/@34.8011818,137.7046969,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20844111fc87:0xb2cc81ce532cc1d9!2m2!1d137.7179644!2d34.7720542!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "quote_or_locator": "車経路 > 11月2日(月)8:30到着 > 国道362号、10.3km、通常18〜24分",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://job.mynavi.jp/27/pc/search/corp265744/outline.html",
+          "quote_or_locator": "企業メッセージ：2026/10/26更新、WEB会社説明会予約受付中。エントリー受付リンクあり。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "公表済み募集条件の事実だけを独自に短く要約し原典へリンク。全文・画像・ロゴは転載しない。",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 卒業後概ね3年以内",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 卒業後概ね3年以内",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 対象学校区分",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "FAQ > 未経験でも仕事ができるようになりますか",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格およびFAQ > 既卒者・未経験者の条件",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 学校区分・卒業時期の条件",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 必須条件の一覧",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格 > 必須条件の一覧",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "応募資格・待遇 > 資格取得支援制度",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://job.mynavi.jp/27/pc/search/corp265744/recruiting_course27028819/recruiting_course.html?site_preference=pc",
+          "quote_or_locator": "勤務地 > 本社（公式）、募集の特徴 > 転居を伴う転勤なし（採用データ）",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "業務内容・勤務時間・応募資格の全項目",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "quote_or_locator": "募集要項 > 応募資格・採用フロー",
+          "checked_at": "2026-11-01",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        }
+      ],
+      "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-01"
+    }
+  ]
 }
