@@ -10,16 +10,18 @@ test('real IT review queue is separate, searchable and explains pending reasons'
  await expect(page.locator('.research-card')).toHaveCount(data.candidates.length);
  await expect(page.locator('.research-card').first().locator('.review-facts dt')).toHaveCount(6);
  await expect(page.locator('.research-card').first().getByRole('link',{name:/給与の根拠/})).toBeVisible();
- await expect(page.getByText(/応募可能とは未確認の候補/)).toBeVisible();
+ await expect(page.getByText(/応募可能とは未確認/)).toBeVisible();
  await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
- await page.getByPlaceholder('候補の会社・職種・保留理由').fill('ゼクスターズ');
- await expect(page.getByText('月給不明（参考月額 約29.2〜50.0万円）')).toBeVisible();
- await expect(page.locator('.salary-note')).toContainText('実際の月給・手取りではありません');
+ for(const candidate of data.candidates){
+  for(const field of ['salary','location','employment','holidays','hours']) expect(candidate.facts.some((f:{field:string;confirmed:boolean})=>f.field===field&&f.confirmed)).toBe(true);
+ }
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('ソフィックス');
+ await expect(page.locator('.research-card')).toHaveCount(0);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('');
  await page.getByLabel('調査段階',{exact:true}).selectOption('detail_review');
  await expect(page.locator('.research-card')).toHaveCount(data.candidates.filter((j:{stage:string})=>j.stage==='detail_review').length);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('アルメニ');
- await expect(page.locator('.research-card')).toHaveCount(3);
+ await expect(page.locator('.research-card')).toHaveCount(0);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('');
  await page.getByLabel('調査段階',{exact:true}).selectOption('');
  await page.locator('.research-content').scrollIntoViewIfNeeded();
@@ -34,7 +36,7 @@ test('real IT review queue is separate, searchable and explains pending reasons'
 
 test('old verification warns in list and comparison; expired evidence stays hidden',async({page})=>{
  const data=dataset(2);
- for(const job of data.jobs){job.first_seen_at=job.last_checked_at='2026-01-01';job.commute.checked_at='2026-01-01';job.sources.forEach(s=>s.checked_at='2026-01-01');job.evidence.forEach(e=>e.checked_at='2026-01-01');}
+ for(const job of data.jobs){job.first_seen_at=job.last_checked_at='2026-01-01';job.commute.checked_at='2026-01-01';job.sources.forEach(s=>s.checked_at='2026-01-01');job.evidence.forEach(e=>e.checked_at='2026-01-01');job.listing_facts?.forEach(f=>f.checked_at='2026-01-01');}
  data.jobs[1].evidence[0].valid_through='2026-01-31';
  await page.route('**/jobs.json',route=>route.fulfill({json:data}));
  await page.goto('./');

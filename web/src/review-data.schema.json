@@ -167,6 +167,11 @@
           "format": "date",
           "title": "Checked At",
           "type": "string"
+        },
+        "confirmed": {
+          "default": false,
+          "title": "Confirmed",
+          "type": "boolean"
         }
       },
       "required": [

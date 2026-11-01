@@ -102,6 +102,15 @@ class Recruitment(Model):
     date_posted: date | None = None
 
 
+class ReviewFact(Model):
+    field: Literal['salary', 'location', 'employment', 'hours', 'holidays', 'commute']
+    text: str = Field(min_length=1, max_length=300)
+    url: str
+    checked_at: date
+    confirmed: bool = False
+    _url = field_validator('url')(public_url)
+
+
 class Job(Model):
     id: str = Field(min_length=1)
     company: str = Field(min_length=1)
@@ -119,6 +128,7 @@ class Job(Model):
     recruitment: Recruitment = Field(default_factory=Recruitment)
     sources: list[Source] = Field(default_factory=list)
     evidence: list[Evidence] = Field(default_factory=list)
+    listing_facts: list[ReviewFact] = Field(default_factory=list)
     first_seen_at: date
     last_checked_at: date
 
@@ -134,14 +144,6 @@ class PublicData(Model):
     updated_at: date | None = None
     collection_status: Literal["not_collected", "research_in_progress", "verified_export"] = "not_collected"
     jobs: list[Job] = Field(default_factory=list)
-
-
-class ReviewFact(Model):
-    field: Literal['salary', 'location', 'employment', 'hours', 'holidays', 'commute']
-    text: str = Field(min_length=1, max_length=300)
-    url: str
-    checked_at: date
-    _url = field_validator('url')(public_url)
 
 
 class ReviewCandidate(Model):

@@ -3,9 +3,10 @@ import {fixture,dataset} from './fixtures';
 import {defaults,readFilters,writeFilters,selectJobs,recommendation} from '../search';
 import {parseData,publishable,needsRecheck} from '../data';
 describe('publication defense',()=>{
+ it.each(['salary','location','employment','holidays','hours'])('hides verified jobs missing confirmed %s',field=>{const j=fixture();j.listing_facts=j.listing_facts!.filter(f=>f.field!==field);expect(publishable(j)).toBe(false);});
  it('requires an IT role for verified publication',()=>{const d=dataset();d.jobs[0].category='technical';expect(parseData(d).jobs).toHaveLength(0);});
  it('keeps old verified data with a recheck warning, but hides expired evidence and deadlines',()=>{
-  const j=fixture();j.first_seen_at=j.last_checked_at='2026-01-01';j.commute.checked_at='2026-01-01';j.sources.forEach(s=>s.checked_at='2026-01-01');j.evidence.forEach(e=>e.checked_at='2026-01-01');
+  const j=fixture();j.first_seen_at=j.last_checked_at='2026-01-01';j.commute.checked_at='2026-01-01';j.sources.forEach(s=>s.checked_at='2026-01-01');j.evidence.forEach(e=>e.checked_at='2026-01-01');j.listing_facts?.forEach(f=>f.checked_at='2026-01-01');
   expect(publishable(j,'2026-11-01')).toBe(true);expect(needsRecheck(j,'2026-11-01')).toBe(true);
   j.evidence[0].valid_through='2026-10-31';expect(publishable(j,'2026-11-01')).toBe(false);
   j.evidence[0].valid_through=null;j.recruitment.valid_through='2026-10-31';expect(publishable(j,'2026-11-01')).toBe(false);

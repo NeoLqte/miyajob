@@ -4,6 +4,7 @@ from pathlib import Path
 import json
 
 from .models import ReviewCandidate, ReviewData, IT_CATEGORIES
+from .listing import complete_conditions
 
 
 def validate_review(data: ReviewData, today: date):
@@ -13,6 +14,8 @@ def validate_review(data: ReviewData, today: date):
         raise ValueError('invalid_or_expired_review_candidate')
     if any(len({f.field for f in j.facts}) != len(j.facts) or any(f.checked_at > j.checked_at for f in j.facts) for j in data.candidates):
         raise ValueError('invalid_review_facts')
+    if any(not complete_conditions(j.facts) for j in data.candidates):
+        raise ValueError('incomplete_listing_conditions')
     return data
 
 
@@ -39,5 +42,6 @@ def review_payload(root: Path, jobs, today: date):
             candidate.valid_through = min(deadline, candidate.valid_through) if candidate.valid_through else deadline
         if candidate.valid_through and candidate.valid_through < today:
             continue
-        accepted.append(candidate)
+        if complete_conditions(candidate.facts):
+            accepted.append(candidate)
     return validate_review(ReviewData(updated_at=today, candidates=accepted), today)

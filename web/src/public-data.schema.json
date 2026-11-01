@@ -345,6 +345,13 @@
           "title": "Evidence",
           "type": "array"
         },
+        "listing_facts": {
+          "items": {
+            "$ref": "#/definitions/ReviewFact"
+          },
+          "title": "Listing Facts",
+          "type": "array"
+        },
         "first_seen_at": {
           "format": "date",
           "title": "First Seen At",
@@ -634,6 +641,51 @@
         "evidence_ids"
       ],
       "title": "Requirement",
+      "type": "object"
+    },
+    "ReviewFact": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "salary",
+            "location",
+            "employment",
+            "hours",
+            "holidays",
+            "commute"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "confirmed": {
+          "default": false,
+          "title": "Confirmed",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "field",
+        "text",
+        "url",
+        "checked_at"
+      ],
+      "title": "ReviewFact",
       "type": "object"
     },
     "Source": {

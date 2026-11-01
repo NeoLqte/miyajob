@@ -1,7 +1,7 @@
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import schema from './public-data.schema.json' with {type:'json'};
-import type {Job, PublicData, ReviewData, ReviewCandidate} from './types';
+import type {Job, PublicData, ReviewData, ReviewCandidate, ReviewFact} from './types';
 import {dimensions,supportedRequirements,dayNow,itCategories} from './constants.ts';
 import reviewSchema from './review-data.schema.json' with {type:'json'};
 export {dimensions,dayNow} from './constants.ts';
@@ -18,12 +18,14 @@ export function reviewNeedsRecheck(j:ReviewCandidate,today=dayNow()):boolean {
  return [j.checked_at,...(j.facts??[]).map(f=>f.checked_at)].some(d=>dayDiff(today,d)>30);
 }
 function safeURL(url:string) {try {const u=new URL(url);return u.protocol==='https:' && !u.username && !u.password && !/(^localhost$|^127\.|^\[::1\]$|\.(invalid|test|localhost)$)/.test(u.hostname);} catch{return false;}}
+export const requiredConditions=['salary','location','employment','holidays','hours'] as const;
+export function completeConditions(facts:ReviewFact[]=[]):boolean {return requiredConditions.every(field=>facts.some(f=>f.field===field&&f.confirmed===true));}
 export function publishable(j:Job,today=dayNow()):boolean {
  const fresh=(d:string|null)=>!!d && dayDiff(today,d)>=0;
  const validEvidence=(id:string,field:string)=>j.evidence.some(e=>e.id===id&&e.field===field&&e.conclusion==='pass'&&fresh(e.checked_at)&&(!e.valid_through||e.valid_through>=today)&&e.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===e.url&&e.checked_at<=s.checked_at));
  const fields=[...requiredEvidence,...j.eligibility.requirements.map(r=>r.field)];
  const c=j.commute;
- return itCategories.includes(j.category)&&j.eligibility.status==='eligible'&&j.eligibility.graduate_eligibility==='pass'&&j.eligibility.professional_experience==='pass'
+ return completeConditions(j.listing_facts)&&new Set(j.listing_facts?.map(f=>f.field)).size===j.listing_facts?.length&&j.listing_facts!.every(f=>safeURL(f.url)&&fresh(f.checked_at)&&f.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===f.url&&f.checked_at<=s.checked_at))&&itCategories.includes(j.category)&&j.eligibility.status==='eligible'&&j.eligibility.graduate_eligibility==='pass'&&j.eligibility.professional_experience==='pass'
  && j.employment_type==='full_time_regular' && j.recruitment.status==='active' && (!j.recruitment.valid_through||j.recruitment.valid_through>=today)
  && (!j.recruitment.date_posted||j.recruitment.date_posted<=today) && fresh(j.last_checked_at)&&j.first_seen_at<=j.last_checked_at
  && j.sources.length>0&&j.sources.every(s=>safeURL(s.url)&&safeURL(s.original_url)&&fresh(s.checked_at)&&s.checked_at<=j.last_checked_at)
@@ -47,5 +49,5 @@ export function parseReviews(input:unknown,today=dayNow()):ReviewData {
  if(input.updated_at>today||new Set(input.candidates.map(j=>j.id)).size!==input.candidates.length)throw Error('確認待ちデータの確認日時・IDが不正です。');
  if(input.candidates.some(j=>!safeURL(j.url)||j.checked_at>today||j.checked_at>input.updated_at))throw Error('確認待ちデータの原典・確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.facts?.map(f=>f.field)).size!==(j.facts?.length??0)||j.facts?.some(f=>!safeURL(f.url)||f.checked_at>j.checked_at)))throw Error('候補の条件・根拠の確認日が不正です。');
- return {...input,candidates:input.candidates.filter(j=>!j.valid_through||j.valid_through>=today)};
+ return {...input,candidates:input.candidates.filter(j=>completeConditions(j.facts)&&(!j.valid_through||j.valid_through>=today))};
 }

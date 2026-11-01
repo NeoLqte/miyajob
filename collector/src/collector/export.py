@@ -7,6 +7,7 @@ from pathlib import Path
 
 from .audit import audit
 from .models import Job, Profile, PublicData
+from .listing import complete_job
 
 
 def stable_id(job: Job) -> str:
@@ -56,7 +57,7 @@ def atomic_json(path: Path, value):
 
 def public_payload(jobs: list[Job], today: date, profile: Profile):
     # Never serialize the applicant profile, review records, or pipeline metadata.
-    accepted = [j for j in jobs if j.eligibility.status == "eligible" and audit(j, profile, today).status == "eligible" and audit(j, None, today).status == "eligible"]
+    accepted = [j for j in jobs if complete_job(j) and j.eligibility.status == "eligible" and audit(j, profile, today).status == "eligible" and audit(j, None, today).status == "eligible"]
     public_jobs = [j.model_copy(deep=True) for j in accepted]
     for job in public_jobs:
         # Free-form internal reviewer notes may mention unknown applicant attributes.
@@ -83,6 +84,8 @@ def validate_public(path: Path, today: date):
     if len(ids) != len(set(ids)):
         raise ValueError("duplicate_public_id")
     for job in payload.jobs:
+        if not complete_job(job):
+            raise ValueError(f'{job.id}: incomplete_listing_conditions')
         decision = audit(job, today=today)
         if decision.status != "eligible":
             raise ValueError(f"{job.id}: {decision.reasons}")

@@ -175,7 +175,7 @@
           "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
           "original_url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
           "kind": "official",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/index.php",
@@ -407,8 +407,45 @@
           "notes": ""
         }
       ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月給22〜25万円＋諸手当",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "中央区東三方町162-1・本社",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日（土日）・年間116日",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:20・実働8時間",
+          "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-01"
+      "last_checked_at": "2026-11-02"
     },
     {
       "id": "40edfed3440bbd03c97f",
@@ -586,7 +623,7 @@
           "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
           "original_url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
           "kind": "official",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E4%B8%89%E6%96%B9%E7%94%BA211-17&travelmode=driving",
@@ -829,419 +866,45 @@
           "notes": ""
         }
       ],
-      "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-01"
-    },
-    {
-      "id": "92dc1a9efbd586794cc6",
-      "company": "株式会社アルファプロジェクト",
-      "employer": "株式会社アルファプロジェクト",
-      "title": "ファームウェア・ソフトウェア技術者（既卒対象枠）",
-      "category": "software",
-      "recruitment_track": "2027新卒・卒業後概ね3年以内",
-      "employment_type": "full_time_regular",
-      "description": "既卒3年以内も対象のファームウェア・PC／スマートフォン向けソフト開発。積志町の本社勤務。2027採用媒体の大卒基本給は月24.2万円。休日は公式に2024年度122日、採用媒体に116日の表記があり、対象年度確認前のため比較数値は不明とする。入社時期は柔軟に対応。",
-      "location": {
-        "address": "静岡県浜松市中央区積志町834",
-        "region": "浜松市中央区",
-        "region_band": 2,
-        "is_fixed": true,
-        "remote_policy": "unknown",
-        "residence_verified": false
-      },
-      "commute": {
-        "minutes": 24.0,
-        "status": "verified",
-        "provider": "Google マップ（平日朝の通常交通予測を手動確認）",
-        "checked_at": "2026-11-01",
-        "route_assumptions": "公共の参考地点・宮口駅から積志町834。2026-11-02(月)9:00到着、飛龍街道・国道152号経由8.4km、通常14〜24分を2026-11-01に画面で確認。表示には予測上限24分を使用。本人の自宅発や実走ではなく交通状況で変動する。URLを開いた後は到着日時を再指定する。"
-      },
-      "pay": {
-        "monthly_base_min_jpy": 242000,
-        "monthly_total_min_jpy": 242000,
-        "annual_min_jpy": null,
-        "annual_basis": "unknown",
-        "bonus": "年2回。支給月・金額は採用年度の要項を確認。",
-        "fixed_overtime": "固定残業制度なし。",
-        "allowances": "役職・家族・住宅・通勤・時間外等は条件により別途。通勤手当込みのモデル額を保証月給に加算しない。"
-      },
-      "workstyle": {
-        "annual_holidays": null,
-        "overtime_hours_month": null,
-        "flex": "yes",
-        "transfer": "no",
-        "car_commute": "yes",
-        "parking": "yes",
-        "client_site": "unknown"
-      },
-      "eligibility": {
-        "status": "eligible",
-        "graduate_eligibility": "pass",
-        "professional_experience": "pass",
-        "requirements": [
-          {
-            "field": "graduated",
-            "operator": "eq",
-            "value": true,
-            "description": "卒業済みの既卒も明示的に応募可。",
-            "evidence_ids": [
-              "graduated"
-            ]
-          },
-          {
-            "field": "graduation_date",
-            "operator": "between",
-            "value": [
-              "2024-04",
-              "2027-03"
-            ],
-            "description": "2027採用で卒業後概ね3年以内。監査対象は2024年4月〜2027年3月の卒業範囲。",
-            "evidence_ids": [
-              "graduation_date"
-            ]
-          },
-          {
-            "field": "education",
-            "operator": "in",
-            "value": [
-              "vocational",
-              "junior_college",
-              "technical_college",
-              "university",
-              "graduate"
-            ],
-            "description": "専門学校・短大・高専・四年制大学・大学院等が対象。全学部・全学科。",
-            "evidence_ids": [
-              "education"
-            ]
-          },
-          {
-            "field": "it_years",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "it_years"
-            ]
-          },
-          {
-            "field": "employment_history",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "employment_history"
-            ]
-          },
-          {
-            "field": "age",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "age"
-            ]
-          },
-          {
-            "field": "drivers_license",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "drivers_license"
-            ]
-          },
-          {
-            "field": "license_restriction",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "license_restriction"
-            ]
-          },
-          {
-            "field": "other_qualifications",
-            "operator": "any",
-            "value": null,
-            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-            "evidence_ids": [
-              "other_qualifications"
-            ]
-          },
-          {
-            "field": "relocation",
-            "operator": "any",
-            "value": null,
-            "description": "初期勤務地は積志町の本社。転勤なし。転居可能を必須条件としない。",
-            "evidence_ids": [
-              "relocation"
-            ]
-          },
-          {
-            "field": "travel",
-            "operator": "any",
-            "value": null,
-            "description": "当該募集に出張経験・資格等の必須指定なし。",
-            "evidence_ids": [
-              "travel"
-            ]
-          },
-          {
-            "field": "start_date",
-            "operator": "any",
-            "value": null,
-            "description": "採用トップで入社時期は柔軟に対応と明示。",
-            "evidence_ids": [
-              "start_date"
-            ]
-          }
-        ]
-      },
-      "recruitment": {
-        "status": "active",
-        "valid_through": null,
-        "date_posted": null
-      },
-      "sources": [
+      "listing_facts": [
         {
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "original_url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "kind": "official",
-          "checked_at": "2026-11-01"
+          "field": "salary",
+          "text": "月給24万円〜（経験による）",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
-          "url": "https://www.apnet.co.jp/company/recruit.html",
-          "original_url": "https://www.apnet.co.jp/company/recruit.html",
-          "kind": "official",
-          "checked_at": "2026-11-01"
-        },
-        {
-          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
-          "original_url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
-          "kind": "job_board",
-          "checked_at": "2026-11-01"
-        },
-        {
-          "url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
-          "original_url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
-          "kind": "other",
-          "checked_at": "2026-11-01"
-        }
-      ],
-      "evidence": [
-        {
-          "id": "existence",
-          "field": "existence",
-          "url": "https://www.apnet.co.jp/company/recruit.html",
-          "quote_or_locator": "2027新卒採用受付中、既卒も応募可、当該ファームウェア・ソフトウェア職の募集要項への導線",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "employment",
-          "field": "employment",
-          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
-          "quote_or_locator": "募集コースの雇用形態：正社員。ファームウェア・ソフトウェアの配属職種。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "job_board",
-          "notes": ""
-        },
-        {
-          "id": "requirements_complete",
-          "field": "requirements_complete",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "新卒採用の対象・募集職種・学歴・既卒3年以内を全文確認。経験者向けキャリア枠の実務3年をこの枠へ転用しない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "location",
           "field": "location",
-          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
-          "quote_or_locator": "勤務地は本社所在地の浜松市中央区積志町834。転勤なし。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "job_board",
-          "notes": ""
+          "text": "中央区東三方町211-17・本社",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
-          "id": "commute",
-          "field": "commute",
-          "url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
-          "quote_or_locator": "公共の参考地点・宮口駅から積志町834。2026-11-02(月)9:00到着、飛龍街道・国道152号経由8.4km、通常14〜24分を2026-11-01に画面で確認。表示には予測上限24分を使用。本人の自宅発や実走ではなく交通状況で変動する。URLを開いた後は到着日時を再指定する。",
+          "field": "employment",
+          "text": "正社員（公式キャリア募集一覧）",
+          "url": "https://tegara.recruitment.jp/career/job/",
           "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "other",
-          "notes": ""
+          "confirmed": true
         },
         {
-          "id": "recruitment",
-          "field": "recruitment",
-          "url": "https://www.apnet.co.jp/company/recruit.html",
-          "quote_or_locator": "2027年新卒採用受付中と既卒応募可を明示。入社時期は柔軟対応。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
+          "field": "holidays",
+          "text": "土日祝中心・月1回程度土曜祝日出勤／年間116日（うるう年117日）",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
-          "id": "reuse",
-          "field": "reuse",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "条件の事実を短い独自要約と原典リンクで紹介。原文全文や画像を転載しない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "other",
-          "notes": ""
-        },
-        {
-          "id": "graduated",
-          "field": "graduated",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：卒業済みの既卒も明示的に応募可。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "graduation_date",
-          "field": "graduation_date",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：2027採用で卒業後概ね3年以内。監査対象は2024年4月〜2027年3月の卒業範囲。",
-          "checked_at": "2026-11-01",
-          "valid_through": "2027-03-31",
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "education",
-          "field": "education",
-          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：専門学校・短大・高専・四年制大学・大学院等が対象。全学部・全学科。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "job_board",
-          "notes": ""
-        },
-        {
-          "id": "it_years",
-          "field": "it_years",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "employment_history",
-          "field": "employment_history",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "age",
-          "field": "age",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "drivers_license",
-          "field": "drivers_license",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "license_restriction",
-          "field": "license_restriction",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "other_qualifications",
-          "field": "other_qualifications",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "relocation",
-          "field": "relocation",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：初期勤務地は積志町の本社。転勤なし。転居可能を必須条件としない。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "travel",
-          "field": "travel",
-          "url": "https://www.apnet.co.jp/company/recruit-new.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：当該募集に出張経験・資格等の必須指定なし。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
-        },
-        {
-          "id": "start_date",
-          "field": "start_date",
-          "url": "https://www.apnet.co.jp/company/recruit.html",
-          "quote_or_locator": "採用対象・資格・勤務地の確認：採用トップで入社時期は柔軟に対応と明示。",
-          "checked_at": "2026-11-01",
-          "valid_through": null,
-          "conclusion": "pass",
-          "method": "official_page",
-          "notes": ""
+          "field": "hours",
+          "text": "9:00〜18:00・休憩60分",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ],
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-01"
+      "last_checked_at": "2026-11-02"
     },
     {
       "id": "a39741d22c11c2bb1f10",
@@ -1419,7 +1082,7 @@
           "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
           "original_url": "https://www.rikisys.co.jp/recruit/new-graduate/",
           "kind": "official",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "url": "https://job.mynavi.jp/27/pc/search/corp265744/outline.html",
@@ -1651,8 +1314,45 @@
           "notes": ""
         }
       ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "大卒月給21.6万円（基本給20万円＋固定残業10時間分1.6万円・超過別途）",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "中央区初生町1254-14・本社",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日（土日・会社指定日）・GW・夏季・年末年始",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "標準9:00〜18:00・休憩60分・実働8時間／コア10:00〜16:00",
+          "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-01"
+      "last_checked_at": "2026-11-02"
     },
     {
       "id": "a57f5b2333b879895c82",
@@ -1821,7 +1521,7 @@
           "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
           "original_url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
           "kind": "official",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%9D%B1%E4%B8%89%E6%96%B9%E7%94%BA211-17&travelmode=driving",
@@ -2053,8 +1753,45 @@
           "notes": ""
         }
       ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月給24万円〜（経験による）",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "中央区東三方町211-17・本社",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員（公式キャリア募集一覧）",
+          "url": "https://tegara.recruitment.jp/career/job/",
+          "checked_at": "2026-11-01",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "土日祝中心・月1回程度土曜祝日出勤／年間116日（うるう年117日）",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・休憩60分",
+          "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
       "first_seen_at": "2026-11-01",
-      "last_checked_at": "2026-11-01"
+      "last_checked_at": "2026-11-02"
     }
   ]
 }

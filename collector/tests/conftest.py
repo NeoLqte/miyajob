@@ -2,7 +2,7 @@ from datetime import date
 
 import pytest
 
-from collector.models import Job, Evidence, Source, Location, Commute, Eligibility, Recruitment, Requirement, Profile, DIMENSIONS, MANDATORY_EVIDENCE
+from collector.models import Job, ReviewFact, Evidence, Source, Location, Commute, Eligibility, Recruitment, Requirement, Profile, DIMENSIONS, MANDATORY_EVIDENCE
 
 TODAY = date(2026, 11, 1)
 URL = "https://www.python.org/jobs/"
@@ -23,4 +23,4 @@ def job():
                commute=Commute(minutes=20, status="verified", provider="TEST ONLY manual route", checked_at=TODAY, route_assumptions="TEST ONLY morning car route"),
                eligibility=Eligibility(status="eligible", graduate_eligibility="pass", professional_experience="pass", requirements=requirements),
                recruitment=Recruitment(status="active"), sources=[Source(url=URL, original_url=URL, kind="official", checked_at=TODAY)],
-               evidence=evidence, first_seen_at=TODAY, last_checked_at=TODAY)
+               listing_facts=[ReviewFact(field=f,text=f'TEST ONLY {f}',url=URL,checked_at=TODAY,confirmed=True) for f in ('salary','location','employment','holidays','hours')], evidence=evidence, first_seen_at=TODAY, last_checked_at=TODAY)
