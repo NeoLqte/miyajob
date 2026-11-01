@@ -4,8 +4,7 @@ import sys
 from pathlib import Path
 root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(root / "collector/src"))
-from collector.models import PublicData
-schema = PublicData.model_json_schema()
+from collector.models import PublicData, ReviewData
 def require_all(node):
     if isinstance(node, dict):
         if "properties" in node:
@@ -18,13 +17,15 @@ def require_all(node):
     elif isinstance(node, list):
         for child in node:
             require_all(child)
-require_all(schema)
-schema["$schema"] = "http://json-schema.org/draft-07/schema#"
-schema["definitions"] = schema.pop("$defs")
-serialized = json.dumps(schema, ensure_ascii=False, indent=2).replace("#/$defs/", "#/definitions/") + "\n"
-target = root / "web/src/public-data.schema.json"
-if "--check" in sys.argv:
-    if target.read_text(encoding="utf-8") != serialized:
-        raise SystemExit("Schema is out of date; run python scripts/schema.py")
-else:
-    target.write_text(serialized, encoding="utf-8")
+for model, filename in [(PublicData, 'public-data.schema.json'), (ReviewData, 'review-data.schema.json')]:
+    schema = model.model_json_schema()
+    require_all(schema)
+    schema['$schema'] = 'http://json-schema.org/draft-07/schema#'
+    schema['definitions'] = schema.pop('$defs')
+    serialized = json.dumps(schema, ensure_ascii=False, indent=2).replace('#/$defs/', '#/definitions/') + '\n'
+    target = root / 'web/src' / filename
+    if '--check' in sys.argv:
+        if target.read_text(encoding='utf-8') != serialized:
+            raise SystemExit('Schema is out of date; run python scripts/schema.py')
+    else:
+        target.write_text(serialized, encoding='utf-8')

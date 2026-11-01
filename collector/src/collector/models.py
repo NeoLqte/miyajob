@@ -6,6 +6,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 Tri = Literal["yes", "no", "unknown"]
 Category = Literal["software", "infrastructure", "internal_it", "it_support", "technical", "office", "other"]
+IT_CATEGORIES = ('software', 'infrastructure', 'internal_it', 'it_support')
 DIMENSIONS = ("graduated", "graduation_date", "education", "it_years", "employment_history", "age", "drivers_license", "license_restriction", "other_qualifications", "relocation", "travel", "start_date")
 SUPPORTED_REQUIREMENTS = (*DIMENSIONS, "pc_basic", "science_education", "programming_basics")
 MANDATORY_EVIDENCE = ("existence", "employment", "requirements_complete", "location", "commute", "recruitment", "reuse")
@@ -133,3 +134,26 @@ class PublicData(Model):
     updated_at: date | None = None
     collection_status: Literal["not_collected", "research_in_progress", "verified_export"] = "not_collected"
     jobs: list[Job] = Field(default_factory=list)
+
+
+class ReviewCandidate(Model):
+    """Explicitly authored public summary. Never copy internal reviewer notes."""
+    id: str = Field(min_length=1)
+    company: str = Field(min_length=1)
+    title: str = Field(min_length=1)
+    category: Literal['software', 'infrastructure', 'internal_it', 'it_support']
+    address: str = Field(min_length=1)
+    url: str
+    checked_at: date
+    stage: Literal['detail_review', 'discovery']
+    reasons: list[str] = Field(min_length=1)
+    summary: str = Field(min_length=1, max_length=600)
+    status: Literal['review'] = 'review'
+    valid_through: date | None = None
+    _url = field_validator('url')(public_url)
+
+
+class ReviewData(Model):
+    schema_version: Literal[1] = 1
+    updated_at: date
+    candidates: list[ReviewCandidate] = Field(default_factory=list)

@@ -14,3 +14,5 @@ export interface Job {
  evidence:Evidence[];first_seen_at:string;last_checked_at:string;
 }
 export interface PublicData {schema_version:1;updated_at:string|null;collection_status:'not_collected'|'research_in_progress'|'verified_export';jobs:Job[]}
+export interface ReviewCandidate {id:string;company:string;title:string;category:'software'|'infrastructure'|'internal_it'|'it_support';address:string;url:string;checked_at:string;stage:'detail_review'|'discovery';reasons:string[];summary:string;status:'review';valid_through:string|null}
+export interface ReviewData {schema_version:1;updated_at:string;candidates:ReviewCandidate[]}

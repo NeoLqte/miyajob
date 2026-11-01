@@ -96,13 +96,14 @@ def test_old_verified_facts_remain_but_expiring_evidence_does_not(job, profile):
 
 
 def test_preferences_are_not_publication_requirements(job, profile):
-    job.category = "other"
     job.pay.monthly_base_min_jpy = 150000
     job.workstyle.annual_holidays = 90
     job.workstyle.overtime_hours_month = 40
     job.workstyle.transfer = "yes"
     job.location.remote_policy = "none"
     assert audit(job, profile, TODAY).status == "eligible"
+    job.category = 'other'
+    assert 'not_it_role' in audit(job, profile, TODAY).reasons
 
 
 def test_additional_basic_skill_requires_evidence_and_confirmed_attribute(job, profile):

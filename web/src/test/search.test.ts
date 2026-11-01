@@ -3,6 +3,7 @@ import {fixture,dataset} from './fixtures';
 import {defaults,readFilters,writeFilters,selectJobs,recommendation} from '../search';
 import {parseData,publishable,needsRecheck} from '../data';
 describe('publication defense',()=>{
+ it('requires an IT role for verified publication',()=>{const d=dataset();d.jobs[0].category='technical';expect(parseData(d).jobs).toHaveLength(0);});
  it('keeps old verified data with a recheck warning, but hides expired evidence and deadlines',()=>{
   const j=fixture();j.first_seen_at=j.last_checked_at='2026-01-01';j.commute.checked_at='2026-01-01';j.sources.forEach(s=>s.checked_at='2026-01-01');j.evidence.forEach(e=>e.checked_at='2026-01-01');
   expect(publishable(j,'2026-11-01')).toBe(true);expect(needsRecheck(j,'2026-11-01')).toBe(true);

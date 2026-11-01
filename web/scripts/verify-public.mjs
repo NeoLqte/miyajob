@@ -1,6 +1,10 @@
 import {readFile} from 'node:fs/promises';
-import {parseData} from '../src/data.ts';
+import {parseData,parseReviews} from '../src/data.ts';
 const raw=JSON.parse(await readFile('public/jobs.json','utf8'));
 const parsed=parseData(raw);
 if(parsed.jobs.length!==raw.jobs.length)throw Error('Publication audit failed: ineligible, unverified, expired or unsafe job in public data.');
 console.log(`Publication audit passed: ${parsed.jobs.length} real verified records (no fixtures).`);
+const reviews=JSON.parse(await readFile('public/review-jobs.json','utf8'));
+const pending=parseReviews(reviews);
+if(pending.candidates.length!==reviews.candidates.length||pending.candidates.some(j=>parsed.jobs.some(v=>v.id===j.id)))throw Error('Review candidates must be current and separate from verified jobs.');
+console.log(`Review export audit passed: ${pending.candidates.length} IT candidates, explicitly unverified.`);

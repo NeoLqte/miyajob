@@ -10,6 +10,7 @@ from .audit import adjudicate
 from .export import atomic_json, deduplicate, public_payload, stable_id
 from .fetch import SafeFetcher, SourcePolicy
 from .models import Job, Profile, PublicData
+from .public_review import review_payload
 
 
 def jsonl(path: Path):
@@ -100,6 +101,7 @@ def update(root: Path, profile_path: Path, sources_path: Path | None = None, imp
         write_jsonl(internal / "leads.jsonl", list(existing.values()))
     # Any fetch error preserves the entire previous export byte for byte.
     proposal = public_payload(merged, today, profile)
+    review_proposal = review_payload(root, merged, today)
     accepted = previous.jobs if errors else proposal.jobs
     old = {j.id:j.model_dump(mode="json") for j in previous.jobs}
     new = {j.id:j.model_dump(mode="json") for j in accepted}
@@ -111,5 +113,6 @@ def update(root: Path, profile_path: Path, sources_path: Path | None = None, imp
     report.write_text("\n".join(lines) + "\n", encoding="utf-8")
     # Final commit point: every extraction, audit, private write and report succeeded.
     if not errors:
+        atomic_json(root / 'web/public/review-jobs.json', review_proposal.model_dump(mode='json'))
         atomic_json(public, proposal.model_dump(mode="json"))
     return {"published":len(accepted),"review":counts["review"],"rejected":counts["rejected"],"errors":len(errors),"public_preserved":bool(errors),"mode":"network" if network else "local_only"}

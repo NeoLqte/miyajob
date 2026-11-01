@@ -1,6 +1,29 @@
 import {test,expect} from '@playwright/test';
 import {dataset} from '../src/test/fixtures';
 
+test('real IT review queue is separate, searchable and explains pending reasons',async({page,isMobile})=>{
+ await page.goto('./');
+ const response=await page.request.get(new URL('review-jobs.json',page.url()).toString());
+ const data=await response.json();
+ await page.getByRole('button',{name:`保留・確認待ち ${data.candidates.length}件`}).click();
+ await expect(page.locator('.workspace')).toBeHidden();
+ await expect(page.locator('.research-card')).toHaveCount(data.candidates.length);
+ await expect(page.getByText(/応募可能とは未確認の候補/)).toBeVisible();
+ await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
+ await page.getByLabel('調査段階',{exact:true}).selectOption('detail_review');
+ await expect(page.locator('.research-card')).toHaveCount(data.candidates.filter((j:{stage:string})=>j.stage==='detail_review').length);
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('アルメニ');
+ await expect(page.locator('.research-card')).toHaveCount(3);
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('');
+ await page.getByLabel('調査段階',{exact:true}).selectOption('');
+ await page.locator('.research-content').scrollIntoViewIfNeeded();
+ await page.screenshot({path:`../artifacts/review-${isMobile?'mobile':'desktop'}.png`,fullPage:false});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
+ await page.getByRole('button',{name:/応募可能・確認済み/}).click();
+ await expect(page.locator('.workspace')).toBeVisible();
+ await expect(page.locator('.research-card')).toHaveCount(0);
+});
+
 test('old verification warns in list and comparison; expired evidence stays hidden',async({page})=>{
  const data=dataset(2);
  for(const job of data.jobs){job.first_seen_at=job.last_checked_at='2026-01-01';job.commute.checked_at='2026-01-01';job.sources.forEach(s=>s.checked_at='2026-01-01');job.evidence.forEach(e=>e.checked_at='2026-01-01');}

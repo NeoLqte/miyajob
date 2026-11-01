@@ -1,0 +1,135 @@
+{
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": 1,
+      "default": 1,
+      "title": "Schema Version",
+      "type": "integer"
+    },
+    "updated_at": {
+      "format": "date",
+      "title": "Updated At",
+      "type": "string"
+    },
+    "candidates": {
+      "items": {
+        "$ref": "#/definitions/ReviewCandidate"
+      },
+      "title": "Candidates",
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema_version",
+    "updated_at",
+    "candidates"
+  ],
+  "title": "ReviewData",
+  "type": "object",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "ReviewCandidate": {
+      "additionalProperties": false,
+      "description": "Explicitly authored public summary. Never copy internal reviewer notes.",
+      "properties": {
+        "id": {
+          "minLength": 1,
+          "title": "Id",
+          "type": "string"
+        },
+        "company": {
+          "minLength": 1,
+          "title": "Company",
+          "type": "string"
+        },
+        "title": {
+          "minLength": 1,
+          "title": "Title",
+          "type": "string"
+        },
+        "category": {
+          "enum": [
+            "software",
+            "infrastructure",
+            "internal_it",
+            "it_support"
+          ],
+          "title": "Category",
+          "type": "string"
+        },
+        "address": {
+          "minLength": 1,
+          "title": "Address",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        },
+        "stage": {
+          "enum": [
+            "detail_review",
+            "discovery"
+          ],
+          "title": "Stage",
+          "type": "string"
+        },
+        "reasons": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "title": "Reasons",
+          "type": "array"
+        },
+        "summary": {
+          "maxLength": 600,
+          "minLength": 1,
+          "title": "Summary",
+          "type": "string"
+        },
+        "status": {
+          "const": "review",
+          "default": "review",
+          "title": "Status",
+          "type": "string"
+        },
+        "valid_through": {
+          "anyOf": [
+            {
+              "format": "date",
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Valid Through"
+        }
+      },
+      "required": [
+        "id",
+        "company",
+        "title",
+        "category",
+        "address",
+        "url",
+        "checked_at",
+        "stage",
+        "reasons",
+        "summary",
+        "status",
+        "valid_through"
+      ],
+      "title": "ReviewCandidate",
+      "type": "object"
+    }
+  }
+}

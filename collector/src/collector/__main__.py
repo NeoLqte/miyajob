@@ -7,7 +7,8 @@ from pathlib import Path
 from .export import validate_public
 from .pipeline import update
 from .review import report
-from .models import Profile
+from .models import Profile, ReviewData
+from .public_review import validate_review
 import yaml
 
 
@@ -27,6 +28,9 @@ def main():
             print(json.dumps(report(args.root, today, profile), ensure_ascii=False))
         elif args.command == "validate":
             data = validate_public(args.root / "web/public/jobs.json", today)
+            reviews = args.root / 'web/public/review-jobs.json'
+            if reviews.exists():
+                validate_review(ReviewData.model_validate_json(reviews.read_text(encoding='utf-8')), today)
             print(json.dumps({"public_valid":True,"count":len(data.jobs)}))
         else:
             print(json.dumps(update(args.root, args.profile, args.sources, args.import_path, args.network, today), ensure_ascii=False))
