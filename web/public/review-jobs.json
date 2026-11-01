@@ -1,7 +1,463 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-01",
+  "updated_at": "2026-11-02",
   "candidates": [
+    {
+      "id": "c6f3fd685b9a5a763a12",
+      "company": "株式会社シーシーイー",
+      "title": "システムエンジニア・プログラマー（未経験・第二新卒対象）",
+      "category": "software",
+      "address": "浜松センター：中央区伝馬町312-32 MIテラス浜松4階",
+      "url": "https://www.cce.co.jp/recruit/engineer/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "採用区分の適用",
+        "車通勤・駐車場",
+        "通勤"
+      ],
+      "summary": "専修学校以上・35歳以下の募集。未経験、新卒・第二新卒も歓迎。IT資格は尚可で必須ではない。転勤なしの浜松センター勤務を確認したが、職歴がない場合の採用区分、車通勤条件と45分以内の経路を追加確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松センター：中央区伝馬町312-32 MIテラス浜松4階",
+          "url": "https://www.cce.co.jp/recruit/engineer/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "月給18〜35万円＋賞与（基本給・手当内訳未確認）",
+          "url": "https://www.cce.co.jp/recruit/engineer/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員／試用6か月も給与・待遇変更なし",
+          "url": "https://www.cce.co.jp/recruit/engineer/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:40（休憩50分）／残業月平均15時間",
+          "url": "https://www.cce.co.jp/recruit/engineer/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間117日・完全週休2日（土日）",
+          "url": "https://www.cce.co.jp/recruit/engineer/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "98704d839972c82d6eb8",
+      "company": "株式会社クレオ",
+      "title": "システム開発エンジニア（磐田・実務未経験可）",
+      "category": "software",
+      "address": "磐田市敷地1542 新平山工業団地内・静岡プロモーションセンター",
+      "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "募集継続・条件全文",
+        "通勤"
+      ],
+      "summary": "広告・販促会社のWeb開発職。同名のソフトウェア企業とは別会社。大学・大学院卒、独学等でコードに触れた経験を対象とし、趣味レベル・実務未経験も明示的に歓迎。紹介求人の現在の募集継続と全条件、車経路を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "磐田市敷地1542 新平山工業団地内・静岡プロモーションセンター",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "月給24万7,330円〜（基本給18万1,410円＋固定残業30時間分4万6,920円＋手当1万9,000円〜）",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員・期間の定めなし／試用6か月は条件変更なし",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:30（休憩75分・所定7時間15分）",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間125日（土日祝・夏季・年末年始等）",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・無料駐車場あり。朝の経路未確認",
+          "url": "https://www.r-agent.com/viewjob/jkc758a9c1c4586f85/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "b445b011d5722f04b9ef",
+      "company": "小林工業株式会社",
+      "title": "ソフトウェア技術者（2027新卒・既卒枠）",
+      "category": "software",
+      "address": "本社：中央区寺脇町722／浜松・県西部または愛知の配属先",
+      "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "初期配属先",
+        "車通勤・通勤",
+        "給与の適用年度"
+      ],
+      "summary": "寺脇町の小林工業システム事業部。富士宮・秋田・群馬等の同名企業とは区別。全学部対象、卒業後原則3年以内の既卒可。愛知配属の可能性もあるため浜松への初期配属、給与の適用年度と通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：中央区寺脇町722／浜松・県西部または愛知の配属先",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "大卒基本月給21.9万円（当該採用データ掲載値・適用年度要確認）／既卒は最終学歴に準じる",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員・新卒／既卒枠。試用3か月は待遇差なし",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "フレックス制度あり（時間帯の詳細未確認）",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間115〜116日と記載（事業部カレンダーによる）",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "8dc33f7e59d645e4a8e4",
+      "company": "日本デジコム株式会社",
+      "title": "プログラマー・システムエンジニア（2027採用枠）",
+      "category": "software",
+      "address": "浜松本社：中央区常盤町2-4 ND MARKS BLD.／名古屋オフィス",
+      "url": "https://recruit.digicomnet.co.jp/graduate/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "雇用形態",
+        "初期配属先",
+        "車通勤・通勤"
+      ],
+      "summary": "2027年3月までの大学等の卒業・修了者または見込みの方、一般的なコンピューター知識を対象とする新卒要項。既卒の適用範囲、正社員区分、浜松への配属と通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松本社：中央区常盤町2-4 ND MARKS BLD.／名古屋オフィス",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給24万520円（基本給21万5,450円＋地域3,000円＋固定残業10時間分1万7,070円＋物価高騰5,000円）",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "新卒募集。該当公式要項では正社員区分の明記未確認",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（休憩60分・実働8時間）",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間122日・完全週休2日・祝日・年末年始",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "bdf8cf622ecd73c8b9ee",
+      "company": "株式会社第一コンピュータリソース",
+      "title": "システムエンジニア・プログラマ（浜松希望・新卒枠）",
+      "category": "software",
+      "address": "浜松拠点（旧中区表記・就業先の番地は未確認）",
+      "url": "https://www.dcr.co.jp/recruit/requirements/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "雇用形態",
+        "実勤務地・通勤"
+      ],
+      "summary": "新卒要項では全学部対象、浜松を含む希望勤務地で採用。中途向け開発経験3年以上の条件とは分離する。新卒枠の既卒適用と正社員区分、正確な就業先・車通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松拠点（旧中区表記・就業先の番地は未確認）",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給24万9,750円（技術職手当3万円を含む・2026年4月改定）",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "期間の定めなし・試用なし。正社員区分の表記は別途確認",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "8:50〜17:35（休憩12:00〜12:45）",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間127日（2026年度）・完全週休2日（土日祝）",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "8e59be117d14b66ed3b7",
+      "company": "株式会社モアソンジャパン",
+      "title": "ソフトウェア開発エンジニア（キャリア・正社員枠）",
+      "category": "software",
+      "address": "中央区海老塚1丁目19-8",
+      "url": "https://recruit.morson.jp/career/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "キャリア枠の応募資格",
+        "車通勤・通勤"
+      ],
+      "summary": "既存の2027新卒枠とは別のキャリア要項。組み込み・業務系・音響等のソフト開発。正社員とアルバイトの給与を区別し、正社員枠を候補化。実務未経験・就業歴なしでの応募可否と通勤は未確認。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区海老塚1丁目19-8",
+          "url": "https://recruit.morson.jp/career/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "正社員は月給20万円〜（経験・能力による。内訳未確認）",
+          "url": "https://recruit.morson.jp/career/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員枠（併記のアルバイト枠とは区別）",
+          "url": "https://recruit.morson.jp/career/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "標準1日8時間・フレックス／コア10:00〜15:00",
+          "url": "https://recruit.morson.jp/career/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日（土日）・GW・夏季・年末年始等",
+          "url": "https://recruit.morson.jp/career/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "2995ea86ac8a097d2c20",
+      "company": "イズモ株式会社",
+      "title": "社内SE・社内DX推進（プログラミング知識対象）",
+      "category": "internal_it",
+      "address": "本部ioffice：中央区三組町185-1",
+      "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "指定言語知識の適合",
+        "募集継続・条件全文",
+        "通勤"
+      ],
+      "summary": "既存の出雲殿互助会とは別の雇用主。C#・PHP等のプログラミング知識と普通免許が必須、開発実績は歓迎条件。具体的な言語知識の適合と募集継続、朝の車経路を確認する。休日の多寡だけで除外しない。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本部ioffice：中央区三組町185-1",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "月給23万8,750〜30万5,000円（基本給20〜27万円を含む。残業手当は別途）",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員・期間の定めなし／試用3か月は変更なし",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:30・変形労働時間制（所定7.5時間）",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間102日・シフト制（月8〜10日休み）",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "commute",
+          "text": "車・バイク通勤可。駐車条件・経路は未確認",
+          "url": "https://www.r-agent.com/viewjob/jk2c5438f64ed79034/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "4459139de4057686f6cc",
+      "company": "株式会社オルトア",
+      "title": "システムエンジニア・プログラマ（新卒枠）",
+      "category": "software",
+      "address": "浜松近郊（当該新卒枠の実就業先は未確認）",
+      "url": "https://www.alt-a.co.jp/recruit.html",
+      "checked_at": "2026-11-02",
+      "stage": "discovery",
+      "reasons": [
+        "既卒条件",
+        "雇用形態",
+        "募集年度・継続",
+        "実勤務地・通勤"
+      ],
+      "summary": "近隣企業の公式HPに新卒SE・PG枠を確認。待遇は相談の上決定で具体額は不明。経験者枠の実務必須条件とモデル年収を、新卒枠へ転用しない。既卒対象・正社員区分・募集年度と継続、初期配属を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松近郊（当該新卒枠の実就業先は未確認）",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "待遇は相談の上決定（月給額未記載）",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "新卒枠・正社員区分は未確認",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
+    {
+      "id": "c21b8aecc4b8b3d6b9b1",
+      "company": "パルステック工業株式会社",
+      "title": "社内SE・情報システム担当（未経験枠・原票確認待ち）",
+      "category": "internal_it",
+      "address": "浜名区細江町中川7000-35（検索掲載情報）",
+      "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+      "checked_at": "2026-11-02",
+      "stage": "discovery",
+      "reasons": [
+        "原典404・募集継続確認",
+        "Windows・Ethernet知識",
+        "通勤"
+      ],
+      "summary": "検索結果では未経験歓迎、Windows設定とEthernetの知識・普通免許・高卒以上・39歳以下を条件とする社内SEを発見。個別ページは404のため募集終了とは断定せず原票確認待ち。現行条件としては未確定。ハローワーク求人番号22021-02568761も再確認対象。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜名区細江町中川7000-35（検索掲載情報）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "salary",
+          "text": "月給19.9〜30万円（検索掲載値・現在の条件未確認）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（検索掲載情報・原票再確認待ち）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30・残業月平均10時間（検索掲載情報）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "holidays",
+          "text": "年間121日・年4日土曜出勤（検索掲載情報）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤・駐車場ありと検索に記載。経路と現行条件は未確認",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        }
+      ]
+    },
     {
       "id": "872f1bde639ea92ba8c7",
       "company": "株式会社ソフテス",
