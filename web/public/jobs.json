@@ -448,6 +448,486 @@
       "last_checked_at": "2026-11-02"
     },
     {
+      "id": "2d0a3783e849132c1803",
+      "company": "シンク・エンジニアリング株式会社 開発本部",
+      "employer": "シンク・エンジニアリング株式会社 開発本部",
+      "title": "システムの開発スタッフ（ITエンジニア）",
+      "category": "software",
+      "recruitment_track": "unknown",
+      "employment_type": "full_time_regular",
+      "description": "水道事業向け監視制御システム・PLC等のプログラム開発。実務経験不問で学生時代のプログラミングも可。高卒以上・40歳以下・普通免許・Excel／Word／PowerPoint操作が必須。納入先の距離により宿泊出張あり。月額は年俸の12分割と原典に明記。",
+      "location": {
+        "address": "静岡県浜松市中央区上島7丁目10-10",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 30.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通予測の手動確認）",
+        "checked_at": "2026-11-02",
+        "route_assumptions": "公共の参考地点・宮口駅から上島7丁目10-10。2026-11-02(月)8:30到着、車、宮口往還経由10.6km、通常22〜30分。上限30分を使用。自宅発の実走ではなく当日の渋滞で変動する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": 250000,
+        "monthly_total_min_jpy": 250000,
+        "annual_min_jpy": 3000000,
+        "annual_basis": "guaranteed",
+        "bonus": "なし",
+        "fixed_overtime": "なし",
+        "allowances": "unknown"
+      },
+      "workstyle": {
+        "annual_holidays": 120,
+        "overtime_hours_month": 15.0,
+        "flex": "unknown",
+        "transfer": "no",
+        "car_commute": "yes",
+        "parking": "yes",
+        "client_site": "unknown"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "age",
+            "operator": "lte",
+            "value": 40.0,
+            "description": "40歳以下",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "in",
+            "value": [
+              "high_school",
+              "university",
+              "graduate",
+              "junior_college",
+              "technical_college",
+              "vocational"
+            ],
+            "description": "高卒以上",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "eq",
+            "value": true,
+            "description": "普通自動車運転免許が必須",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "programming_basics",
+            "operator": "eq",
+            "value": true,
+            "description": "プログラミング経験は学生時代でも可",
+            "evidence_ids": [
+              "programming_basics"
+            ]
+          },
+          {
+            "field": "pc_basic",
+            "operator": "eq",
+            "value": true,
+            "description": "Excel・Word・PowerPointの操作が必須。各製品の操作可否を個別照合済み。",
+            "evidence_ids": [
+              "pc_basic"
+            ]
+          },
+          {
+            "field": "graduated",
+            "operator": "any",
+            "value": null,
+            "description": "卒業見込み限定の新卒枠ではなく、経験不問の一般募集。",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に卒業年月の限定なし。",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "経験不問。学生時代のプログラミングも可。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "経験不問の一般求人で社会人経験の必須指定なし。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "普通免許のAT限定不可等の追加区分なし。",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "普通免許以外に専門資格の必須指定なし。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "転勤なし。開発本部の固定就業先。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "宿泊出張は仕事内容に記載。応募資格に出張歴・特定経験の指定なし。出張ありを明示し希望条件として判断可能にする。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の必須指定なし。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": "2026-11-30",
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "original_url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "kind": "job_board",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.think-tech.co.jp/recruitment/",
+          "original_url": "https://www.think-tech.co.jp/recruitment/",
+          "kind": "official",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E5%B3%B67%E4%B8%81%E7%9B%AE10-10&travelmode=driving",
+          "original_url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E5%B3%B67%E4%B8%81%E7%9B%AE10-10&travelmode=driving",
+          "kind": "other",
+          "checked_at": "2026-11-02"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "求人番号22020-19505861 > システムの開発スタッフ",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "雇用形態 > 正社員、雇用期間の定めなし",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格全文 > 40歳以下・高卒以上・経験不問・普通免許・学生時代のプログラミング可・Excel/Word/PowerPoint操作",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "住所 > 上島7丁目10-10、転勤なし、車通勤可・駐車場あり",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "2026/9/7受理・11/30紹介期限・増員2名。公式求人ページでも開発本部の募集・エントリー導線を確認。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "公開された募集条件の事実を独自要約しリンク。全文・画像は転載しない。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E4%B8%8A%E5%B3%B67%E4%B8%81%E7%9B%AE10-10&travelmode=driving",
+          "quote_or_locator": "11月2日(月)8:30到着 > 車 > 宮口往還経由10.6km、通常22〜30分",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "programming_basics",
+          "field": "programming_basics",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "pc_basic",
+          "field": "pc_basic",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "quote_or_locator": "応募資格・仕事内容・通勤転勤・勤務時間の全文",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        }
+      ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月額25〜29.2万円。年俸300〜350.4万円を12分割と原典に明記／固定残業なし・賞与なし",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "上島7丁目10-10（開発本部）／転勤なし",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員・期間の定めなし／試用3か月",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:00（休憩60分）／残業月平均15時間",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "土日祝ほか・毎週休2日／年間120日",
+          "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
+      "first_seen_at": "2026-11-02",
+      "last_checked_at": "2026-11-02"
+    },
+    {
       "id": "40edfed3440bbd03c97f",
       "company": "テガラ株式会社",
       "employer": "テガラ株式会社",
@@ -904,6 +1384,445 @@
         }
       ],
       "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-02"
+    },
+    {
+      "id": "62d36aed8ddd30ae66a9",
+      "company": "東海精機株式会社",
+      "employer": "東海精機株式会社",
+      "title": "社内システム運用管理・社内PC等IT機器の管理",
+      "category": "internal_it",
+      "recruitment_track": "unknown",
+      "employment_type": "full_time_regular",
+      "description": "自動車部品メーカーの社内システム・ネットワーク・PC管理。未経験者を対象とするOJTあり。試用期間は原典の記載どおり12か月・同条件。賞与実績の記載に差があるため、保証年収には加算しない。",
+      "location": {
+        "address": "静岡県磐田市中泉2830",
+        "region": "磐田市",
+        "region_band": 3,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 45.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通予測の手動確認）",
+        "checked_at": "2026-11-02",
+        "route_assumptions": "公共の参考地点・宮口駅から中泉2830。2026-11-02(月)8:00到着、車、県道343号経由19.1km、通常35〜45分。上限45分を使用。自宅発の実走ではなく当日の渋滞で変動。8:30到着の検索とは区別し、8:00到着に変更後の表示を確認。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": null,
+        "monthly_total_min_jpy": 200000,
+        "annual_min_jpy": 3000000,
+        "annual_basis": "estimated",
+        "bonus": "原典内の賞与実績に4.5か月と5か月の記載差あり。支給保証として扱わない。",
+        "fixed_overtime": "内訳未記載",
+        "allowances": "通勤・家族手当等。適用条件は原典参照。"
+      },
+      "workstyle": {
+        "annual_holidays": 121,
+        "overtime_hours_month": null,
+        "flex": "unknown",
+        "transfer": "no",
+        "car_commute": "yes",
+        "parking": "yes",
+        "client_site": "no"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "any",
+            "value": null,
+            "description": "卒業見込み限定の募集ではなく、未経験者対象の一般募集。",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格欄に卒業年月の限定なし。",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格欄に学歴の限定なし。",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者を対象にOJT。実務年数条件なし。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者対象の一般募集。就業歴・第二新卒在籍年数の条件なし。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格欄に年齢の指定なし。",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に運転免許の必須指定なし。",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に免許区分の必須指定なし。",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に専門資格の必須指定なし。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "転勤なし。本社で社内IT管理。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に出張・夜勤対応等の必須指定なし。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の必須指定なし。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "original_url": "https://en-gage.net/user/search/desc/15659230/",
+          "kind": "job_board",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://en-gage.net/toukai-seiki_saiyo1/",
+          "original_url": "https://en-gage.net/toukai-seiki_saiyo1/",
+          "kind": "job_board",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://domonet.jp/shizuoka/ad/tyd/0032485373",
+          "original_url": "https://domonet.jp/shizuoka/ad/tyd/0032485373",
+          "kind": "job_board",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%AD%E6%B3%892830&travelmode=driving",
+          "original_url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%AD%E6%B3%892830&travelmode=driving",
+          "kind": "other",
+          "checked_at": "2026-11-02"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "仕事内容 > 社内システム・ネットワーク・電算機器の管理",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "正社員／試用期間12か月・本採用と同様",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文 > 未経験者歓迎、PC・プログラムへの関心、業務改善の意識。実務経験・社会人経験・卒業年度の必須指定なし。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "勤務地 > 磐田市中泉2830、転勤なし、車通勤可・無料駐車場",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "雇用主投稿の現行一覧に同職種を掲載、増員募集・選考フロー・応募導線あり。DOMOの2026/10/22〜11/04掲載も照合。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "原典の事実を独自に短く要約しリンク。文章全文・画像は転載しない。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=%E5%AE%AE%E5%8F%A3%E9%A7%85&destination=%E7%A3%90%E7%94%B0%E5%B8%82%E4%B8%AD%E6%B3%892830&travelmode=driving",
+          "quote_or_locator": "11月2日(月)8:00到着 > 車 > 県道343号経由19.1km、通常35〜45分",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "quote_or_locator": "応募資格全文、仕事内容、勤務地・勤務時間の各欄",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        }
+      ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月給20〜25万円。想定年収300〜450万円は保証年収ではない。",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "磐田市中泉2830／転勤なし",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員／試用12か月も本採用と同条件",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:00〜16:40／実働最大7時間50分",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日祝）・年間121日",
+          "url": "https://en-gage.net/user/search/desc/15659230/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
+      "first_seen_at": "2026-11-02",
       "last_checked_at": "2026-11-02"
     },
     {

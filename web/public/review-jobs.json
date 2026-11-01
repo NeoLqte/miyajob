@@ -12,8 +12,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "必須スキル・未経験応募可否",
-        "通勤"
+        "必須スキル・学習経験の適用範囲",
+        "車通勤・通勤"
       ],
       "summary": "企業公式の独立したプログラマー募集。Web制作チームでの開発職。具体的な必須言語・経験年数、実務未経験での応募可否は記載から確定できないため追加確認する。",
       "status": "review",
@@ -73,8 +73,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "コーディング経験の適用範囲",
-        "通勤"
+        "必須スキル・学習経験の適用範囲",
+        "車通勤・通勤"
       ],
       "summary": "同社プログラマーとは別ページのコーダー募集。コーディング経験を生かす職種として案内。趣味・学習経験が対象か、必要な制作スキルの水準を確認する。デザイン専任職とは区別する。",
       "status": "review",
@@ -134,8 +134,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "募集継続・条件全文",
-        "初期配属・通勤"
+        "原募集との現行性・初期配属の照合",
+        "車45分経路"
       ],
       "summary": "車載メーター用ソフトの設計・コーディング・テスト。C言語の知識が必須、実務未経験からスキルに応じた業務を始める旨を確認。紹介案件の現行募集と条件全文、初期配属・通勤を照合する。",
       "status": "review",
@@ -195,8 +195,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "公式原票・募集継続",
-        "通勤"
+        "現行の公式原票",
+        "車45分経路"
       ],
       "summary": "ハローワーク転載の求人番号22020-21225561。高卒以上・普通免許・一般的なOffice操作を要求。SE経験3年以上は「あれば尚可」であり必須として除外しない。基幹システム・ネットワーク・ヘルプデスク等の職種。公式原票の募集継続と通勤を確認する。",
       "status": "review",
@@ -256,9 +256,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "採用区分の適用",
-        "車通勤・駐車場",
-        "通勤"
+        "就業歴なし既卒の採用区分",
+        "車通勤・通勤"
       ],
       "summary": "専修学校以上・35歳以下の募集。未経験、新卒・第二新卒も歓迎。IT資格は尚可で必須ではない。転勤なしの浜松センター勤務を確認したが、職歴がない場合の採用区分、車通勤条件と45分以内の経路を追加確認する。",
       "status": "review",
@@ -311,8 +310,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "募集継続・条件全文",
-        "通勤"
+        "募集継続の追加確認",
+        "車45分経路"
       ],
       "summary": "広告・販促会社のWeb開発職。同名のソフトウェア企業とは別会社。大学・大学院卒、独学等でコードに触れた経験を対象とし、趣味レベル・実務未経験も明示的に歓迎。紹介求人の現在の募集継続と全条件、車経路を確認する。",
       "status": "review",
@@ -372,8 +371,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "キャリア枠の応募資格",
-        "車通勤・通勤"
+        "既卒が適用される採用区分",
+        "実勤務地・通勤"
       ],
       "summary": "既存の2027新卒枠とは別のキャリア要項。組み込み・業務系・音響等のソフト開発。正社員とアルバイトの給与を区別し、正社員枠を候補化。実務未経験・就業歴なしでの応募可否と通勤は未確認。",
       "status": "review",
@@ -426,9 +425,8 @@
       "checked_at": "2026-11-02",
       "stage": "detail_review",
       "reasons": [
-        "指定言語知識の適合",
-        "募集継続・条件全文",
-        "通勤"
+        "必須C#・PHP知識の照合",
+        "車45分経路"
       ],
       "summary": "既存の出雲殿互助会とは別の雇用主。C#・PHP等のプログラミング知識と普通免許が必須、開発実績は歓迎条件。具体的な言語知識の適合と募集継続、朝の車経路を確認する。休日の多寡だけで除外しない。",
       "status": "review",
@@ -488,9 +486,8 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "車通勤・駐車場",
-        "通勤",
-        "配属・入社時期"
+        "2027年1月入社への対応",
+        "車通勤・通勤"
       ],
       "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
       "status": "review",
@@ -543,9 +540,8 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "車通勤・駐車場",
-        "通勤",
-        "配属・入社時期"
+        "2027年1月入社への対応",
+        "車通勤・通勤"
       ],
       "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
       "status": "review",
@@ -589,6 +585,67 @@
       ]
     },
     {
+      "id": "64ccd46641297e31c355",
+      "company": "ハクビー株式会社",
+      "title": "システムエンジニア・プログラマー",
+      "category": "software",
+      "address": "中央区舞阪町舞阪2701-9 舞阪支所4階 事務室5",
+      "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "実就業先・配属の最終照合",
+        "車45分経路"
+      ],
+      "summary": "同一求人番号22020-20542061で月給の単位・金額を補完。実務1年以上、または情報系専攻という選択条件であり、実務経験だけを必須とは扱わない。舞阪の実就業先・朝の車経路の確認が残る。",
+      "status": "review",
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給24〜30万円（同一求人番号で単位確認）",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "舞阪町舞阪2701-9 舞阪支所4階事務室5",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員・無期／試用3か月同条件",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "フレックス／標準8:30〜17:30、5:00〜22:00の間で8時間程度",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日／会社カレンダー、GW・夏季・年末年始",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・駐車場あり。宮口駅からの朝の経路未確認",
+          "url": "https://helloworkjob.jp/22020-20542061/",
+          "checked_at": "2026-11-02",
+          "confirmed": false
+        }
+      ]
+    },
+    {
       "id": "8db8d36afaf8af779e21",
       "company": "株式会社ウチゲン",
       "title": "SIer・ロボット向けソフトウェア開発（中途）",
@@ -598,8 +655,9 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "中途枠の適用",
-        "通勤"
+        "原典の本文取得未完了",
+        "応募区分・実務条件",
+        "車通勤・通勤"
       ],
       "summary": "自動化システムのソフト開発・設計・保守を行うIT寄りのSIer職。35歳以下を対象とし、情報・機械・電気系や画像処理・AIへの関心を重視。プログラミング等は活かせる経験として記載。職歴がない場合の中途枠適用と通勤を確認する。",
       "status": "review",
@@ -659,8 +717,8 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "既卒条件",
-        "車通勤・通勤"
+        "新卒枠の既卒適用",
+        "配属・車通勤・通勤"
       ],
       "summary": "C++・C#等で3次元形状処理ソフトを開発する新卒枠。大学・大学院、学部学科不問、専門知識やプログラミング経験は不要。既卒者への適用と勤務先への経路は未確認。",
       "status": "review",
@@ -713,8 +771,9 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "配属先",
-        "通勤"
+        "原典取得失敗・現行募集の照合",
+        "本社勤務と常駐業務の配属条件",
+        "車通勤・通勤"
       ],
       "summary": "新卒・既卒枠は既卒対象と免許条件を確認。雇用形態欄が「新卒」のため、当該枠の正社員区分・実配属を確認する。",
       "status": "review",
@@ -767,8 +826,8 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "ハローワーク原票"
+        "必要経験・知識条件の全文照合",
+        "車45分経路"
       ],
       "summary": "基本情報相当の知識・開発基礎の条件と、PCスキル欄の実務経験の扱いを原票で確認する。ITパスポートは尚可条件。",
       "status": "review",
@@ -828,9 +887,10 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "通勤"
+        "現行募集の照合",
+        "車通勤・通勤"
       ],
-      "summary": "未経験者向け応募条件は確認。宮口駅から平日朝の車経路予測は30〜50分で、45分以内を確定できていない。",
+      "summary": "見出しは経験者募集だが、本文は実務経験またはIT職への転向意欲の選択条件。歓迎スキルを必須とは扱わない。一方、企業別一覧は取得結果に過去の掲載終了枠を含むため、当該求人の募集継続を別に確認する。",
       "status": "review",
       "valid_through": null,
       "facts": [
@@ -872,6 +932,68 @@
       ]
     },
     {
+      "id": "58365c8c3788bb0d77c6",
+      "company": "株式会社ニトエル",
+      "title": "ITサポート・アプリ運用サポート",
+      "category": "it_support",
+      "address": "中央区鍛冶町140 浜松Cビル4F リージャス内",
+      "url": "https://en-gage.net/user/search/desc/17867843/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "研修中の就業先",
+        "車通勤の可否",
+        "車45分経路"
+      ],
+      "summary": "当該求人番号17867843の本文で、業務時の勤務地を浜松駅北口のレンタルオフィスと明記。入社後の研修場所は近隣の別オフィスの場合あり。未経験・既卒・正社員デビュー歓迎、普通免許必須。南口の別募集の給与・勤務時間は混ぜない。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給24〜40万円（想定年収300〜600万円は保証年収ではない）",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "中央区鍛冶町140 浜松Cビル4F リージャス内",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員／試用3か月も雇用形態・給与同じ",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00／実働最大8時間",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日祝）・年間120日以上。配属部署等で異なる場合あり",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "commute",
+          "text": "勤務地は業務用レンタルオフィス。車通勤・駐車場・研修中の経路は未確認。",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-02",
+          "confirmed": false
+        }
+      ]
+    },
+    {
       "id": "8db967e46b40e8f9a8ff",
       "company": "メディアミックス株式会社",
       "title": "システム開発プログラマー（未経験枠）",
@@ -881,9 +1003,8 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "実勤務地・通勤",
-        "募集継続・詳細未確認"
+        "車通勤の可否",
+        "車45分経路"
       ],
       "summary": "未経験研修の開発職を発見。別媒体の同社募集は重ねて数えず、採用区分と実配属・研修場所を確認する。",
       "status": "review",
@@ -936,11 +1057,10 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "通勤",
-        "条件全体の確認"
+        "未経験相談枠の適用・SCADA等の必須条件",
+        "車45分経路"
       ],
-      "summary": "Windows・DB・.NET/C#/Java・SCADA等の経験条件があるが、未経験者も相談可と明記。相談枠への適用と通勤を確認する。",
+      "summary": "SCADA・Windows・DB構築等の条件と、未経験は相談可という記載を確認。相談できることを応募資格適合と断定しない。月給・勤務地・正社員・休日・勤務時間の5項目は保持。",
       "status": "review",
       "valid_through": null,
       "facts": [
@@ -984,6 +1104,237 @@
           "text": "車通勤可・駐車場完備。所要時間未計測",
           "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
           "checked_at": "2026-11-01",
+          "confirmed": false
+        }
+      ]
+    },
+    {
+      "id": "0e058095824a2ac7fe41",
+      "company": "榎本工業株式会社",
+      "title": "社内SE",
+      "category": "internal_it",
+      "address": "静岡県浜松市浜名区細江町中川7000-27",
+      "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "コーディング経験の適用範囲",
+        "募集継続の追加確認",
+        "車通勤・通勤"
+      ],
+      "summary": "社内システムの設計・コーディング、PC・サーバー・SaaS管理、ヘルプデスク。総務業務を兼ねる場合あり。必須のコーディング経験に学習・個人開発が含まれるか未確定。ページの取得時期が古いため募集継続も確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "salary",
+          "text": "想定年収400〜600万円／月給不明。年額を12で割った値は実月給ではない。",
+          "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "細江町中川7000-27",
+          "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:00〜17:00",
+          "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日）・年間116日",
+          "url": "https://www.workport.co.jp/globalpartners/details/711369894/407076420/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "id": "8d481f5e78b56b643dbf",
+      "company": "株式会社タニコー",
+      "title": "社内ITサポート・ヘルプデスク",
+      "category": "it_support",
+      "address": "静岡県磐田市南平松5",
+      "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "IT機器セットアップ経験の照合",
+        "車45分経路"
+      ],
+      "summary": "社内PC・プリンタ・Wi-Fi設定と問い合わせ対応。紹介元はイロドル、雇用先はタニコーの直接雇用。開発専任ではない。IT機器セットアップ経験とネットワーク基礎知識が必須で、歓迎の実務経験と区別する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給23〜35万円（給与内訳は原典参照）",
+          "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "磐田市南平松5／車通勤可",
+          "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "タニコーの正社員として直接雇用",
+          "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:00〜17:00／休憩60分・実働8時間",
+          "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日（土日、一部土曜出勤）・年間115日",
+          "url": "https://townwork.net/viewjob/jobid_0ef9ed8be384591f/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
+    },
+    {
+      "id": "6f4d36617c94ca4e36c1",
+      "company": "株式会社アクティシステム",
+      "title": "自社内勤務SE候補（第二新卒枠）",
+      "category": "software",
+      "address": "中央区根洗町1536-1",
+      "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "採用区分・社会人経験条件の適用",
+        "車45分経路"
+      ],
+      "summary": "JOBはまはIT就業経験なし・自己学習でも対象と案内。一方、同社ATSの自社パッケージ枠には社会人経験1〜3年が必須。別部署・別枠として適用を確認し、条件を混合しない。",
+      "status": "review",
+      "valid_through": "2026-12-03",
+      "facts": [
+        {
+          "field": "salary",
+          "text": "想定年収335〜420万円／月給不明。固定残業25時間43,000円〜の記載あり。",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "根洗町1536-1／自社内勤務・客先常駐なし",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒枠）",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "土日祝（会社カレンダー）・年間124日",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・社員専用駐車場。朝の車45分経路未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+          "checked_at": "2026-11-02",
+          "confirmed": false
+        }
+      ]
+    },
+    {
+      "id": "3fbd17c02ac21666660f",
+      "company": "ヤマハモーターソリューション株式会社",
+      "title": "BtoC・BtoB向けモバイル・Webアプリケーション構築開発",
+      "category": "software",
+      "address": "磐田市の岩井・新貝・中泉の3就業先（選択未確定）",
+      "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
+      "reasons": [
+        "初期配属先・車45分経路",
+        "年間休日数の情報源間の差"
+      ],
+      "summary": "公式と同じBtoC・BtoBアプリ開発枠を照合。必須のアプリ開発経験は業務外でも可。英語・海外出張・資格は歓迎条件。就業先は磐田の3拠点から未確定のため、車45分以内を断定しない。年間休日数は公式121日と媒体122日に差があり、土日完全週休2日の共通部分のみ確定情報とする。",
+      "status": "review",
+      "valid_through": "2027-01-28",
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給31.5〜51.5万円＋各種手当・賞与。初年度年収515〜980万円は保証年収ではない。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "磐田市岩井2000-1／新貝2500／中泉1-6-16のいずれか。実配属先の確定待ち。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員／試用3か月・待遇変更なし",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "フルフレックス（コアなし）／標準1日8時間",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日）／GW・夏季・年末年始。年間日数は情報源間で差があるため確認待ち。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可。初期配属先と朝の車45分経路を確認待ち。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-288497-5-164-1/?ty=eg",
+          "checked_at": "2026-11-02",
           "confirmed": false
         }
       ]
