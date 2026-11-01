@@ -46,7 +46,7 @@ class Source(Model):
 
 class Requirement(Model):
     field: str
-    operator: Literal["any", "eq", "gte", "lte", "in", "between"]
+    operator: Literal["any", "eq", "gt", "gte", "lte", "in", "between"]
     value: str | float | bool | list[str] | None = None
     description: str = Field(min_length=1, max_length=300)
     evidence_ids: list[str] = Field(min_length=1)

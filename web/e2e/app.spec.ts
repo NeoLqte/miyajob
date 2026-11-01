@@ -12,6 +12,10 @@ test('real IT review queue is separate, searchable and explains pending reasons'
  await expect(page.locator('.research-card').first().getByRole('link',{name:/給与の根拠/})).toBeVisible();
  await expect(page.getByText(/応募可能とは未確認の候補/)).toBeVisible();
  await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('ゼクスターズ');
+ await expect(page.getByText('月給不明（参考月額 約29.2〜50.0万円）')).toBeVisible();
+ await expect(page.locator('.salary-note')).toContainText('実際の月給・手取りではありません');
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('');
  await page.getByLabel('調査段階',{exact:true}).selectOption('detail_review');
  await expect(page.locator('.research-card')).toHaveCount(data.candidates.filter((j:{stage:string})=>j.stage==='detail_review').length);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('アルメニ');

@@ -19,6 +19,8 @@ def compare(actual, operator, expected):
     try:
         if operator == "eq":
             return type(actual) is type(expected) and actual == expected
+        if operator == "gt":
+            return isinstance(actual, (float, int)) and not isinstance(actual, bool) and isinstance(expected, (float, int)) and not isinstance(expected, bool) and actual > expected
         if operator == "gte":
             return isinstance(actual, (float, int)) and not isinstance(actual, bool) and isinstance(expected, (float, int)) and not isinstance(expected, bool) and actual >= expected
         if operator == "lte":

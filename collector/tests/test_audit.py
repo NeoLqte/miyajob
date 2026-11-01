@@ -56,6 +56,16 @@ def test_known_failure(job, profile):
     assert audit(job,profile,TODAY).status == "rejected"
 
 
+def test_professional_experience_without_minimum_years(job, profile):
+    restrict(job, 'it_years', 'gt', 0)
+    profile.attributes['it_years'] = 0
+    assert audit(job, profile, TODAY).status == 'rejected'
+    profile.attributes['it_years'] = None
+    assert audit(job, profile, TODAY).status == 'review'
+    profile.attributes['it_years'] = 0.25
+    assert audit(job, profile, TODAY).status == 'eligible'
+
+
 @pytest.mark.parametrize("change,expected", [
     (lambda j:setattr(j.location,"is_fixed",False),"review"),
     (lambda j:setattr(j.commute,"status","unverified"),"review"),

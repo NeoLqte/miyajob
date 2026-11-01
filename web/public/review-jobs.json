@@ -3,6 +3,611 @@
   "updated_at": "2026-11-01",
   "candidates": [
     {
+      "id": "872f1bde639ea92ba8c7",
+      "company": "株式会社ソフテス",
+      "title": "インフラエンジニア（2027年1月入社）",
+      "category": "infrastructure",
+      "address": "中央区田町330-5 遠鉄田町ビル7F",
+      "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "車通勤・駐車場",
+        "通勤",
+        "配属・入社時期"
+      ],
+      "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
+      "status": "review",
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区田町330-5 遠鉄田町ビル7F",
+          "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給26〜45万円（経験・能力等で決定。基本給内訳未確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "標準9:00〜18:00／フレックス・コア10:00〜15:00",
+          "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上・土日祝休み",
+          "url": "https://www.shigoto-hamamatsu.com/job/3081/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "2546e9bb010d4a68b3a6",
+      "company": "株式会社ソフテス",
+      "title": "ITコンサルタント（2027年1月入社）",
+      "category": "software",
+      "address": "中央区田町330-5 遠鉄田町ビル7F",
+      "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "車通勤・駐車場",
+        "通勤",
+        "配属・入社時期"
+      ],
+      "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
+      "status": "review",
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区田町330-5 遠鉄田町ビル7F",
+          "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給26〜45万円（経験・能力等で決定。基本給内訳未確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "標準9:00〜18:00／フレックス・コア10:00〜15:00",
+          "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上・土日祝休み",
+          "url": "https://www.shigoto-hamamatsu.com/job/3080/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "36b9018491442f33a017",
+      "company": "株式会社ゼクスターズ",
+      "title": "SE・PG（開発言語の学習経験対象）",
+      "category": "software",
+      "address": "中央区砂山町350-5 浜松駅南ビルディング8F-D／取引先",
+      "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "配属先",
+        "車通勤・通勤"
+      ],
+      "summary": "何らかの開発言語に触れた経験とオンサイト勤務が条件。Java・Python等の実務経験や資格は歓迎条件。磐田のほか静岡・牧之原・豊田・裾野の取引先勤務もあるため、初期配属を確認する。",
+      "status": "review",
+      "valid_through": "2027-03-31",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区砂山町350-5 浜松駅南ビルディング8F-D／取引先",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "年収350〜600万円（月給額・賞与内訳は未記載）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00／残業月平均5時間",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日（2026年度）・完全週休2日（土日）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "64ccd46641297e31c355",
+      "company": "ハクビー株式会社",
+      "title": "システムエンジニア・プログラマー",
+      "category": "software",
+      "address": "中央区舞阪町舞阪2701-9 舞阪支所4階 事務室5",
+      "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "通勤45分圏",
+        "条件詳細"
+      ],
+      "summary": "59歳以下の既卒正社員枠。情報系の大学等でシステム開発を学んだ経験も歓迎する旨を確認。舞阪のため45分圏内か朝の経路確認が必要。リモートは能力・状況に応じ週2日程度で、完全在宅ではない。",
+      "status": "review",
+      "valid_through": "2027-03-15",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区舞阪町舞阪2701-9 舞阪支所4階 事務室5",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "給与24〜30万円（月単位の明記は要確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "標準8時間／コア10:00〜15:00・フレックス5:00〜22:00",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日・土日休み（祝日は一部出勤）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "マイカー通勤可能。朝の45分圏内・駐車条件は未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/4416/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "8db8d36afaf8af779e21",
+      "company": "株式会社ウチゲン",
+      "title": "SIer・ロボット向けソフトウェア開発（中途）",
+      "category": "software",
+      "address": "中央区幸4丁目4番3号・ロボット事業部",
+      "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "中途枠の適用",
+        "通勤"
+      ],
+      "summary": "自動化システムのソフト開発・設計・保守を行うIT寄りのSIer職。35歳以下を対象とし、情報・機械・電気系や画像処理・AIへの関心を重視。プログラミング等は活かせる経験として記載。職歴がない場合の中途枠適用と通勤を確認する。",
+      "status": "review",
+      "valid_through": "2026-12-20",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区幸4丁目4番3号・ロボット事業部",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給20.7万円〜（年齢・経験による）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:00〜17:00／8:30〜17:30を選択・実働8時間",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "120日と記載（計画有休5日を含む。純粋な休日数とは区別）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・社員駐車場あり。経路未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/1192/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "12134dd590426a53e37d",
+      "company": "株式会社アルモニコス",
+      "title": "ソフトウェアエンジニア（2027新卒枠）",
+      "category": "software",
+      "address": "浜名区細江町中川7000-65",
+      "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "車通勤・通勤"
+      ],
+      "summary": "C++・C#等で3次元形状処理ソフトを開発する新卒枠。大学・大学院、学部学科不問、専門知識やプログラミング経験は不要。既卒者への適用と勤務先への経路は未確認。",
+      "status": "review",
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜名区細江町中川7000-65",
+          "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給27.6万円（2027年4月入社予定値・内訳要確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（新卒・2027年卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "フレックス・標準1日8時間（例8:00〜17:00）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間123日・完全週休2日（土日）",
+          "url": "https://www.shigoto-hamamatsu.com/job/1348/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "b91c0e0c52bcf8534f59",
+      "company": "株式会社モアソンジャパン",
+      "title": "システムエンジニア・プログラマー（2027新卒枠）",
+      "category": "software",
+      "address": "浜松拠点：中央区海老塚1-19-8／東京・静岡等",
+      "url": "https://www.shigoto-hamamatsu.com/job/621/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "配属先",
+        "車通勤・通勤"
+      ],
+      "summary": "組み込み・音響・Web・基幹システム等の新卒募集。全学部全学科対象。2027年4月開始予定。既卒者への適用、浜松への配属と通勤を確認し、東京・静岡の枠と混同しない。",
+      "status": "review",
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松拠点：中央区海老塚1-19-8／東京・静岡等",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給23万6,558円（手当・基本給内訳未確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（新卒・2027年卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30／コア10:00〜15:00",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間122日・完全週休2日（土日）",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "b514cbab515d1e15fe8c",
+      "company": "株式会社アーティス",
+      "title": "自社開発エンジニア（実務未経験者）",
+      "category": "software",
+      "address": "中央区板屋町111-2 浜松アクトタワー20F",
+      "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "キャリア枠・雇用形態",
+        "通勤",
+        "給与内訳"
+      ],
+      "summary": "公式に実務未経験者向けのキャリア募集。フロント・バックエンドの技術知識は望ましい条件。必要条件はHRTに基づくコミュニケーション。キャリア枠の適用、正社員区分・固定残業内訳と通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区板屋町111-2 浜松アクトタワー20F",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給23.5〜34万円（基本給・固定残業の内訳は要確認）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "キャリア採用。該当公式要項の雇用形態表記は未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（休憩1時間）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "122日と記載（2026年計画・計画有休5日を含む）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可。経路・駐車条件は未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "d0d1a99e41fbc5c869b4",
+      "company": "株式会社アーティス",
+      "title": "受託開発エンジニア（実務未経験者）",
+      "category": "software",
+      "address": "中央区板屋町111-2 浜松アクトタワー20F",
+      "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "PHP・Linuxの基礎条件",
+        "雇用形態",
+        "通勤",
+        "給与内訳"
+      ],
+      "summary": "公式に実務未経験者向けのキャリア募集。PC基本操作・Linux基礎・簡単なPHPスクリプトが必要。業務としての開発経験は歓迎条件。PHP等の条件適合、正社員区分・給与内訳と通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区板屋町111-2 浜松アクトタワー20F",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給23.5〜34万円（基本給・固定残業の内訳は要確認）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "キャリア採用。該当公式要項の雇用形態表記は未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（休憩1時間）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "122日と記載（2026年計画・計画有休5日を含む）",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可。経路・駐車条件は未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "5924a2cab894803bed72",
+      "company": "株式会社フュージョン",
+      "title": "ソフトウェア設計・画像検証SE",
+      "category": "software",
+      "address": "浜名区新都田1丁目2番11号 都田テクノパーク ミリアセンター内",
+      "url": "https://fusioninc.jp/?page_id=165",
+      "checked_at": "2026-11-01",
+      "stage": "discovery",
+      "reasons": [
+        "応募資格",
+        "雇用形態",
+        "募集継続",
+        "通勤"
+      ],
+      "summary": "近隣企業の公式HPでVisual C++のソフト設計と画像検証SE募集を発見。機械設計とは分けてIT職を候補化。給与は応相談。経験・資格・正社員区分・募集継続を含む詳細条件は未確認。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜名区新都田1丁目2番11号 都田テクノパーク ミリアセンター内",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "応相談（給与額・月給内訳は未記載）",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30・標準8時間",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日＋有休・週休2日（土日）",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "f2675840ce99bc0b390d",
+      "company": "株式会社ナブー",
+      "title": "SE・プログラマー（自社Webサービス）",
+      "category": "software",
+      "address": "浜松市（当該募集の就業先詳細は未確認）",
+      "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "開発経験の適用",
+        "募集継続",
+        "実勤務地・通勤"
+      ],
+      "summary": "PHP・Java・MySQLのいずれかの開発経験が必須で、2年以上は歓迎条件。学歴不問。学習・個人制作経験で必須条件を満たせるか、募集継続と正確な勤務地・通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市（当該募集の就業先詳細は未確認）",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "年収350〜700万円（月給・賞与内訳未記載）",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（休憩60分）",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日）・祝日・夏季・年末年始",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "19649d6e67478ba28d73",
+      "company": "日本インターシステムズ株式会社",
+      "title": "JAVAプログラマー（浜松・未経験研修枠）",
+      "category": "software",
+      "address": "浜松市（検索表示・実配属先は未確認）",
+      "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+      "checked_at": "2026-11-01",
+      "stage": "discovery",
+      "reasons": [
+        "詳細取得待ち",
+        "応募資格",
+        "募集継続",
+        "配属先・通勤"
+      ],
+      "summary": "未経験者向け研修を含むJava開発募集を検索で発見。詳細ページは取得できず、年齢・資格を含む応募条件全文、募集継続と実配属先の確認が必要。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市（検索表示・実配属先は未確認）",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給21〜25万円（検索表示・詳細取得待ち）",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（検索表示・原票確認待ち）",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
       "id": "fc77135a9fe335cfcc23",
       "company": "ジーリンクス株式会社",
       "title": "組込系ソフトウェア開発技術者（未経験相談枠）",
@@ -321,7 +926,6 @@
       "checked_at": "2026-11-01",
       "stage": "detail_review",
       "reasons": [
-        "雇用形態",
         "配属先",
         "通勤"
       ],
@@ -337,14 +941,14 @@
         },
         {
           "field": "salary",
-          "text": "月給19〜20万円（大卒20万円。賞与相当分の分割支給記載あり）",
-          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "text": "大卒月給20万円（当該新卒枠。中途枠の25〜35万円とは別）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4137/",
           "checked_at": "2026-11-01"
         },
         {
           "field": "employment",
-          "text": "「新卒」と表記。正社員区分は未確認",
-          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "text": "正社員（新卒・2027年卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/4137/",
           "checked_at": "2026-11-01"
         },
         {
@@ -641,14 +1245,14 @@
         },
         {
           "field": "salary",
-          "text": "大卒基本月給21万円（2026年4月以降予定額の表記）",
-          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "text": "大卒月給21万円（2026年4月以降予定額／既卒も同体系）",
+          "url": "https://www.shigoto-hamamatsu.com/job/713/",
           "checked_at": "2026-11-01"
         },
         {
           "field": "employment",
-          "text": "正社員",
-          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "text": "正社員（新卒・2027年卒。既卒給与体系も記載）",
+          "url": "https://www.shigoto-hamamatsu.com/job/713/",
           "checked_at": "2026-11-01"
         },
         {
@@ -1378,38 +1982,6 @@
       ]
     },
     {
-      "id": "75d5a350d5d6e2aa0ba2",
-      "company": "ヘルツ電子株式会社",
-      "title": "産業用IoT製品のソフトウェア開発",
-      "category": "software",
-      "address": "浜松市浜名区（都田駅周辺）",
-      "url": "https://xn--pckua2a7gp15o89zb.com/jbi/05f2a397aa629a8b8596a4c33b1071c4",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
-      "reasons": [
-        "応募資格",
-        "実勤務地・通勤",
-        "募集継続・詳細未確認"
-      ],
-      "summary": "IoT機器・無線モジュールの組み込み開発募集を発見。未経験・既卒への適用と現在の募集継続、詳細勤務地を確認する。",
-      "status": "review",
-      "valid_through": null,
-      "facts": [
-        {
-          "field": "location",
-          "text": "浜松市浜名区（都田駅周辺）（実配属・通勤の確認は別）",
-          "url": "https://xn--pckua2a7gp15o89zb.com/jbi/05f2a397aa629a8b8596a4c33b1071c4",
-          "checked_at": "2026-11-01"
-        },
-        {
-          "field": "salary",
-          "text": "掲載年収450〜550万円（検索表示・詳細条件は未確認）",
-          "url": "https://xn--pckua2a7gp15o89zb.com/jbi/05f2a397aa629a8b8596a4c33b1071c4",
-          "checked_at": "2026-11-01"
-        }
-      ]
-    },
-    {
       "id": "4274f4877ff45ed68b19",
       "company": "株式会社出雲殿互助会",
       "title": "社内SE・システムサポート",
@@ -1679,7 +2251,7 @@
         },
         {
           "field": "salary",
-          "text": "年俸350万円〜（月給へ換算しない）",
+          "text": "年俸350万円〜（支払回数・月給額は未確認）",
           "url": "https://en-gage.net/user/search/desc/5758975/",
           "checked_at": "2026-11-01"
         },
@@ -1993,9 +2565,9 @@
         "実勤務地・通勤",
         "募集継続・詳細未確認"
       ],
-      "summary": "2026-11-04までの媒体募集。実就業先が配属先によるため、応募資格・雇用区分と通勤を確認する。期限切れの別ハローワーク番号とは分けて確認。",
+      "summary": "IT学習経験等を対象とする11〜12月入社枠。ハローワーク転載で月給・資格条件を補足。原票の正社員・派遣区分、現在の募集継続、実配属と通勤を確認する。",
       "status": "review",
-      "valid_through": "2026-11-04",
+      "valid_through": "2026-11-30",
       "facts": [
         {
           "field": "location",
@@ -2005,14 +2577,32 @@
         },
         {
           "field": "salary",
-          "text": "月給22〜28万円（媒体検索表示・内訳未確認）",
-          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "text": "月給22〜28万円（転載の基本給a・固定残業代なし）",
+          "url": "https://ricareer.jp/hellowork/22020-19445361/",
           "checked_at": "2026-11-01"
         },
         {
           "field": "employment",
-          "text": "正社員（媒体検索表示。配属先は未確定）",
-          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "text": "正社員・期間の定めなし（ハローワーク転載）",
+          "url": "https://ricareer.jp/hellowork/22020-19445361/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00／残業月平均12時間",
+          "url": "https://ricareer.jp/hellowork/22020-19445361/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間122日・祝日のある週に土曜出勤の場合あり",
+          "url": "https://ricareer.jp/hellowork/22020-19445361/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "場合により車通勤可・駐車場なし。実配属・経路未確認",
+          "url": "https://ricareer.jp/hellowork/22020-19445361/",
           "checked_at": "2026-11-01"
         }
       ]
