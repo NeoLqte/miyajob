@@ -1,0 +1,16 @@
+# No source is approved by default. Add reviewed policies to sources.yaml locally.
+# modes: discovery (company/official recruitment links), jsonld, html, json, csv, manual
+sources: []
+# - name: Reviewed official careers page
+#   url: https://employer.example/careers/
+#   allowed_prefixes: [https://employer.example/careers/]
+#   mode: jsonld
+#   kind: official
+#   terms_url: https://employer.example/terms/
+#   permission_notes: "Record the actual permission and reuse limits here"
+#   terms_checked_at: YYYY-MM-DD
+#   automated_access_allowed: false
+#   minimum_interval_seconds: 604800
+# For reviewed company directories, use mode: discovery and selectors:
+#   links: '.member-list a[href]'
+# Discovered company sites stay as leads until an actual vacancy is verified.
