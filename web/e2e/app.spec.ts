@@ -8,6 +8,8 @@ test('real IT review queue is separate, searchable and explains pending reasons'
  await page.getByRole('button',{name:`保留・確認待ち ${data.candidates.length}件`}).click();
  await expect(page.locator('.workspace')).toBeHidden();
  await expect(page.locator('.research-card')).toHaveCount(data.candidates.length);
+ await expect(page.locator('.research-card').first().locator('.review-facts dt')).toHaveCount(6);
+ await expect(page.locator('.research-card').first().getByRole('link',{name:/給与の根拠/})).toBeVisible();
  await expect(page.getByText(/応募可能とは未確認の候補/)).toBeVisible();
  await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
  await page.getByLabel('調査段階',{exact:true}).selectOption('detail_review');
@@ -18,6 +20,8 @@ test('real IT review queue is separate, searchable and explains pending reasons'
  await page.getByLabel('調査段階',{exact:true}).selectOption('');
  await page.locator('.research-content').scrollIntoViewIfNeeded();
  await page.screenshot({path:`../artifacts/review-${isMobile?'mobile':'desktop'}.png`,fullPage:false});
+ await page.locator('.research-card').first().locator('.review-facts').scrollIntoViewIfNeeded();
+ await page.screenshot({path:`../artifacts/review-facts-${isMobile?'mobile':'desktop'}.png`,fullPage:false});
  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth)).toBe(true);
  await page.getByRole('button',{name:/応募可能・確認済み/}).click();
  await expect(page.locator('.workspace')).toBeVisible();

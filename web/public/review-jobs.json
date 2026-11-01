@@ -3,6 +3,315 @@
   "updated_at": "2026-11-01",
   "candidates": [
     {
+      "id": "fc77135a9fe335cfcc23",
+      "company": "ジーリンクス株式会社",
+      "title": "組込系ソフトウェア開発技術者（未経験相談枠）",
+      "category": "software",
+      "address": "本社：中央区西丘町943-1／浜松市周辺",
+      "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "未経験相談の適用",
+        "配属先",
+        "通勤"
+      ],
+      "summary": "情報系の学歴・学習意欲があれば未経験相談可。相談結果、初期配属先と通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：中央区西丘町943-1／浜松市周辺",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給22〜40万円（試用期間は給与9割）",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30（休憩60分）",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間115日・週休2日（土日）",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・駐車場あり。実配属先の経路未確認",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "15047b646be8b4c4b3b5",
+      "company": "株式会社ソフトウェアプロダクツ",
+      "title": "プログラマー（浜松）",
+      "category": "software",
+      "address": "中央区長鶴町158-1",
+      "url": "https://www.workport.co.jp/details/710939470/403539419/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "応募資格",
+        "通勤",
+        "募集継続"
+      ],
+      "summary": "免許と指定言語・DBの経験が必須。基本情報技術者は尚可。対象言語・DB経験の適用と通勤、募集継続を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区長鶴町158-1",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "想定年収330〜400万円（月給・基本給の内訳不明）",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "フルフレックスタイム",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間121日・完全週休2日（土日祝）",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "657e5b906a70f248951d",
+      "company": "株式会社ユーシン",
+      "title": "プログラマー・システムエンジニア（新卒枠）",
+      "category": "software",
+      "address": "浜松本社（実配属先の詳細未確認）",
+      "url": "https://yushin-ict.com/recruit/new_graduate/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "雇用形態",
+        "実勤務地・通勤"
+      ],
+      "summary": "全学部対象の新卒枠。既卒者への適用、正社員区分と通勤を確認する。休日113日と必須取得有休5日は区別して表示。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松本社（実配属先の詳細未確認）",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒基本給21万円（固定残業代なし）",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "休日113日＋取得必須有休5日（別枠）",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "f5b2cbfa4e0ae03b44aa",
+      "company": "株式会社ビジネスブレイン太田昭和",
+      "title": "会計SE（浜松・2027新卒枠）",
+      "category": "software",
+      "address": "浜松市中央区（移転後の勤務先を要確認）",
+      "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+      "checked_at": "2026-11-01",
+      "stage": "detail_review",
+      "reasons": [
+        "既卒条件",
+        "移転後の勤務地",
+        "通勤"
+      ],
+      "summary": "会計とITの新卒SE枠。既卒対象への適用を未確認。旧住所の記載と2026年7月移転案内が併存するため現勤務地も確認する。",
+      "status": "review",
+      "valid_through": "2026-12-31",
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（移転後の勤務先を要確認）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給29万3,500円（固定残業20時間分含む）／研修2か月は25.2万円",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（新卒）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:30（実働7.5時間）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日）・祝日・夏季・年末年始",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "e31a7a2ad588b6fb4168",
+      "company": "株式会社ヒップ",
+      "title": "ソフトウェア開発エンジニア（浜松・未経験相談）",
+      "category": "software",
+      "address": "浜松営業所：中央区板屋町110-5（実配属未確認）",
+      "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+      "checked_at": "2026-11-01",
+      "stage": "discovery",
+      "reasons": [
+        "詳細取得待ち",
+        "応募資格",
+        "配属先・通勤"
+      ],
+      "summary": "学部卒等で業務経験がなくてもプログラミング技術があれば応募可の記載。原典詳細の取得に失敗したため、条件全文・初期配属・募集継続を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松営業所：中央区板屋町110-5（実配属未確認）",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給28.5万円〜＋各種手当（検索表示・詳細取得待ち）",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（検索表示）",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:00・実働7時間（検索表示）",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "5ccbc3a6098b3c20731d",
+      "company": "株式会社GUM",
+      "title": "テクニカルサポート・ヘルプデスク（天竜区候補）",
+      "category": "it_support",
+      "address": "浜松市天竜区・希望周辺のプロジェクト先",
+      "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+      "checked_at": "2026-11-01",
+      "stage": "discovery",
+      "reasons": [
+        "詳細取得待ち",
+        "募集継続",
+        "実勤務地・通勤"
+      ],
+      "summary": "未経験・職歴不問のITサポート募集を検索で発見。原典詳細を取得できないため、現在の募集継続と実配属・通勤を確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市天竜区・希望周辺のプロジェクト先",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給25.2〜45.8万円（検索表示・詳細取得待ち）",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（検索表示）",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
+      "id": "be7c45771952e84b12d1",
+      "company": "拓設システムサービス株式会社",
+      "title": "システムエンジニア",
+      "category": "software",
+      "address": "磐田市三ケ野台28-8（会社所在地・実就業先未確認）",
+      "url": "https://www.tess-i.com/",
+      "checked_at": "2026-11-01",
+      "stage": "discovery",
+      "reasons": [
+        "応募資格",
+        "雇用形態",
+        "給与・条件詳細",
+        "実勤務地・通勤"
+      ],
+      "summary": "公式サイトでシステムエンジニアの採用案内を確認。職種以外の詳細条件は未確認で、給与・採用区分・雇用形態・実就業先を追加確認する。",
+      "status": "review",
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "磐田市三ケ野台28-8（会社所在地・実就業先未確認）",
+          "url": "https://www.tess-i.com/",
+          "checked_at": "2026-11-01"
+        }
+      ]
+    },
+    {
       "id": "0566bb2bd8ad52e3b7e1",
       "company": "株式会社ハブ",
       "title": "プログラマ（新卒・既卒対象）",
@@ -18,7 +327,39 @@
       ],
       "summary": "新卒・既卒枠は既卒対象と免許条件を確認。雇用形態欄が「新卒」のため、当該枠の正社員区分・実配属を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：中央区元城町216-19 フジヤマ元城ビル4F",
+          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給19〜20万円（大卒20万円。賞与相当分の分割支給記載あり）",
+          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "「新卒」と表記。正社員区分は未確認",
+          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:45／残業月平均5時間",
+          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上・完全週休2日（土日）",
+          "url": "https://en-gage.net/user/search/desc/16689147/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "15d877ccefa94f809f2a",
@@ -34,7 +375,39 @@
       ],
       "summary": "採用対象はシステム構築・営業経験者。未経験の代替条件に生産・販売・物流管理の実務や運用知識があるため、適用条件を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区細島町6-5（初期配属は要確認）",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "既卒は月給22万円〜（全体の基本月給欄は17〜30万円）",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30／9:00〜18:00／9:30〜18:30から選択",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日（土日）・GW・夏季・年末年始",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "2bc178406753c2002613",
@@ -51,7 +424,39 @@
       ],
       "summary": "既卒・社会人経験なしの受入記載があるが、案件ごとの勤務先と車通勤を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中区（詳細未確定）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給26〜46万円（基本給の内訳は未確認）",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上・土日祝休み",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "37cb2689248b039521fc",
@@ -68,7 +473,45 @@
       ],
       "summary": "未経験者向け開発枠。浜松開発センターまたは顧客先勤務のため初期配属先を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松開発センターまたは顧客先（案件別）",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給21〜40万円（経験による。基本給内訳未確認）",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "基準9:00〜18:00／フレックス・コア11:00〜14:00",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間126日（採用ページ記載）",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・無料駐車場あり。顧客先を含むため時間未確定",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "4b5c968ec0cd6250f2ff",
@@ -85,7 +528,45 @@
       ],
       "summary": "基本情報相当の知識・開発基礎の条件と、PCスキル欄の実務経験の扱いを原票で確認する。ITパスポートは尚可条件。",
       "status": "review",
-      "valid_through": null
+      "valid_through": "2026-11-30",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区東三方町258-1（本社と記載）",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月額22.2〜27.87万円（a+b／手当込み）",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員・雇用期間の定めなし",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:15〜17:00／残業月平均5時間",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間124日（ハローワーク転載）",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・駐車場あり。所要時間は未計測",
+          "url": "https://helloworkjob.jp/22021-02212161/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "5e3f3a2d57763b619d83",
@@ -101,7 +582,39 @@
       ],
       "summary": "未経験者向け応募条件は確認。宮口駅から平日朝の車経路予測は30〜50分で、45分以内を確定できていない。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区新津町598-2",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-419107-5-7-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給20.4〜28.4万円（基本給の内訳は未確認）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-419107-5-7-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-419107-5-7-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:45（休憩60分）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-419107-5-7-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間123日・土日祝休み",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-419107-5-7-1/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "707063548a27fea0c9fb",
@@ -118,7 +631,39 @@
       ],
       "summary": "情報系・既卒・未経験に対応する募集。一時的な静岡事業所への通勤条件と初期配属先を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松本社：中央区東伊場2-7-1／臨時に静岡事業所勤務あり",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒基本月給21万円（2026年4月以降予定額の表記）",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可（規程・契約駐車場）。静岡事業所勤務の適用を要確認",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "785aaf266a6061784c5d",
@@ -136,7 +681,21 @@
       ],
       "summary": "ソフトウェア研究・プログラミング経験が対象。通年採用の既卒・社会人経験条件の適用と実際の配属先を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "静岡県浜松市（当該ソフトウェア職の記載。事業所未確定）",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:00〜16:30（実働7時間45分）",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "7a8f094d6ab6b9b7b91e",
@@ -152,7 +711,27 @@
       ],
       "summary": "未経験者向け正社員枠。公式要項は希望を聞いて浜松本社または東京に勤務地を決めるため、浜松配属の確定が必要。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "希望を聞いて浜松本社または東京オフィスに決定",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給23万6,340円（基本給の内訳は未確認）",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "bfd54e8ebd61abd9e26b",
@@ -170,7 +749,39 @@
       ],
       "summary": "開発経験3年以上。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間129〜130日（要項内に表記差あり）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "c4aaaa0235f743f502f0",
@@ -188,7 +799,33 @@
       ],
       "summary": "中途未経験可・学歴不問を確認。募集要項に正社員の明示がなく、実勤務地と雇用区分の確認を残す。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区中央3丁目7-10 セントラルプラザ21 2階",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "給与20〜45万円（要項表記。内訳未確認）",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・フレックス／コア10:00〜15:00",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間125日・土日祝休み",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "cf7ac16bb7bb84d6c524",
@@ -206,7 +843,15 @@
       ],
       "summary": "未経験向けITサポート募集。浜松市内という記載だけでは実就業先と通勤を確定できない。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（詳細未記載）（実配属・通勤の確認は別）",
+          "url": "https://www.baitoru.com/jobdetail/162681888",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "d6137a54d9ded0b5b42f",
@@ -224,7 +869,39 @@
       ],
       "summary": "C/C++開発経験は要相談。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間129〜130日（要項内に表記差あり）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "eaadd79c92617c23f465",
@@ -240,7 +917,15 @@
       ],
       "summary": "中途枠の言語条件に加え、開発工程を独力で遂行する条件の適用を確認。2027年3月卒業見込み枠と混同しない。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社・新都田工場（ソフトウェア中途枠）",
+          "url": "https://recruit.systec.co.jp/recruit/application.html",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "eec37a5b066109d91e61",
@@ -256,9 +941,41 @@
         "配属先",
         "通勤"
       ],
-      "summary": "情報系の学習経験を対象にする記載があるが、当該枠の正社員・無期派遣の区分、顧客先配属と通勤を確認する。",
+      "summary": "媒体で正社員（既卒）・情報系学習の適用、2026年度休日を確認。派遣区分と実配属先・研修場所・通勤を引き続き確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": "2026-12-31",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区鍛冶町140 浜松Cビル5階と記載。実配属を要確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "初年度の金額不明（掲載されているのはモデル年収）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（既卒）と媒体に表記・派遣区分は原票確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:45",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間129日（2026年度）",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "fc6774b65572fdff81f0",
@@ -276,7 +993,39 @@
       ],
       "summary": "関連経験2年以上。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間129〜130日（要項内に表記差あり）",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "5ebf099b9ae0387b8c93",
@@ -294,7 +1043,21 @@
       ],
       "summary": "公式採用一覧の2026-10-30更新枠で発見。詳細URLの取得に失敗したため、卒業後5年未満の対象条件、車通勤可否、配属先を追加確認。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（配属拠点未確定）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/ess-recruit/work_18677912/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給20〜28.5万円（公式採用一覧。内訳未確認）",
+          "url": "https://en-gage.net/ess-recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "063813d7a2c9fa7b1312",
@@ -311,7 +1074,45 @@
       ],
       "summary": "IT業界未経験可だが関係者調整経験が必須。マイカー通勤不可のため、通勤方法の適合も要確認。全国出張の記載あり。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区千歳町91-1（浜松本社）",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給26.9〜33.5万円（固定残業20時間・3.5万円を含む）",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "中途採用・正社員",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "標準8:50〜17:50・フルフレックス",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間121日（年度カレンダーによる）",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "マイカー通勤不可。公共交通での適合は未確認",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "87a9ec52e181bd3c8ef2",
@@ -328,7 +1129,45 @@
       ],
       "summary": "Webアプリ等の開発経験が必須。学習・個人開発が対象に含まれるか確認する。マイカー通勤不可。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区千歳町91-1（浜松本社）",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給26.9〜40.7万円（固定残業20時間分を含む）",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "中途採用・正社員",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "標準8:50〜17:50・フルフレックス",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間121日（年度カレンダーによる）",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "マイカー通勤不可。公共交通での適合は未確認",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "987b5544e707f2bcb904",
@@ -346,7 +1185,39 @@
       ],
       "summary": "中途枠とは別の新卒募集。未経験可だが、既卒者への適用と配属・通勤を未確認。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給24万円〜（大卒・スタートアップ手当込み）",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "「新卒」と表記。既卒対象の適用は未確認",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "フルフレックス・標準1日8時間",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間121日（年度カレンダーによる）",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "d5ce6a81fbc8d3e21821",
@@ -364,24 +1235,39 @@
       ],
       "summary": "中途正社員、専門・短大卒以上、現時点のスキルは不問。プロジェクトによって勤務先が変わるため実勤務地と通勤を確認する。",
       "status": "review",
-      "valid_through": null
-    },
-    {
-      "id": "e32806be5fc7703d8924",
-      "company": "株式会社アルファプロジェクト",
-      "title": "ファームウェア・ソフトウェア技術者（既卒対象枠）",
-      "category": "software",
-      "address": "浜松市（詳細配属未確認）",
-      "url": "https://www.apnet.co.jp/company/recruit-new.html",
-      "checked_at": "2026-11-01",
-      "stage": "detail_review",
-      "reasons": [
-        "雇用形態",
-        "実勤務地・通勤"
-      ],
-      "summary": "公式の新卒要項に卒業後3年以内の既卒を明示。マイコン・PC・スマートフォンのソフト開発職を対象に、正社員区分・実勤務地・通勤を確認する。",
-      "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区十軒町3（プロジェクトにより異なる）",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "年齢・経験により決定（金額の記載なし）",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（中途枠）",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00／フレックス・コア10:00〜15:00",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "2021年度実績120日。現行年度の数値は未確認",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "44a52bf16cd9a4df8cf3",
@@ -399,25 +1285,45 @@
       ],
       "summary": "中途正社員の必要資格に基本情報技術者を明記。資格の適合と顧客先配属・通勤の確認が必要。",
       "status": "review",
-      "valid_through": null
-    },
-    {
-      "id": "3928771e8689d6bcfee6",
-      "company": "株式会社ネクサス",
-      "title": "プログラマー・システムエンジニア（未経験採用）",
-      "category": "software",
-      "address": "浜松市または各プロジェクト先",
-      "url": "https://recruit.nexus-nt.co.jp/joblist/p396/",
-      "checked_at": "2026-11-01",
-      "stage": "detail_review",
-      "reasons": [
-        "応募資格",
-        "実勤務地・通勤",
-        "募集継続・詳細未確認"
-      ],
-      "summary": "公式の未経験採用枠。学歴不問と研修を確認。浜松配属の確定、実勤務地・研修場所と必須条件全体を確認する。",
-      "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "事業所所在地および顧客先（初期配属未確定）",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給24万2,542〜34万6,488円（固定残業20時間分を含む）",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員・期間の定めなし",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（休憩60分）",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間123日（2026年度）",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "指定駐車場のみ車通勤可・ガソリン代支給なし。時間未確認",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "48903e2d3850d80d2e2b",
@@ -435,7 +1341,15 @@
       ],
       "summary": "公式キャリア採用では実務経験は歓迎、未経験も相談可。相談結果に依存する応募対象と、雇用形態・勤務地を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市（詳細勤務地未確認）（実配属・通勤の確認は別）",
+          "url": "https://www.mysofix.co.jp/recruit/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "ea753065052b9d8eb12f",
@@ -453,7 +1367,15 @@
       ],
       "summary": "公式要項の未経験者はハローワーク経由のトライアル制度。正社員・契約社員等が併記され、制度対象と雇用区分を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市（詳細勤務地未確認）（実配属・通勤の確認は別）",
+          "url": "https://www.variantsoft.co.jp/LinkData/recruitmentinfo.pdf",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "75d5a350d5d6e2aa0ba2",
@@ -471,7 +1393,21 @@
       ],
       "summary": "IoT機器・無線モジュールの組み込み開発募集を発見。未経験・既卒への適用と現在の募集継続、詳細勤務地を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市浜名区（都田駅周辺）（実配属・通勤の確認は別）",
+          "url": "https://xn--pckua2a7gp15o89zb.com/jbi/05f2a397aa629a8b8596a4c33b1071c4",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "掲載年収450〜550万円（検索表示・詳細条件は未確認）",
+          "url": "https://xn--pckua2a7gp15o89zb.com/jbi/05f2a397aa629a8b8596a4c33b1071c4",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "4274f4877ff45ed68b19",
@@ -489,7 +1425,27 @@
       ],
       "summary": "未経験向け社内システム開発・サポート募集を発見。現在の必須条件全文と勤務地・通勤の確認前。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区連尺町（実配属・通勤の確認は別）",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給20〜35万円（媒体検索表示・詳細未確認）",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（媒体検索表示）",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "5a178c467ce6fb8686f5",
@@ -499,15 +1455,47 @@
       "address": "浜松市中央区（実就業先未確認）",
       "url": "https://en-gage.net/user/search/desc/17867843/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "応募資格",
         "実勤務地・通勤",
         "募集継続・詳細未確認"
       ],
-      "summary": "未経験向けITサポートを発見。同社のアプリ運用広告と重複の可能性があるため一候補に集約。研修・実際の配属先・条件全文を確認する。",
+      "summary": "条件表はITサポート枠の値。別のアプリ運用広告とは給与・勤務先・時間が異なるため混ぜない。実配属と研修中の業務・応募資格を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "ITサポート枠：中央区鍛冶町140 浜松Cビル4Fのレンタルオフィス",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "ITサポート枠：月給24〜40万円（基本給内訳未確認）",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "ITサポート枠：9:00〜18:00",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上（2025年実績125日。部署で異なる場合あり）",
+          "url": "https://en-gage.net/user/search/desc/17867843/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "ce0c73a5813ab026b977",
@@ -517,7 +1505,7 @@
       "address": "浜松市中央区元魚町",
       "url": "https://en-gage.net/user/search/desc/13141352/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "実配属の仕事内容",
         "応募資格",
@@ -525,7 +1513,39 @@
       ],
       "summary": "ゲームエンジニアの見出しとWeb開発研修の記載がある。実配属の仕事内容、研修中の業務、必須条件と通勤を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区元魚町（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給27〜35万円（基本給の内訳は未確認）",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "10:00〜19:00",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上・土日祝休み",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "3c777b860ba68308b040",
@@ -535,7 +1555,7 @@
       "address": "浜松市中央区（実就業先未確認）",
       "url": "https://helloworkjob.jp/23020-67702861/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "ハローワーク原票",
         "雇用形態",
@@ -543,7 +1563,45 @@
       ],
       "summary": "未経験可の募集を発見。ハローワーク原票で正社員・派遣区分、勤務地と必須条件を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": "2026-12-31",
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松オフィス：中央区板屋町111-2 アクトタワー27階（実配属未確認）",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給21〜31万円（基本給20〜25万円＋技術手当）",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（転載情報。原票の派遣区分を確認）",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日（ハローワーク転載）",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・駐車場ありとの転載。経路は未計測",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "973dc49a98bb27cea87f",
@@ -561,7 +1619,39 @@
       ],
       "summary": "同社の浜松・同職種の類似広告は一候補に集約。未経験研修の募集を発見した段階で、実配属と研修中の条件を未確認。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区板屋町111-2（実配属未確認）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給28万円〜（検索表示・詳細取得待ち）",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（検索表示）",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00（検索表示）",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上（検索表示）",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "5a0e596111d0156305f6",
@@ -571,7 +1661,7 @@
       "address": "浜松市中央区旭町6-1（旧中区表記）",
       "url": "https://en-gage.net/user/search/desc/5758975/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "応募資格",
         "実勤務地・通勤",
@@ -579,7 +1669,39 @@
       ],
       "summary": "未経験Webエンジニア募集を発見。研修と配属までの仕事内容、正社員条件全文、実勤務地・通勤を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区旭町6-1（原典は旧中区表記・実配属確認待ち）",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "年俸350万円〜（月給へ換算しない）",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:30〜18:30（プロジェクトにより変動）",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間120日以上",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "4683ac3c6b773b1b7fa5",
@@ -589,7 +1711,7 @@
       "address": "浜松市中央区（旧中区・実勤務地未確認）",
       "url": "https://en-gage.net/user/search/desc/3694514/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "応募資格",
         "実勤務地・通勤",
@@ -597,7 +1719,39 @@
       ],
       "summary": "サーバー・ネットワーク運用監視や構築の募集。未経験可の表記を確認したが、案件別配属と応募条件全文は未確認。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（旧中区・実勤務地未確認）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給19.5〜50万円（基本給の内訳は未確認）",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間122日・土日祝休み",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "f14173b3ba1ae1391e0b",
@@ -615,7 +1769,15 @@
       ],
       "summary": "ネットワーク運用保守を発見。未経験タグと本文の経験者向け説明の適用、顧客先の所在地を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市中央区（顧客先未確認）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/11848844/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "eafe0fdcdf6a6f4635b0",
@@ -633,7 +1795,15 @@
       ],
       "summary": "見出しはネットワーク職だが、検索本文にはAIの回答評価等が記載されている。実際の仕事内容・研修・雇用条件の整合を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市（実就業先未確認）（実配属・通勤の確認は別）",
+          "url": "https://en-gage.net/user/search/desc/18004890/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "8db967e46b40e8f9a8ff",
@@ -643,7 +1813,7 @@
       "address": "浜松市中央区（本社または配属先）",
       "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "応募資格",
         "実勤務地・通勤",
@@ -651,7 +1821,39 @@
       ],
       "summary": "未経験研修の開発職を発見。別媒体の同社募集は重ねて数えず、採用区分と実配属・研修場所を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松開発ラボ：中央区連尺町314-31",
+          "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "大卒月給22.3万円（一律勤務手当4万7,500円を含む）",
+          "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・実働8時間／残業月平均10時間程度",
+          "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間127日・土日祝（年1回土曜出勤）",
+          "url": "https://wagasyade-saiyo.jp/202608281734Bva/recruitment/detail/4219651/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "34030cda98d76d46a734",
@@ -669,7 +1871,27 @@
       ],
       "summary": "媒体一覧で具体的な募集を発見。年齢・日本語条件の適用、研修中の業務、実就業先と詳細募集URLを確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区砂山町（実就業先・番地未確認）",
+          "url": "https://next.rikunabi.com/job_search/area-shizuoka/city-hamamatsu/oc-technology/omc-1106/prf-001/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給27〜50万円（媒体一覧の表示・詳細未確認）",
+          "url": "https://next.rikunabi.com/job_search/area-shizuoka/city-hamamatsu/oc-technology/omc-1106/prf-001/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（媒体一覧の表示）",
+          "url": "https://next.rikunabi.com/job_search/area-shizuoka/city-hamamatsu/oc-technology/omc-1106/prf-001/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "015b7771a9400f3cc711",
@@ -685,7 +1907,27 @@
       ],
       "summary": "検索結果には社内SE募集が残るが、原典は現行一覧へ転送され同職種を確認できない。募集終了とは断定せず、再募集・継続確認を待つ。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "旧求人の本社工場：浜名区寺島291-2（募集継続未確認）",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "旧求人：月給20〜23万円（現行募集か未確認）",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "旧求人は正社員。現在の募集継続は未確認",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "2f1ec10395692fcaf362",
@@ -695,7 +1937,7 @@
       "address": "浜松市中央区板屋町111-2 浜松アクトタワー13階",
       "url": "https://job.goo.to/jobs/13010-15547762",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "ハローワーク原票",
         "応募資格",
@@ -703,7 +1945,39 @@
       ],
       "summary": "2026-10-21受付のハローワーク転載求人。原票と資格全文を未確認。マイカー通勤不可のため通勤方法の適合を確認する。",
       "status": "review",
-      "valid_through": "2026-12-31"
+      "valid_through": "2026-12-31",
+      "facts": [
+        {
+          "field": "location",
+          "text": "中央区板屋町111-2 アクトタワー13階",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給20.9〜24.38万円（ハローワーク転載）",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（転載情報）",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間124日・土日祝",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "マイカー通勤不可。通勤方法の適合は未確認",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "04e6b4d7a09187ec5e2e",
@@ -721,7 +1995,27 @@
       ],
       "summary": "2026-11-04までの媒体募集。実就業先が配属先によるため、応募資格・雇用区分と通勤を確認する。期限切れの別ハローワーク番号とは分けて確認。",
       "status": "review",
-      "valid_through": "2026-11-04"
+      "valid_through": "2026-11-04",
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松市周辺（配属先による）（実配属・通勤の確認は別）",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給22〜28万円（媒体検索表示・内訳未確認）",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員（媒体検索表示。配属先は未確定）",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        }
+      ]
     },
     {
       "id": "ac93973e3b6c0e4b6ad8",
@@ -731,15 +2025,53 @@
       "address": "浜松市中央区流通元町13-7",
       "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
       "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "応募資格",
         "通勤",
         "条件全体の確認"
       ],
-      "summary": "公式採用ページのFA・IT開発職。経験者歓迎の見出しと未経験領域の研修があるが、必須実務経験の適用を全文で確認する。",
+      "summary": "Windows・DB・.NET/C#/Java・SCADA等の経験条件があるが、未経験者も相談可と明記。相談枠への適用と通勤を確認する。",
       "status": "review",
-      "valid_through": null
+      "valid_through": null,
+      "facts": [
+        {
+          "field": "location",
+          "text": "浜松支店：中央区流通元町13-7",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "salary",
+          "text": "月給22.7〜35.6万円（一律手当込み）＋みなし時間外手当等",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30（休憩60分）",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "holidays",
+          "text": "年間122日・土日祝",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "commute",
+          "text": "車通勤可・駐車場完備。所要時間未計測",
+          "url": "https://job-gear.net/kdwan2/AE1005827522/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        }
+      ]
     }
   ]
 }

@@ -2,7 +2,7 @@ import {render,screen,within} from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import {it,expect,vi} from 'vitest';
 import ResearchPanel from '../ResearchPanel';
-import {parseReviews,dayNow} from '../data';
+import {parseReviews,dayNow,reviewNeedsRecheck} from '../data';
 import type {ReviewData} from '../types';
 
 const data:ReviewData={schema_version:1,updated_at:dayNow(),candidates:[{id:'review',company:'TEST ONLY COMPANY',title:'TEST ONLY IT SUPPORT',category:'it_support',address:'TEST ONLY ADDRESS',url:'https://www.python.org/jobs/',checked_at:dayNow(),stage:'detail_review',reasons:['TEST ONLY 配属先'],summary:'TEST ONLY SUMMARY',status:'review',valid_through:null}]};
@@ -22,4 +22,18 @@ it('rejects profile fields, non-IT categories and false eligibility flags; filte
  expect(()=>parseReviews({...data,candidates:[{...data.candidates[0],category:'office'}]})).toThrow();
  expect(()=>parseReviews({...data,candidates:[{...data.candidates[0],status:'eligible'}]})).toThrow();
  expect(parseReviews({...data,candidates:[{...data.candidates[0],valid_through:'2020-01-01'}]}).candidates).toHaveLength(0);
+});
+it('shows source-backed pay and location while leaving missing facts unknown',async()=>{
+ const detailed:ReviewData={...data,candidates:[{...data.candidates[0],facts:[{field:'salary',text:'TEST ONLY 月給24万円（手当込み）',url:'https://www.python.org/jobs/',checked_at:dayNow()},{field:'location',text:'TEST ONLY 本社または客先',url:'https://www.python.org/jobs/',checked_at:dayNow()}]}]};
+ const user=userEvent.setup();render(<ResearchPanel verifiedCount={4} onModeChange={()=>{}} initialData={detailed}/>);
+ await user.click(await screen.findByRole('button',{name:'保留・確認待ち 1件'}));
+ expect(screen.getByText('TEST ONLY 月給24万円（手当込み）')).toBeVisible();
+ expect(screen.getByText('TEST ONLY 本社または客先')).toBeVisible();
+ expect(screen.getAllByText('不明・未確認')).toHaveLength(4);
+ expect(screen.getByRole('link',{name:/給与の根拠/})).toHaveAttribute('href','https://www.python.org/jobs/');
+ await user.type(screen.getByPlaceholderText('候補の会社・職種・保留理由'),'24万円');
+ expect(screen.getByRole('article')).toBeVisible();
+ expect(()=>parseReviews({...detailed,candidates:[{...detailed.candidates[0],facts:[{...detailed.candidates[0].facts![0],url:'javascript:alert(1)'}]}]})).toThrow();
+ const oldFact={...detailed.candidates[0],facts:[{...detailed.candidates[0].facts![0],checked_at:'2020-01-01'}]};
+ expect(reviewNeedsRecheck(oldFact)).toBe(true);
 });

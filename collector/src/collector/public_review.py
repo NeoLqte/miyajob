@@ -11,6 +11,8 @@ def validate_review(data: ReviewData, today: date):
         raise ValueError('invalid_review_metadata')
     if any(j.checked_at > today or j.checked_at > data.updated_at or (j.valid_through and j.valid_through < today) for j in data.candidates):
         raise ValueError('invalid_or_expired_review_candidate')
+    if any(len({f.field for f in j.facts}) != len(j.facts) or any(f.checked_at > j.checked_at for f in j.facts) for j in data.candidates):
+        raise ValueError('invalid_review_facts')
     return data
 
 
@@ -30,6 +32,8 @@ def review_payload(root: Path, jobs, today: date):
             continue
         if (candidate.company, candidate.title, candidate.category) != (job.company, job.title, job.category) or candidate.url not in {s.url for s in job.sources}:
             raise ValueError('review_summary_source_mismatch')
+        if any(f.url not in {s.url for s in job.sources} for f in candidate.facts):
+            raise ValueError('review_fact_source_mismatch')
         # Keep the earliest explicit expiry; never let a curated summary extend it.
         if deadline:
             candidate.valid_through = min(deadline, candidate.valid_through) if candidate.valid_through else deadline

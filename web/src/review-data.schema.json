@@ -112,6 +112,13 @@
           ],
           "default": null,
           "title": "Valid Through"
+        },
+        "facts": {
+          "items": {
+            "$ref": "#/definitions/ReviewFact"
+          },
+          "title": "Facts",
+          "type": "array"
         }
       },
       "required": [
@@ -129,6 +136,46 @@
         "valid_through"
       ],
       "title": "ReviewCandidate",
+      "type": "object"
+    },
+    "ReviewFact": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "salary",
+            "location",
+            "employment",
+            "hours",
+            "holidays",
+            "commute"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "text": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Text",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "text",
+        "url",
+        "checked_at"
+      ],
+      "title": "ReviewFact",
       "type": "object"
     }
   }

@@ -136,6 +136,14 @@ class PublicData(Model):
     jobs: list[Job] = Field(default_factory=list)
 
 
+class ReviewFact(Model):
+    field: Literal['salary', 'location', 'employment', 'hours', 'holidays', 'commute']
+    text: str = Field(min_length=1, max_length=300)
+    url: str
+    checked_at: date
+    _url = field_validator('url')(public_url)
+
+
 class ReviewCandidate(Model):
     """Explicitly authored public summary. Never copy internal reviewer notes."""
     id: str = Field(min_length=1)
@@ -150,6 +158,7 @@ class ReviewCandidate(Model):
     summary: str = Field(min_length=1, max_length=600)
     status: Literal['review'] = 'review'
     valid_through: date | None = None
+    facts: list[ReviewFact] = Field(default_factory=list)
     _url = field_validator('url')(public_url)
 
 

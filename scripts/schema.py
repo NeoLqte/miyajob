@@ -12,6 +12,8 @@ def require_all(node):
             # Additive expiry support must also accept older verified exports.
             if node.get('title') == 'Evidence':
                 node['required'].remove('valid_through')
+            if node.get('title') == 'ReviewCandidate':
+                node['required'].remove('facts')
         for child in node.values():
             require_all(child)
     elif isinstance(node, list):
