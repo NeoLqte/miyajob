@@ -9,7 +9,7 @@
 | Playwright Chromium / PC・iPhone相当幅 | 4件通過。実データ0件とテスト時だけのネットワーク差し替えを分離 |
 | TypeScript / Vite production build | 成功 |
 | 公開JSON・生成物の個人情報／テストデータ検査 | 成功、公開0件 |
-| GitHub Actions / Pages本番 | リモート権限未解決のため未実行 |
+| GitHub Actions / Pages本番 | 成功。Quality checks #1、Deploy verified web app #1ともに通過 |
 | 実スマホ端末 | 未実施。モバイル幅・タッチ設定のChromiumで検証 |
 | 外部ソース自動巡回 | 承認済み設定がないため未実施。robots・403等はMockTransportで検証 |
 | 地図API・実求人の経路計測 | 未実施 |
@@ -20,4 +20,10 @@
 
 ## 最終実行
 
-Python 39 passed、Vitest 14 passed、Playwright 4 passed。TypeScript・Viteビルド、公開データ監査・成果物の混入検査、Schema生成差分なしを確認。公開データ0件。外部公開は未実行。
+Python 39 passed、Vitest 14 passed、Playwright 4 passed。TypeScript・Viteビルド、公開データ監査・成果物の混入検査、Schema生成差分なしを確認。公開データ0件。
+
+2026-11-01、本人の承認後にリポジトリをPublicへ変更し、Pagesの配信元をGitHub Actionsに設定。コミット841cc97を公開し、実URLでタイトル・未検証求人を掲載しない空状態を確認しました。
+
+- 公開サイト: https://neolqte.github.io/miyajob/
+- CI: https://github.com/NeoLqte/miyajob/actions/runs/41275944743
+- デプロイ成功: https://github.com/NeoLqte/miyajob/actions/runs/41276341926
