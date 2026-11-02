@@ -36,6 +36,18 @@ def test_unknown_employment_is_review(job,profile):
     assert audit(job,profile,TODAY).status == "review"
 
 
+def test_office_basics_do_not_imply_windows_and_lan_setup(job,profile):
+    from collector.models import Evidence
+    job.evidence.append(Evidence(id='windows_lan',field='windows_lan_setup',url=job.sources[0].url,quote_or_locator='TEST ONLY Windows/LAN required',checked_at=TODAY,conclusion='pass',method='job_board'))
+    job.eligibility.requirements.append(Requirement(field='windows_lan_setup',operator='eq',value=True,description='TEST ONLY Windows/LAN required',evidence_ids=['windows_lan']))
+    profile.attributes['pc_basic']=True
+    assert audit(job,profile,TODAY).status=='review'
+    profile.attributes['windows_lan_setup']=False
+    assert audit(job,profile,TODAY).status=='rejected'
+    profile.attributes['windows_lan_setup']=True
+    assert audit(job,profile,TODAY).status=='eligible'
+
+
 def test_private_reviewer_notes_never_exported(job,profile,tmp_path):
     job.evidence[0].notes="private applicant attributes should stay local"
     path=tmp_path/'jobs.json'

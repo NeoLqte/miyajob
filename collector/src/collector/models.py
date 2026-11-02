@@ -8,7 +8,7 @@ Tri = Literal["yes", "no", "unknown"]
 Category = Literal["software", "infrastructure", "internal_it", "it_support", "technical", "office", "other"]
 IT_CATEGORIES = ('software', 'infrastructure', 'internal_it', 'it_support')
 DIMENSIONS = ("graduated", "graduation_date", "education", "it_years", "employment_history", "age", "drivers_license", "license_restriction", "other_qualifications", "relocation", "travel", "start_date")
-SUPPORTED_REQUIREMENTS = (*DIMENSIONS, "pc_basic", "science_education", "programming_basics")
+SUPPORTED_REQUIREMENTS = (*DIMENSIONS, "pc_basic", "science_education", "programming_basics", "windows_lan_setup")
 MANDATORY_EVIDENCE = ("existence", "employment", "requirements_complete", "location", "commute", "recruitment", "reuse")
 
 
