@@ -9,12 +9,15 @@ it('shows discovery without five conditions only after minimum discovery curatio
  expect(parse({})).toHaveLength(1);
  for(const changes of [{discovery_verified:false},{regions:[]},{company:'社名非公開'},{stage:'detail_review'},{status:'review'},{valid_through:'2020-01-01'}])expect(parse(changes)).toHaveLength(0);
  expect(()=>parse({url:'javascript:alert(1)'})).toThrow();
+ expect(parse({screening:[{field:'experience',result:'fail',detail:'TEST ONLY required professional experience',url,checked_at:dayNow()}]})).toHaveLength(0);
+ expect(()=>parse({screening:[{field:'experience',result:'unknown',detail:'TEST ONLY',url:'javascript:alert(1)',checked_at:dayNow()}]})).toThrow();
 });
 it('sorts explicit monthly salary and leaves annual-only, unknown and unconfirmed last',()=>{
  const unknown=candidate('a'),annual=candidate('b','年収600万円'),low=candidate('low','月給20〜25万円'),high=candidate('high','月給285,000円～');
  expect(selectCandidates([unknown,low,annual,high],filters).slice(0,2).map(j=>j.id)).toEqual(['high','low']);
  high.facts![0].confirmed=false;expect(candidateMetrics(high).monthly).toBeNull();
  expect(candidateMetrics(candidate('conflict','月給30万円・金額未確認')).monthly).toBeNull();
+ expect(candidateMetrics(candidate('model','年収例500万円・月給32万円（経験7年のモデル）')).monthly).toBeNull();
 });
 it('combines status, region, category and keywords, and puts missing holiday/commute last',()=>{
  const a=candidate('a'),b=candidate('b');b.status='review';b.regions=['磐田市'];

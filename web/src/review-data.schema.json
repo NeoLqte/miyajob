@@ -108,6 +108,13 @@
           "title": "Discovery Verified",
           "type": "boolean"
         },
+        "screening": {
+          "items": {
+            "$ref": "#/definitions/ScreeningCheck"
+          },
+          "title": "Screening",
+          "type": "array"
+        },
         "regions": {
           "items": {
             "type": "string"
@@ -196,6 +203,54 @@
         "checked_at"
       ],
       "title": "ReviewFact",
+      "type": "object"
+    },
+    "ScreeningCheck": {
+      "additionalProperties": false,
+      "properties": {
+        "field": {
+          "enum": [
+            "it_role",
+            "regular_employment",
+            "graduate",
+            "experience"
+          ],
+          "title": "Field",
+          "type": "string"
+        },
+        "result": {
+          "enum": [
+            "confirmed",
+            "unknown",
+            "fail"
+          ],
+          "title": "Result",
+          "type": "string"
+        },
+        "detail": {
+          "maxLength": 300,
+          "minLength": 1,
+          "title": "Detail",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "checked_at": {
+          "format": "date",
+          "title": "Checked At",
+          "type": "string"
+        }
+      },
+      "required": [
+        "field",
+        "result",
+        "detail",
+        "url",
+        "checked_at"
+      ],
+      "title": "ScreeningCheck",
       "type": "object"
     }
   }

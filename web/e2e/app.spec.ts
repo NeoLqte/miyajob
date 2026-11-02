@@ -8,6 +8,9 @@ test('discovery and all-candidate views preserve unknowns, source links and comb
  const verified=await (await page.request.get(new URL('jobs.json',page.url()).toString())).json();
  await page.getByRole('button',{name:`未審査・新規候補 ${discovery.length}件`,exact:true}).click();
  await expect(page.locator('.research-card')).toHaveCount(discovery.length);
+ await page.locator('.research-card').first().getByText('応募条件の簡易チェック',{exact:true}).click();
+ await expect(page.locator('.research-card').first().locator('.screening li')).toHaveCount(4);
+ await expect(page.getByText(/通勤15分帯を最優先/)).toBeVisible();
  await expect(page.locator('.workspace')).toBeHidden();
  expect(await page.locator('.research-card').getByRole('link',{name:/原典を見る/}).count()).toBe(discovery.length);
  expect(await page.locator('.fact-unknown').count()).toBeGreaterThan(0);

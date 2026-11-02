@@ -146,6 +146,15 @@ class PublicData(Model):
     jobs: list[Job] = Field(default_factory=list)
 
 
+class ScreeningCheck(Model):
+    field: Literal['it_role', 'regular_employment', 'graduate', 'experience']
+    result: Literal['confirmed', 'unknown', 'fail']
+    detail: str = Field(min_length=1, max_length=300)
+    url: str
+    checked_at: date
+    _url = field_validator('url')(public_url)
+
+
 class ReviewCandidate(Model):
     """Explicitly authored public summary. Never copy internal reviewer notes."""
     id: str = Field(min_length=1)
@@ -160,6 +169,7 @@ class ReviewCandidate(Model):
     summary: str = Field(min_length=1, max_length=600)
     status: Literal['review', 'discovery'] = 'review'
     discovery_verified: bool = False
+    screening: list[ScreeningCheck] = Field(default_factory=list)
     regions: list[str] = Field(default_factory=list)
     valid_through: date | None = None
     facts: list[ReviewFact] = Field(default_factory=list)

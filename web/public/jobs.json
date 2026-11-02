@@ -1826,6 +1826,881 @@
       "last_checked_at": "2026-11-02"
     },
     {
+      "id": "7a8f094d6ab6b9b7b91e",
+      "company": "株式会社ジリオン浜松",
+      "employer": "株式会社ジリオン浜松",
+      "title": "業務系アプリケーションソフトウェア設計・開発（未経験者枠）",
+      "category": "software",
+      "recruitment_track": "新規採用（未経験者）",
+      "employment_type": "full_time_regular",
+      "description": "企業向け業務アプリの開発・テストから経験を積む未経験者枠。応募資格欄は特段の条件なし。勤務地は浜松本社。顧客先での作業もあるため、その頻度・常駐有無は応募前に確認。2年目以降のフレックスは希望に応じた対応。",
+      "location": {
+        "address": "静岡県浜松市中央区根洗町1431",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 22.0,
+        "status": "verified",
+        "provider": "Google マップ（通常交通の予測を手動確認）",
+        "checked_at": "2026-11-01",
+        "route_assumptions": "公共の参考地点・宮口駅から浜松本社。2026-11-02(月)8:30到着、車、国道362号ともくれん通り経由8.9km、通常16〜22分。ソート・分数フィルターは予測範囲の上限22分を使用。2026-11-01確認。自宅発の実走計測ではなく、実際の起点・当日の渋滞で変動する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": 236340,
+        "monthly_total_min_jpy": null,
+        "annual_min_jpy": null,
+        "annual_basis": "unknown",
+        "bonus": "年2回（7月・12月）。2年目以降は夏季分が年俸に含まれ、冬季分は実績査定。",
+        "fixed_overtime": "unknown",
+        "allowances": "交通費全額支給。給与の基本給・固定残業代の内訳は未記載。"
+      },
+      "workstyle": {
+        "annual_holidays": null,
+        "overtime_hours_month": null,
+        "flex": "unknown",
+        "transfer": "unknown",
+        "car_commute": "unknown",
+        "parking": "unknown",
+        "client_site": "unknown"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に卒業見込み限定などの制限なし（資格欄は特段の条件なし）",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に卒業年度の限定なし（未経験者枠）",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に学歴の限定なし。給与は最終学歴別。",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠。経験者向けの実務3年以上という別枠とは区別。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に就業歴条件なし。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に年齢の限定なし。",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "普通免許は推奨要件。必須ではない。",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "推奨する普通免許はAT限定・取得見込みも可。",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "未経験者枠の応募資格に専門資格の必須指定なし。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "当該未経験者枠の勤務地は浜松本社。転居を応募条件にしていない。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に特定の出張・夜勤対応指定なし。顧客先作業は仕事内容として明記。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "応募資格に入社可能日の指定なし。採用時期は選考時に確認。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://www.zillion.co.jp/recruit/",
+          "original_url": "https://www.zillion.co.jp/recruit/",
+          "kind": "official",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "original_url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "kind": "other",
+          "checked_at": "2026-11-01"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者）の職種・所在地",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "新規採用（未経験者） > 雇用形態：正社員",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "未経験者枠の応募資格を全文確認。応募資格自体に特段の条件なしと明記。経験者向け別枠の条件と混同しない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "新規採用（未経験者）の勤務地は浜松本社。浜松／東京の選択は経験者欄のみ。",
+          "checked_at": "2026-11-02",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/%E5%AE%AE%E5%8F%A3%E9%A7%85%E3%80%81%E3%80%92434-0004+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E6%B5%9C%E5%90%8D%E5%8C%BA%E5%AE%AE%E5%8F%A3/%E3%80%92433-8108+%E9%9D%99%E5%B2%A1%E7%9C%8C%E6%B5%9C%E6%9D%BE%E5%B8%82%E4%B8%AD%E5%A4%AE%E5%8C%BA%E6%A0%B9%E6%B4%97%E7%94%BA%EF%BC%91%EF%BC%94%EF%BC%93%EF%BC%91+%EF%BD%9A%EF%BD%89%EF%BD%8C%EF%BD%8C%EF%BD%89%EF%BD%8F%EF%BD%8E/@34.8132624,137.6989349,13z/data=!3m1!4b1!4m18!4m17!1m5!1m1!1s0x601b1f7757f33cbb:0x911cd27bc7041f26!2m2!1d137.7736526!2d34.8303233!1m5!1m1!1s0x601b20e6892cbf01:0xe22496af0fc354d!2m2!1d137.7087228!2d34.7920967!2m3!6e1!7e2!8j1793608200!3e0?entry=ttu&g_ep=EgoyMDI2MTAyOC4wIKXMDSoASAFQAw%3D%3D",
+          "quote_or_locator": "車経路 > 11月2日(月)8:30到着 > 国道362号ともくれん通り、8.9km、通常16〜22分",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "採用ページ冒頭の随時募集告知と、未経験者枠の現行募集要項・問い合わせ導線を確認。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "公表済みの募集条件を独自に短く要約して原典へリンク。全文・画像・ロゴは転載しない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "quote_or_locator": "募集要項 > 新規採用（未経験者） > 応募資格（特段の条件なし）、勤務地・勤務時間・仕事内容",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        }
+      ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月給236,340円（大卒・初年度）。2年目以降は年俸制",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "未経験者枠：浜松本社・中央区根洗町1431。東京との選択は別の経験者枠",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員（新規採用・未経験者）",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・実働8時間。2年目以降フレックスタイム制度",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日制（土日）・祝日・夏季5日間・年末年始約1週間。年間休日数は未確認",
+          "url": "https://www.zillion.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ],
+      "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-02"
+    },
+    {
+      "id": "92dc1a9efbd586794cc6",
+      "company": "株式会社アルファプロジェクト",
+      "employer": "株式会社アルファプロジェクト",
+      "title": "ファームウェア・ソフトウェア技術者（既卒対象枠）",
+      "category": "software",
+      "recruitment_track": "2027新卒・卒業後概ね3年以内",
+      "employment_type": "full_time_regular",
+      "description": "既卒3年以内も対象のファームウェア・PC／スマートフォン向けソフト開発。積志町の本社勤務。2027採用媒体の大卒基本給は月24.2万円。休日は公式に2024年度122日、採用媒体に116日の表記があり、対象年度確認前のため比較数値は不明とする。入社時期は柔軟に対応。",
+      "location": {
+        "address": "静岡県浜松市中央区積志町834",
+        "region": "浜松市中央区",
+        "region_band": 2,
+        "is_fixed": true,
+        "remote_policy": "unknown",
+        "residence_verified": false
+      },
+      "commute": {
+        "minutes": 24.0,
+        "status": "verified",
+        "provider": "Google マップ（平日朝の通常交通予測を手動確認）",
+        "checked_at": "2026-11-01",
+        "route_assumptions": "公共の参考地点・宮口駅から積志町834。2026-11-02(月)9:00到着、飛龍街道・国道152号経由8.4km、通常14〜24分を2026-11-01に画面で確認。表示には予測上限24分を使用。本人の自宅発や実走ではなく交通状況で変動する。URLを開いた後は到着日時を再指定する。"
+      },
+      "pay": {
+        "monthly_base_min_jpy": 242000,
+        "monthly_total_min_jpy": 242000,
+        "annual_min_jpy": null,
+        "annual_basis": "unknown",
+        "bonus": "年2回。支給月・金額は採用年度の要項を確認。",
+        "fixed_overtime": "固定残業制度なし。",
+        "allowances": "役職・家族・住宅・通勤・時間外等は条件により別途。通勤手当込みのモデル額を保証月給に加算しない。"
+      },
+      "workstyle": {
+        "annual_holidays": null,
+        "overtime_hours_month": null,
+        "flex": "yes",
+        "transfer": "no",
+        "car_commute": "yes",
+        "parking": "yes",
+        "client_site": "unknown"
+      },
+      "eligibility": {
+        "status": "eligible",
+        "graduate_eligibility": "pass",
+        "professional_experience": "pass",
+        "requirements": [
+          {
+            "field": "graduated",
+            "operator": "eq",
+            "value": true,
+            "description": "卒業済みの既卒も明示的に応募可。",
+            "evidence_ids": [
+              "graduated"
+            ]
+          },
+          {
+            "field": "graduation_date",
+            "operator": "between",
+            "value": [
+              "2024-04",
+              "2027-03"
+            ],
+            "description": "2027採用で卒業後概ね3年以内。監査対象は2024年4月〜2027年3月の卒業範囲。",
+            "evidence_ids": [
+              "graduation_date"
+            ]
+          },
+          {
+            "field": "education",
+            "operator": "in",
+            "value": [
+              "vocational",
+              "junior_college",
+              "technical_college",
+              "university",
+              "graduate"
+            ],
+            "description": "専門学校・短大・高専・四年制大学・大学院等が対象。全学部・全学科。",
+            "evidence_ids": [
+              "education"
+            ]
+          },
+          {
+            "field": "it_years",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "it_years"
+            ]
+          },
+          {
+            "field": "employment_history",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "employment_history"
+            ]
+          },
+          {
+            "field": "age",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "age"
+            ]
+          },
+          {
+            "field": "drivers_license",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "drivers_license"
+            ]
+          },
+          {
+            "field": "license_restriction",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "license_restriction"
+            ]
+          },
+          {
+            "field": "other_qualifications",
+            "operator": "any",
+            "value": null,
+            "description": "当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+            "evidence_ids": [
+              "other_qualifications"
+            ]
+          },
+          {
+            "field": "relocation",
+            "operator": "any",
+            "value": null,
+            "description": "初期勤務地は積志町の本社。転勤なし。転居可能を必須条件としない。",
+            "evidence_ids": [
+              "relocation"
+            ]
+          },
+          {
+            "field": "travel",
+            "operator": "any",
+            "value": null,
+            "description": "当該募集に出張経験・資格等の必須指定なし。",
+            "evidence_ids": [
+              "travel"
+            ]
+          },
+          {
+            "field": "start_date",
+            "operator": "any",
+            "value": null,
+            "description": "採用トップで入社時期は柔軟に対応と明示。",
+            "evidence_ids": [
+              "start_date"
+            ]
+          }
+        ]
+      },
+      "recruitment": {
+        "status": "active",
+        "valid_through": null,
+        "date_posted": null
+      },
+      "sources": [
+        {
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "original_url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "kind": "official",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "url": "https://www.apnet.co.jp/company/recruit.html",
+          "original_url": "https://www.apnet.co.jp/company/recruit.html",
+          "kind": "official",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "original_url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "kind": "job_board",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
+          "original_url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
+          "kind": "other",
+          "checked_at": "2026-11-01"
+        }
+      ],
+      "evidence": [
+        {
+          "id": "existence",
+          "field": "existence",
+          "url": "https://www.apnet.co.jp/company/recruit.html",
+          "quote_or_locator": "2027新卒採用受付中、既卒も応募可、当該ファームウェア・ソフトウェア職の募集要項への導線",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment",
+          "field": "employment",
+          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "quote_or_locator": "募集コースの雇用形態：正社員。ファームウェア・ソフトウェアの配属職種。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "requirements_complete",
+          "field": "requirements_complete",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "新卒採用の対象・募集職種・学歴・既卒3年以内を全文確認。経験者向けキャリア枠の実務3年をこの枠へ転用しない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "location",
+          "field": "location",
+          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "quote_or_locator": "勤務地は本社所在地の浜松市中央区積志町834。転勤なし。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "commute",
+          "field": "commute",
+          "url": "https://www.google.com/maps/dir/?api=1&origin=宮口駅&destination=浜松市中央区積志町834&travelmode=driving",
+          "quote_or_locator": "公共の参考地点・宮口駅から積志町834。2026-11-02(月)9:00到着、飛龍街道・国道152号経由8.4km、通常14〜24分を2026-11-01に画面で確認。表示には予測上限24分を使用。本人の自宅発や実走ではなく交通状況で変動する。URLを開いた後は到着日時を再指定する。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "recruitment",
+          "field": "recruitment",
+          "url": "https://www.apnet.co.jp/company/recruit.html",
+          "quote_or_locator": "2027年新卒採用受付中と既卒応募可を明示。入社時期は柔軟対応。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "reuse",
+          "field": "reuse",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "条件の事実を短い独自要約と原典リンクで紹介。原文全文や画像を転載しない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "other",
+          "notes": ""
+        },
+        {
+          "id": "graduated",
+          "field": "graduated",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：卒業済みの既卒も明示的に応募可。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "graduation_date",
+          "field": "graduation_date",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：2027採用で卒業後概ね3年以内。監査対象は2024年4月〜2027年3月の卒業範囲。",
+          "checked_at": "2026-11-01",
+          "valid_through": "2027-03-31",
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "education",
+          "field": "education",
+          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：専門学校・短大・高専・四年制大学・大学院等が対象。全学部・全学科。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "job_board",
+          "notes": ""
+        },
+        {
+          "id": "it_years",
+          "field": "it_years",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "employment_history",
+          "field": "employment_history",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "age",
+          "field": "age",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "drivers_license",
+          "field": "drivers_license",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "license_restriction",
+          "field": "license_restriction",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "other_qualifications",
+          "field": "other_qualifications",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該新卒・既卒募集の応募資格全文で、この観点の追加制限を指定していない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "relocation",
+          "field": "relocation",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：初期勤務地は積志町の本社。転勤なし。転居可能を必須条件としない。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "travel",
+          "field": "travel",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：当該募集に出張経験・資格等の必須指定なし。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        },
+        {
+          "id": "start_date",
+          "field": "start_date",
+          "url": "https://www.apnet.co.jp/company/recruit.html",
+          "quote_or_locator": "採用対象・資格・勤務地の確認：採用トップで入社時期は柔軟に対応と明示。",
+          "checked_at": "2026-11-01",
+          "valid_through": null,
+          "conclusion": "pass",
+          "method": "official_page",
+          "notes": ""
+        }
+      ],
+      "listing_facts": [
+        {
+          "field": "salary",
+          "text": "月給242,000円（四年制大学卒の初任給）",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市・中央区積志町834。転勤なし（勤務地の別登録根拠も参照）",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・実働8時間・昼休み12:00〜13:00。フレックス制度あり",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日制（土日）・年末年始・GW・夏季。現在の年間休日数は未確認（122日は2024年度実績）",
+          "url": "https://www.apnet.co.jp/company/recruit-new.html",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員（当該新卒・既卒募集コース）",
+          "url": "https://job.mynavi.jp/27/pc/corpinfo/displayEmployment/index?corpId=98147&recruitingCourseId=27004977",
+          "checked_at": "2026-11-01",
+          "confirmed": true
+        }
+      ],
+      "first_seen_at": "2026-11-01",
+      "last_checked_at": "2026-11-02"
+    },
+    {
       "id": "a39741d22c11c2bb1f10",
       "company": "株式会社リキシステム",
       "employer": "株式会社リキシステム",

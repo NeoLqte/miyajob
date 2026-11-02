@@ -7,6 +7,8 @@ from .models import ReviewCandidate, ReviewData, IT_CATEGORIES
 from .listing import complete_conditions, complete_job
 
 def visible_candidate(candidate):
+    if any(c.result == 'fail' for c in candidate.screening):
+        return False
     if candidate.status == 'review':
         return complete_conditions(candidate.facts)
     return (candidate.stage == 'discovery' and candidate.discovery_verified
@@ -22,6 +24,8 @@ def validate_review(data: ReviewData, today: date):
         raise ValueError('invalid_review_facts')
     if any(not visible_candidate(j) for j in data.candidates):
         raise ValueError('incomplete_listing_conditions')
+    if any(len({c.field for c in j.screening}) != len(j.screening) or any(c.checked_at > j.checked_at for c in j.screening) for j in data.candidates):
+        raise ValueError('invalid_screening_checks')
     return data
 
 
@@ -45,6 +49,8 @@ def review_payload(root: Path, jobs, today: date):
             raise ValueError('review_summary_source_mismatch')
         if any(f.url not in {s.url for s in job.sources} for f in candidate.facts):
             raise ValueError('review_fact_source_mismatch')
+        if any(c.url not in {s.url for s in job.sources} for c in candidate.screening):
+            raise ValueError('screening_source_mismatch')
         # Keep the earliest explicit expiry; never let a curated summary extend it.
         if deadline:
             candidate.valid_through = min(deadline, candidate.valid_through) if candidate.valid_through else deadline

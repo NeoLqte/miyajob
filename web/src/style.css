@@ -17,3 +17,5 @@
 .review-facts .salary-note{display:block;margin-top:5px;color:var(--muted);font-size:10px;font-weight:400;line-height:1.6}
 
 .candidate-warning{display:block;color:var(--muted);font-size:13px;margin:12px 0}.research-controls small{display:block;font-weight:normal;line-height:1.6;margin-top:6px}.research-tabs button{min-width:140px}
+
+.screening{border-top:1px solid var(--line);margin:16px 0;padding-top:12px;font-size:13px}.screening summary{cursor:pointer;font-weight:600}.screening li{margin:12px 0}.ranking-explanation{font-size:12px;color:var(--muted);line-height:1.8}

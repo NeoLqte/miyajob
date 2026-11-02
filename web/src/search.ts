@@ -1,4 +1,5 @@
 import type {Category, Job} from './types';
+import {rankOpportunity} from './recommendation';
 export const categories:Record<Category,string> = {software:'開発',infrastructure:'インフラ',internal_it:'社内SE',it_support:'ITサポート',technical:'技術職',office:'事務',other:'その他'};
 export type Filters = {q:string;category:string;region:string;commute:string;monthly:string;annual:string;payBasis:'base'|'total';annualBasis:'guaranteed'|'estimated';holidays:boolean;overtime:boolean;remote:boolean;flex:boolean;transfer:boolean;car:boolean;parking:boolean;client:boolean;includeUnknown:boolean;sort:string;view:'cards'|'table'};
 export const defaults:Filters={q:'',category:'',region:'',commute:'',monthly:'',annual:'',payBasis:'base',annualBasis:'guaranteed',holidays:false,overtime:false,remote:false,flex:false,transfer:false,car:false,parking:false,client:false,includeUnknown:false,sort:'recommended',view:'cards'};
@@ -18,16 +19,7 @@ export function writeFilters(f:Filters) {const p=new URLSearchParams();for(const
 export const monthlyValue=(j:Job,f:Filters)=>f.payBasis==='base'?j.pay.monthly_base_min_jpy:j.pay.monthly_total_min_jpy;
 export const annualValue=(j:Job,f:Filters)=>j.pay.annual_basis===f.annualBasis?j.pay.annual_min_jpy:null;
 export function recommendation(j:Job) {
- const commute=j.commute.minutes===null?null:Math.max(0,1-j.commute.minutes/45);
- const salary=j.pay.monthly_base_min_jpy===null?null:Math.min(1,j.pay.monthly_base_min_jpy/350000);
- const holiday=j.workstyle.annual_holidays===null?null:Math.min(1,j.workstyle.annual_holidays/130);
- const overtime=j.workstyle.overtime_hours_month===null?null:Math.max(0,1-j.workstyle.overtime_hours_month/40);
- const rest=holiday===null||overtime===null?null:(holiday+overtime)/2;
- const fixed=j.workstyle.transfer==='unknown'?null:j.workstyle.transfer==='no'?1:0;
- const remote=j.location.remote_policy==='unknown'?null:j.location.remote_policy==='none'?0:1;
- const parts:[number|null,number][]=[[commute,.45],[salary,.2],[rest,.2],[fixed,.1],[remote,.05]];
- const confidence=parts.reduce((s,[v,w])=>s+(v===null?0:w),0);
- return {score:confidence?parts.reduce((s,[v,w])=>s+(v??0)*w,0)/confidence:0,confidence,reason:`通勤45%・基本給20%・休日/残業20%・転勤10%・在宅5%。確認済み項目のみで算出（充足率${Math.round(confidence*100)}%）。賞与額の定量比較は未対応。`};
+ return rankOpportunity({commute:j.commute.status==='verified'?j.commute.minutes:null,eligibility:j.eligibility.status==='eligible'?1:null,monthly:j.pay.monthly_base_min_jpy,holidays:j.workstyle.annual_holidays,overtime:j.workstyle.overtime_hours_month,transfer:j.workstyle.transfer});
 }
 function numeric(a:number|null,b:number|null,desc=false) {if(a===null)return b===null?0:1;if(b===null)return -1;return desc?b-a:a-b;}
 export function selectJobs(jobs:Job[],f:Filters):Job[] {
@@ -55,7 +47,7 @@ export function selectJobs(jobs:Job[],f:Filters):Job[] {
    case 'overtime':n=numeric(a.workstyle.overtime_hours_month,b.workstyle.overtime_hours_month);break;
    case 'new':n=b.first_seen_at.localeCompare(a.first_seen_at);break;
    case 'updated':n=b.last_checked_at.localeCompare(a.last_checked_at);break;
-   default:{const sa=recommendation(a),sb=recommendation(b);n=sb.score-sa.score;if(!n)n=numeric(a.location.region_band,b.location.region_band);}
+   default:{const sa=recommendation(a),sb=recommendation(b);n=sa.commuteBand-sb.commuteBand||sb.score-sa.score;if(!n)n=numeric(a.location.region_band,b.location.region_band);}
   }return n||a.id.localeCompare(b.id);
  });
 }

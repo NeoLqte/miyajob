@@ -49,5 +49,6 @@ export function parseReviews(input:unknown,today=dayNow()):ReviewData {
  if(input.updated_at>today||new Set(input.candidates.map(j=>j.id)).size!==input.candidates.length)throw Error('確認待ちデータの確認日時・IDが不正です。');
  if(input.candidates.some(j=>!safeURL(j.url)||j.checked_at>today||j.checked_at>input.updated_at))throw Error('確認待ちデータの原典・確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.facts?.map(f=>f.field)).size!==(j.facts?.length??0)||j.facts?.some(f=>!safeURL(f.url)||f.checked_at>j.checked_at)))throw Error('候補の条件・根拠の確認日が不正です。');
- return {...input,candidates:input.candidates.filter(j=>(j.status==='review'?completeConditions(j.facts):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
+ if(input.candidates.some(j=>new Set(j.screening?.map(c=>c.field)).size!==(j.screening?.length??0)||j.screening?.some(c=>!safeURL(c.url)||c.checked_at>j.checked_at)))throw Error('簡易チェックの根拠・確認日が不正です。');
+ return {...input,candidates:input.candidates.filter(j=>!j.screening?.some(c=>c.result==='fail')&&(j.status==='review'?completeConditions(j.facts):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
 }

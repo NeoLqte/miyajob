@@ -123,3 +123,19 @@ def test_eligible_with_missing_conditions_can_only_be_discovery(tmp_path,job):
     candidate.discovery_verified=True;candidate.regions=['浜松市浜名区']
     path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
     assert len(review_payload(tmp_path,[job],TODAY).candidates)==1
+
+
+def test_screening_fail_is_hidden_and_checks_require_registered_sources(tmp_path,job):
+    from collector.models import ScreeningCheck
+    job.eligibility.status='review'
+    path,candidate=prepare(tmp_path,job)
+    candidate.screening=[ScreeningCheck(field='experience',result='fail',detail='TEST ONLY professional requirement',url=job.sources[0].url,checked_at=TODAY)]
+    path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
+    assert not review_payload(tmp_path,[job],TODAY).candidates
+    candidate.screening[0].result='unknown'
+    candidate.screening[0].url='https://www.python.org/unrelated'
+    path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
+    with pytest.raises(ValueError,match='screening_source_mismatch'):review_payload(tmp_path,[job],TODAY)
+    candidate.screening[0].url=job.sources[0].url
+    candidate.screening[0].checked_at=TODAY+timedelta(days=1)
+    with pytest.raises(ValueError,match='invalid_screening_checks'):validate_review(ReviewData(updated_at=TODAY,candidates=[candidate]),TODAY)

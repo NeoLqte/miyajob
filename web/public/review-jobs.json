@@ -18,6 +18,36 @@
       "summary": "検索結果には社内SE募集が残るが、原典は現行一覧へ転送され同職種を確認できない。募集終了とは断定せず、再募集・継続確認を待つ。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://wagasyade-saiyo.jp/unionparts/recruitment/detail/4201340/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
@@ -56,6 +86,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "原則実務3年に対し3年未満の例外あり。未経験への適用は不明",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -64,6 +95,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/XELv7SFdr9N2YHEDS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/XELv7SFdr9N2YHEDS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/XELv7SFdr9N2YHEDS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "原則実務3年に対し3年未満の例外あり。未経験への適用は不明",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/XELv7SFdr9N2YHEDS",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -88,6 +149,36 @@
       "summary": "IT学習経験等を対象とする11〜12月入社枠。ハローワーク転載で月給・資格条件を補足。原票の正社員・派遣区分、現在の募集継続、実配属と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://domonet.jp/shizuoka/ad/tya/0029234246?consultant=consultant",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -154,6 +245,7 @@
       "summary": "新卒・既卒枠は既卒対象と免許条件を確認。雇用形態欄が「新卒」のため、当該枠の正社員区分・実配属を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -211,6 +303,36 @@
       "summary": "IT業界未経験可だが関係者調整経験が必須。マイカー通勤不可のため、通勤方法の適合も要確認。全国出張の記載あり。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/ess-recruit/work_18564584/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -278,6 +400,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/22020-17500561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-17500561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-17500561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/22020-17500561",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -301,6 +453,7 @@
       "summary": "社内システムの設計・コーディング、PC・サーバー・SaaS管理、ヘルプデスク。総務業務を兼ねる場合あり。必須のコーディング経験に学習・個人開発が含まれるか未確定。ページの取得時期が古いため募集継続も確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -357,6 +510,7 @@
       "summary": "C++・C#等で3次元形状処理ソフトを開発する新卒枠。大学・大学院、学部学科不問、専門知識やプログラミング経験は不要。既卒者への適用と勤務先への経路は未確認。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-11-30",
       "facts": [
@@ -415,6 +569,36 @@
       "summary": "免許と指定言語・DBの経験が必須。基本情報技術者は尚可。対象言語・DB経験の適用と通勤、募集継続を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.workport.co.jp/details/710939470/403539419/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -475,6 +659,36 @@
       "summary": "自社の労務管理システム開発。大学授業程度の知識で可。雇用区分に新卒とのみ記載され正社員区分・既卒の適用条件が未確定。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/16770621/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16770621/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16770621/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/16770621/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -517,54 +731,85 @@
       "category": "software",
       "address": "静岡県浜松市中央区細島町6-5",
       "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "構築経験等が対象。未経験代替の生産管理実務等は歓迎表現であり一律必須としない",
+        "システム構築経験に学生制作が含まれるか確認",
+        "実際の就業先と車45分以内の通勤"
       ],
-      "summary": "採用対象はシステム構築・営業経験者。未経験の代替条件に生産・販売・物流管理の実務や運用知識があるため、適用条件を確認する。",
-      "status": "discovery",
+      "summary": "既卒者の基本月給22万円〜と随時応募受付を確認。採用対象はシステム構築等の経験者。未経験でも生産・販売・物流等の実務や運用知識は歓迎との記載であり、歓迎事項を必須とは扱いません。学生制作を構築経験として扱えるか確認待ち。",
+      "status": "review",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "構築経験等が対象。未経験代替の生産管理実務等は歓迎表現であり一律必須としない",
+          "url": "https://www.advancesystem.co.jp/recruit/requirement/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "中央区細島町6-5（初期配属は要確認）",
+          "field": "salary",
+          "text": "基本月給170,000〜300,000円。既卒者は220,000円〜",
           "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
-          "field": "salary",
-          "text": "既卒は月給22万円〜（全体の基本月給欄は17〜30万円）",
+          "field": "location",
+          "text": "浜松市中央区細島町6-5・カワ清 林京西ビル2F",
           "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
           "text": "8:30〜17:30／9:00〜18:00／9:30〜18:30から選択",
           "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "完全週休2日（土日）・GW・夏季・年末年始",
+          "text": "完全週休2日制（土日）・GW・夏季・年末年始",
           "url": "https://www.advancesystem.co.jp/recruit/requirement/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -587,6 +832,36 @@
       "summary": "未経験者向け研修を含むJava開発募集を検索で発見。詳細ページは取得できず、年齢・資格を含む応募条件全文、募集継続と実配属先の確認が必要。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://jp.indeed.com/viewjob?jk=8c87eb02618404f3",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -631,6 +906,7 @@
       "summary": "車載メーター用ソフトの設計・コーディング・テスト。C言語の知識が必須、実務未経験からスキルに応じた業務を始める旨を確認。紹介案件の現行募集と条件全文、初期配属・通勤を照合する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -697,6 +973,36 @@
       "summary": "必須は意欲、言語経験・評価経験・C言語経験は歓迎とする公式募集。新卒・中途双方の案内はあるが、既卒で就業歴がない場合の適用と現在の待遇を確認する。採用窓口住所を実就業先と断定しない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -762,6 +1068,7 @@
       "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-11-30",
       "facts": [
@@ -820,6 +1127,36 @@
       "summary": "住宅メーカーの基幹システムの分析・保守・管理。未経験枠、月給26.5万円以上との情報を確認。常駐先が具体的に特定できず、所在地を推測しない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://jp.indeed.com/viewjob?jk=cbd55fe280c97624",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://jp.indeed.com/viewjob?jk=cbd55fe280c97624",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://jp.indeed.com/viewjob?jk=cbd55fe280c97624",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://jp.indeed.com/viewjob?jk=cbd55fe280c97624",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -842,6 +1179,7 @@
       "summary": "既存の出雲殿互助会とは別の雇用主。C#・PHP等のプログラミング知識と普通免許が必須、開発実績は歓迎条件。具体的な言語知識の適合と募集継続、朝の車経路を確認する。休日の多寡だけで除外しない。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -906,6 +1244,36 @@
       "summary": "既卒・社会人経験なしの受入記載があるが、案件ごとの勤務先と車通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "既卒・社会人経験なしの受入を記載",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "社会人経験なしの受入を記載",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -966,6 +1334,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/D9N6gZFBpTa2LUkmS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/D9N6gZFBpTa2LUkmS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/D9N6gZFBpTa2LUkmS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/D9N6gZFBpTa2LUkmS",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -990,6 +1388,36 @@
       "summary": "2026-10-21受付のハローワーク転載求人。原票と資格全文を未確認。マイカー通勤不可のため通勤方法の適合を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/13010-15547762",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1048,6 +1476,7 @@
       "summary": "ハローワーク転載の求人番号22020-21225561。高卒以上・普通免許・一般的なOffice操作を要求。SE経験3年以上は「あれば尚可」であり必須として除外しない。基幹システム・ネットワーク・ヘルプデスク等の職種。公式原票の募集継続と通勤を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-12-31",
       "facts": [
@@ -1112,6 +1541,36 @@
       "summary": "何らかの開発言語に触れた経験とオンサイト勤務が条件。Java・Python等の実務経験や資格は歓迎条件。磐田のほか静岡・牧之原・豊田・裾野の取引先勤務もあるため、初期配属を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.shigoto-hamamatsu.com/job/4465/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1172,6 +1631,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oKU6rN-_Zh64YRJPS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oKU6rN-_Zh64YRJPS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oKU6rN-_Zh64YRJPS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oKU6rN-_Zh64YRJPS",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -1195,6 +1684,36 @@
       "summary": "未経験者向け開発枠。浜松開発センターまたは顧客先勤務のため初期配属先を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "実務未経験者向けの開発枠",
+          "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -1254,20 +1773,76 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "職種別の開発・チーム経験年数",
-        "正社員区分",
-        "実勤務地",
-        "休日の適用年度",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "卒業済み・職務経歴なしも対象だが、Web開発とチーム制作の各2年以上の経験を別途確認",
+        "正社員での採用区分と浜松勤務・リモート条件を確認"
       ],
       "summary": "就業経験のない既卒も対象とする通年新卒募集。職種別の開発経験・チーム開発年数を照合する。休日数には2024年度の記載があり、現行年度の待遇と正社員・勤務場所の適用を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "卒業済みで職務経歴なしも募集対象",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
       "valid_through": null,
-      "facts": []
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給200,000円〜（学歴不問・能力等で決定）",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松／東京出社、リモート等。実就業条件未確定",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "フレックス・標準労働時間8時間。時間外労働あり",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日制・年末年始等。現年度の年間休日数は未確認（120日は2024年実績）",
+          "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
     },
     {
       "id": "3c777b860ba68308b040",
@@ -1287,6 +1862,36 @@
       "summary": "未経験可の募集を発見。ハローワーク原票で正社員・派遣区分、勤務地と必須条件を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://helloworkjob.jp/23020-67702861/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1352,6 +1957,7 @@
       "summary": "公式と同じBtoC・BtoBアプリ開発枠を照合。必須のアプリ開発経験は業務外でも可。英語・海外出張・資格は歓迎条件。就業先は磐田の3拠点から未確定のため、車45分以内を断定しない。年間休日数は公式121日と媒体122日に差があり、土日完全週休2日の共通部分のみ確定情報とする。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2027-01-28",
       "facts": [
@@ -1417,6 +2023,36 @@
       "summary": "未経験向け社内システム開発・サポート募集を発見。現在の必須条件全文と勤務地・通勤の確認前。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.atimes.co.jp/shizuoka/ad/tys/0032485841?dp=woman",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1464,6 +2100,36 @@
       "summary": "近隣企業の公式HPに新卒SE・PG枠を確認。待遇は相談の上決定で具体額は不明。経験者枠の実務必須条件とモデル年収を、新卒枠へ転用しない。既卒対象・正社員区分・募集年度と継続、初期配属を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.alt-a.co.jp/recruit.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -1499,63 +2165,93 @@
       "category": "software",
       "address": "浜松市（事業所または顧客先）",
       "url": "https://www.7sys.jp/recruit/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "必須資格",
-        "配属先",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "実務経験は優遇。必須の基本情報技術者資格の取得状況を確認",
+        "必須の基本情報技術者資格の適合確認",
+        "就業歴のない既卒者への中途枠の適用",
+        "顧客先を含む初期配属・車通勤経路"
       ],
       "summary": "中途正社員の必要資格に基本情報技術者を明記。資格の適合と顧客先配属・通勤の確認が必要。",
-      "status": "discovery",
+      "status": "review",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員・期間の定めなし（中途枠）",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "実務経験は優遇。必須の基本情報技術者資格の取得状況を確認",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "事業所所在地および顧客先（初期配属未確定）",
+          "field": "commute",
+          "text": "指定駐車場のみ車通勤可・ガソリン代支給なし。時間未確認",
           "url": "https://www.7sys.jp/recruit/",
           "checked_at": "2026-11-01",
           "confirmed": false
         },
         {
           "field": "salary",
-          "text": "月給24万2,542〜34万6,488円（固定残業20時間分を含む）",
+          "text": "月給242,542〜346,488円（基本給200,000〜250,000円・技能手当10,000〜50,000円・固定残業20時間分32,542〜46,488円を含む。超過別途）",
           "url": "https://www.7sys.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "事業所所在地および顧客先。テレワークを含む変更範囲あり。初期配属先未確定",
+          "url": "https://www.7sys.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
-          "text": "正社員・期間の定めなし",
+          "text": "正社員・期間の定めなし（中途枠）",
           "url": "https://www.7sys.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00（休憩60分）",
+          "text": "9:00〜18:00・休憩60分。残業月平均15時間（特別条項あり）",
           "url": "https://www.7sys.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間123日（2026年度）",
+          "text": "完全週休2日制（土日祝）・年間休日123日（2026年度）",
           "url": "https://www.7sys.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "commute",
-          "text": "指定駐車場のみ車通勤可・ガソリン代支給なし。時間未確認",
-          "url": "https://www.7sys.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -1577,6 +2273,36 @@
       "summary": "サーバー・ネットワーク運用監視や構築の募集。未経験可の表記を確認したが、案件別配属と応募条件全文は未確認。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1626,17 +2352,47 @@
       "category": "software",
       "address": "浜松市（詳細勤務地未確認）",
       "url": "https://www.mysofix.co.jp/recruit/",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "未経験相談の適用",
-        "雇用形態",
-        "実勤務地・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "実務経験は歓迎。未経験は相談可だが受入未確定",
+        "未経験者の相談結果と既卒者へのキャリア枠適用",
+        "給与・雇用形態・休日・勤務時間の詳細不足",
+        "採用部署・実就業先と通勤の確認"
       ],
-      "summary": "公式キャリア採用では実務経験は歓迎、未経験も相談可。相談結果に依存する応募対象と、雇用形態・勤務地を確認する。",
+      "summary": "キャリア採用の実務経験は歓迎条件で、未経験も相談可。相談結果は未確定のため不適合とも応募可能とも断定しません。新卒枠は年度末の卒業予定者向けで別区分です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.mysofix.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.mysofix.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.mysofix.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "実務経験は歓迎。未経験は相談可だが受入未確定",
+          "url": "https://www.mysofix.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -1667,6 +2423,7 @@
       "summary": "基本情報相当の知識・開発基礎の条件と、PCスキル欄の実務経験の扱いを原票で確認する。ITパスポートは尚可条件。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-11-30",
       "facts": [
@@ -1722,21 +2479,87 @@
       "address": "浜松市の案件先により異なる",
       "url": "https://www.workport.co.jp/details/700010648/406502850/",
       "checked_at": "2026-11-02",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
         "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
       ],
-      "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
-      "status": "discovery",
+      "summary": "ネットワークまたはサーバーの設計・構築・運用・保守経験が必須。経験の範囲は明示されず、学習経験を実務として扱わず確認待ち。IT社の未経験研修枠と混同しません。",
+      "status": "review",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員（就業形態は自社受託または顧客先請負・派遣）",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
       "valid_through": null,
-      "facts": []
+      "facts": [
+        {
+          "field": "salary",
+          "text": "想定年収400〜800万円。月給は未確認。掲載の月給例は経験者のモデルであり対象額にしない",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市の案件先。実配属先未確定",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "employment",
+          "text": "正社員（就業形態は自社受託または顧客先請負・派遣）",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・実働8時間。プロジェクトにより異なる",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日制（土日祝・祝日の週に土曜出勤あり）・夏季・年末年始",
+          "url": "https://www.workport.co.jp/details/700010648/406502850/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
     },
     {
       "id": "58365c8c3788bb0d77c6",
@@ -1755,6 +2578,7 @@
       "summary": "当該求人番号17867843の本文で、業務時の勤務地を浜松駅北口のレンタルオフィスと明記。入社後の研修場所は近隣の別オフィスの場合あり。未経験・既卒・正社員デビュー歓迎、普通免許必須。南口の別募集の給与・勤務時間は混ぜない。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -1812,6 +2636,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "アプリPM2年以上、またはiOS/Android開発2年以上のいずれか。経験の範囲を確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -1820,6 +2645,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index26.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index26.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index26.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "アプリPM2年以上、またはiOS/Android開発2年以上のいずれか。経験の範囲を確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index26.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -1833,30 +2688,51 @@
       "category": "software",
       "address": "浜名区新都田1丁目2番11号 都田テクノパーク ミリアセンター内",
       "url": "https://fusioninc.jp/?page_id=165",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "応募資格",
-        "雇用形態",
-        "募集継続",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "給与は応相談で具体額未確認",
+        "正社員区分・既卒・実務未経験の応募条件を未確認",
+        "宮口からの実経路・通勤時間を未確認"
       ],
       "summary": "近隣企業の公式HPでVisual C++のソフト設計と画像検証SE募集を発見。機械設計とは分けてIT職を候補化。給与は応相談。経験・資格・正社員区分・募集継続を含む詳細条件は未確認。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
       "valid_through": null,
       "facts": [
-        {
-          "field": "location",
-          "text": "浜名区新都田1丁目2番11号 都田テクノパーク ミリアセンター内",
-          "url": "https://fusioninc.jp/?page_id=165",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
         {
           "field": "salary",
           "text": "応相談（給与額・月給内訳は未記載）",
@@ -1865,18 +2741,25 @@
           "confirmed": false
         },
         {
-          "field": "hours",
-          "text": "8:30〜17:30・標準8時間",
+          "field": "location",
+          "text": "本社：浜松市浜名区新都田1-2-11・都田テクノパーク内",
           "url": "https://fusioninc.jp/?page_id=165",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30・標準労働時間8時間",
+          "url": "https://fusioninc.jp/?page_id=165",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間120日＋有休・週休2日（土日）",
+          "text": "週休2日制（土日）・年間休日120日（有給休暇とは別）・年末年始/GW/夏季",
           "url": "https://fusioninc.jp/?page_id=165",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -1898,6 +2781,36 @@
       "summary": "未経験Webエンジニア募集を発見。研修と配属までの仕事内容、正社員条件全文、実勤務地・通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -1950,6 +2863,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "AWS/GCP基盤経験目安3年・チーム管理目安2年が必須。経験の範囲と適合を確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -1958,6 +2872,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index23.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index23.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index23.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "AWS/GCP基盤経験目安3年・チーム管理目安2年が必須。経験の範囲と適合を確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index23.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -1982,6 +2926,36 @@
       "summary": "未経験・職歴不問のITサポート募集を検索で発見。原典詳細を取得できないため、現在の募集継続と実配属・通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://next.rikunabi.com/viewjob/jk0d9f89fde544aa95/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市天竜区"
       ],
@@ -2026,6 +3000,7 @@
       "summary": "見出しは経験者募集だが、本文は実務経験またはIT職への転向意欲の選択条件。歓迎スキルを必須とは扱わない。一方、企業別一覧は取得結果に過去の掲載終了枠を含むため、当該求人の募集継続を別に確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -2084,6 +3059,36 @@
       "summary": "公式採用一覧の2026-10-30更新枠で発見。詳細URLの取得に失敗したため、卒業後5年未満の対象条件、車通勤可否、配属先を追加確認。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/ess-recruit/work_18677912/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_18677912/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_18677912/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/ess-recruit/work_18677912/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -2121,6 +3126,7 @@
       "summary": "同一求人番号22020-20542061で月給の単位・金額を補完。実務1年以上、または情報系専攻という選択条件であり、実務経験だけを必須とは扱わない。舞阪の実就業先・朝の車経路の確認が残る。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-11-30",
       "facts": [
@@ -2186,6 +3192,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/18010876/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18010876/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18010876/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/18010876/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2210,6 +3246,36 @@
       "summary": "全学部対象の新卒枠。既卒者への適用、正社員区分と通勤を確認する。休日113日と必須取得有休5日は区別して表示。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://yushin-ict.com/recruit/new_graduate/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2263,6 +3329,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.simplyhired.jp/job/tmj_4pQ-CtxKTXt-8arNvFTgtJGczknQxdRBSbXfYWyM6dICQyCtzw",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.simplyhired.jp/job/tmj_4pQ-CtxKTXt-8arNvFTgtJGczknQxdRBSbXfYWyM6dICQyCtzw",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.simplyhired.jp/job/tmj_4pQ-CtxKTXt-8arNvFTgtJGczknQxdRBSbXfYWyM6dICQyCtzw",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.simplyhired.jp/job/tmj_4pQ-CtxKTXt-8arNvFTgtJGczknQxdRBSbXfYWyM6dICQyCtzw",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -2285,6 +3381,7 @@
       "summary": "JOBはまはIT就業経験なし・自己学習でも対象と案内。一方、同社ATSの自社パッケージ枠には社会人経験1〜3年が必須。別部署・別枠として適用を確認し、条件を混合しない。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-12-03",
       "facts": [
@@ -2349,6 +3446,36 @@
       "summary": "情報系・既卒・未経験に対応する募集。一時的な静岡事業所への通勤条件と初期配属先を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "既卒・情報系の未経験者対象を記載",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "実務未経験対象。ただし別拠点への一時通勤は確認待ち",
+          "url": "https://en-gage.net/user/search/desc/16423825/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -2406,9 +3533,39 @@
         "車通勤・通勤",
         "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
       ],
-      "summary": "求人番号23020-64896361、経験不問・44歳以下・普通免許。事務機器等の技術対応枠。給与・勤務先・休日・時間の全文が未取得のため非公開。",
+      "summary": "求人番号23020-64896361、経験不問・44歳以下・普通免許。事務機器等の技術対応枠。給与・勤務先・休日・時間の全文が未取得のため詳細確認待ち。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/23020-64896361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/23020-64896361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/23020-64896361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/23020-64896361",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2425,6 +3582,7 @@
       "checked_at": "2026-11-01",
       "stage": "discovery",
       "reasons": [
+        "通年枠の既卒は社会人経験者が対象。社会人経験の定義と適用を確認",
         "応募資格",
         "配属先",
         "通勤",
@@ -2433,6 +3591,36 @@
       "summary": "ソフトウェア研究・プログラミング経験が対象。通年採用の既卒・社会人経験条件の適用と実際の配属先を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "通年枠の既卒は社会人経験者が対象。社会人経験の定義と適用を確認",
+          "url": "https://www.hamamatsu.com/jp/ja/our-company/recruit/year-round-recruitment/application/05.html",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2464,6 +3652,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "原則実務3年に対し3年未満の例外あり。未経験への適用は不明",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -2472,6 +3661,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/gZx27IxLZK6xLHJ-S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/gZx27IxLZK6xLHJ-S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/gZx27IxLZK6xLHJ-S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "原則実務3年に対し3年未満の例外あり。未経験への適用は不明",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/gZx27IxLZK6xLHJ-S",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2494,6 +3713,7 @@
       "summary": "同社プログラマーとは別ページのコーダー募集。コーディング経験を生かす職種として案内。趣味・学習経験が対象か、必要な制作スキルの水準を確認する。デザイン専任職とは区別する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -2542,50 +3762,6 @@
       ]
     },
     {
-      "id": "7a8f094d6ab6b9b7b91e",
-      "company": "株式会社ジリオン浜松",
-      "title": "業務系アプリケーションソフトウェア設計・開発（未経験者枠）",
-      "category": "software",
-      "address": "静岡県浜松市中央区根洗町1431",
-      "url": "https://www.zillion.co.jp/recruit/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
-      "reasons": [
-        "配属先",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
-      ],
-      "summary": "未経験者向け正社員枠。公式要項は希望を聞いて浜松本社または東京に勤務地を決めるため、浜松配属の確定が必要。",
-      "status": "discovery",
-      "discovery_verified": true,
-      "regions": [
-        "浜松市中央区"
-      ],
-      "valid_through": null,
-      "facts": [
-        {
-          "field": "location",
-          "text": "希望を聞いて浜松本社または東京オフィスに決定",
-          "url": "https://www.zillion.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "salary",
-          "text": "大卒月給23万6,340円（基本給の内訳は未確認）",
-          "url": "https://www.zillion.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "employment",
-          "text": "正社員",
-          "url": "https://www.zillion.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        }
-      ]
-    },
-    {
       "id": "859a48cd0fdc6e3befe1",
       "company": "スズキ株式会社",
       "title": "社内SE（ITインフラ担当マネージャー）に関する業務〖管理職候補〗",
@@ -2595,6 +3771,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "ITインフラのプロジェクトマネジメント経験が必須。研究・個人制作での適用は未確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -2603,6 +3780,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/RE-JK-Llr1mf3RG0S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/RE-JK-Llr1mf3RG0S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/RE-JK-Llr1mf3RG0S",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "ITインフラのプロジェクトマネジメント経験が必須。研究・個人制作での適用は未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/RE-JK-Llr1mf3RG0S",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2629,6 +3836,36 @@
       "summary": "公式募集ページでプログラマー・インフラ職を発見。給与・制度は記載されるがページ名や制度の記載が古く、現行の募集年度・待遇は未確定。正社員区分と実務未経験の応募資格も確認する。併記のグラフィック・ライター職は対象に含めない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://systemix.jp/saiyo2019.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://systemix.jp/saiyo2019.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://systemix.jp/saiyo2019.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://systemix.jp/saiyo2019.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -2694,6 +3931,7 @@
       "summary": "JOBはまの既卒正社員枠。35歳未満・大学または大学院卒、職務経験不問。基本情報技術者などは活かせる資格であり必須扱いしない。2027年1月入社枠の職種配属・車通勤条件と経路を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-11-30",
       "facts": [
@@ -2751,6 +3989,36 @@
       "summary": "Webアプリ等の開発経験が必須。学習・個人開発が対象に含まれるか確認する。マイカー通勤不可。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/ess-recruit/work_14528918/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -2816,6 +4084,7 @@
       "summary": "社内PC・プリンタ・Wi-Fi設定と問い合わせ対応。紹介元はイロドル、雇用先はタニコーの直接雇用。開発専任ではない。IT機器セットアップ経験とネットワーク基礎知識が必須で、歓迎の実務経験と区別する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -2873,6 +4142,7 @@
       "summary": "自動化システムのソフト開発・設計・保守を行うIT寄りのSIer職。35歳以下を対象とし、情報・機械・電気系や画像処理・AIへの関心を重視。プログラミング等は活かせる経験として記載。職歴がない場合の中途枠適用と通勤を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": "2026-12-20",
       "facts": [
@@ -2936,6 +4206,7 @@
       "summary": "未経験研修の開発職を発見。別媒体の同社募集は重ねて数えず、採用区分と実配属・研修場所を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -2995,6 +4266,36 @@
       "summary": "2027年3月までの大学等の卒業・修了者または見込みの方、一般的なコンピューター知識を対象とする新卒要項。既卒の適用範囲、正社員区分、浜松への配属と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://recruit.digicomnet.co.jp/graduate/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3055,6 +4356,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-478991-5-1-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-478991-5-1-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-478991-5-1-1/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-478991-5-1-1/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3077,6 +4408,7 @@
       "summary": "既存の2027新卒枠とは別のキャリア要項。組み込み・業務系・音響等のソフト開発。正社員とアルバイトの給与を区別し、正社員枠を候補化。実務未経験・就業歴なしでの応募可否と通勤は未確認。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -3118,30 +4450,6 @@
       ]
     },
     {
-      "id": "92dc1a9efbd586794cc6",
-      "company": "株式会社アルファプロジェクト",
-      "title": "ファームウェア・ソフトウェア技術者（既卒対象枠）",
-      "category": "software",
-      "address": "静岡県浜松市中央区積志町834",
-      "url": "https://www.apnet.co.jp/company/recruit-new.html",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
-      "reasons": [
-        "既卒・実務未経験での必須条件適合を未確認",
-        "現在の募集継続・雇用形態の最終照合",
-        "実際の配属先・車45分以内の経路を未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
-      ],
-      "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
-      "status": "discovery",
-      "discovery_verified": true,
-      "regions": [
-        "浜松市中央区"
-      ],
-      "valid_through": null,
-      "facts": []
-    },
-    {
       "id": "973dc49a98bb27cea87f",
       "company": "株式会社Reang",
       "title": "ITエンジニア（未経験・研修枠）",
@@ -3159,6 +4467,36 @@
       "summary": "同社の浜松・同職種の類似広告は一候補に集約。未経験研修の募集を発見した段階で、実配属と研修中の条件を未確認。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/18305278/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3217,6 +4555,7 @@
       "summary": "広告・販促会社のWeb開発職。同名のソフトウェア企業とは別会社。大学・大学院卒、独学等でコードに触れた経験を対象とし、趣味レベル・実務未経験も明示的に歓迎。紹介求人の現在の募集継続と全条件、車経路を確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -3282,6 +4621,36 @@
       "summary": "中途枠とは別の新卒募集。未経験可だが、既卒者への適用と配属・通勤を未確認。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/17311499/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3342,6 +4711,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oUmv7eJjxZmDY48bS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oUmv7eJjxZmDY48bS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oUmv7eJjxZmDY48bS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/oUmv7eJjxZmDY48bS",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -3358,6 +4757,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "IDaaSとクラウドの設計運用経験目安各3年が必須。未経験と即断せず適用範囲を確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -3366,6 +4766,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index25.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index25.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index25.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "IDaaSとクラウドの設計運用経験目安各3年が必須。未経験と即断せず適用範囲を確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index25.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -3390,6 +4820,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/22020-21511361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-21511361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-21511361",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/22020-21511361",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3414,6 +4874,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/18164803/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18164803/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18164803/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/18164803/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -3436,6 +4926,7 @@
       "summary": "企業公式の独立したプログラマー募集。Web制作チームでの開発職。具体的な必須言語・経験年数、実務未経験での応募可否は記載から確定できないため追加確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -3501,6 +4992,36 @@
       "summary": "既存の開発・ヘルプデスクとは業務の異なるソフトウェア検証枠。採用オフィスを実配属先として確定しない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/16609123/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16609123/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16609123/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/16609123/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -3525,6 +5046,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.simplyhired.jp/job/HHBCE6zj7xfQY1hNxHajlfE_whJnGjp99_ew8qjYHqmLJpIO5oJXHA",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.simplyhired.jp/job/HHBCE6zj7xfQY1hNxHajlfE_whJnGjp99_ew8qjYHqmLJpIO5oJXHA",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.simplyhired.jp/job/HHBCE6zj7xfQY1hNxHajlfE_whJnGjp99_ew8qjYHqmLJpIO5oJXHA",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.simplyhired.jp/job/HHBCE6zj7xfQY1hNxHajlfE_whJnGjp99_ew8qjYHqmLJpIO5oJXHA",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -3539,15 +5090,45 @@
       "address": "静岡県浜松市浜名区新都田1-9-2（求人の旧北区表記を現区名に整理）",
       "url": "https://www.workport.co.jp/details/710769482/404340342/",
       "checked_at": "2026-11-02",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認"
       ],
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
-      "status": "discovery",
+      "status": "review",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.workport.co.jp/details/710769482/404340342/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員",
+          "url": "https://www.workport.co.jp/details/710769482/404340342/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.workport.co.jp/details/710769482/404340342/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.workport.co.jp/details/710769482/404340342/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
@@ -3600,6 +5181,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "IT職務3年以上が原則だが新卒はインターン・プロジェクト経験を含む。既卒への例外適用を確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -3608,6 +5190,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/FxsTtNK3FKkQpUnYS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/FxsTtNK3FKkQpUnYS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/FxsTtNK3FKkQpUnYS",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "IT職務3年以上が原則だが新卒はインターン・プロジェクト経験を含む。既卒への例外適用を確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/FxsTtNK3FKkQpUnYS",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -3630,6 +5242,7 @@
       "summary": "SCADA・Windows・DB構築等の条件と、未経験は相談可という記載を確認。相談できることを応募資格適合と断定しない。月給・勤務地・正社員・休日・勤務時間の5項目は保持。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -3696,6 +5309,36 @@
       "summary": "PC設定・問い合わせ対応・システム運用支援の未経験枠。研修から始める旨は確認できるが、資格・学歴等の応募条件全文と実際の配属先は不明。給与の月給上限と併記年収の関係、給与内訳も追加確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/16709886/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16709886/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/16709886/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/16709886/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3756,6 +5399,36 @@
       "summary": "寺脇町の小林工業システム事業部。富士宮・秋田・群馬等の同名企業とは区別。全学部対象、卒業後原則3年以内の既卒可。愛知配属の可能性もあるため浜松への初期配属、給与の適用年度と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "卒業後原則3年以内の既卒を対象",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3816,6 +5489,36 @@
       "summary": "公式に実務未経験者向けのキャリア募集。フロント・バックエンドの技術知識は望ましい条件。必要条件はHRTに基づくコミュニケーション。キャリア枠の適用、正社員区分・固定残業内訳と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "実務未経験者向け。別途コミュニケーション要件あり",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/programmer-2/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3866,30 +5569,6 @@
       ]
     },
     {
-      "id": "b63fca14045f4c713d53",
-      "company": "スズキ株式会社",
-      "title": "〖サイバーセキュリティ〗クラウドセキュリティエンジニア",
-      "category": "software",
-      "address": "浜松の本社・技術拠点・駅北オフィス等／職種別所在地の照合待ち",
-      "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/DzLS64ktZoKTLKsoS",
-      "checked_at": "2026-11-02",
-      "stage": "discovery",
-      "reasons": [
-        "既卒・実務未経験での必須条件適合を未確認",
-        "現在の募集継続・雇用形態の最終照合",
-        "実際の配属先・車45分以内の経路を未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
-      ],
-      "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
-      "status": "discovery",
-      "discovery_verified": true,
-      "regions": [
-        "浜松市（区未確認）"
-      ],
-      "valid_through": null,
-      "facts": []
-    },
-    {
       "id": "b806f3ac57090a66a225",
       "company": "富士フイルムメディカル株式会社",
       "title": "医療機器・ITシステムのフィールドサービスエンジニア（静岡・浜松）",
@@ -3907,6 +5586,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3931,6 +5640,36 @@
       "summary": "組み込み・音響・Web・基幹システム等の新卒募集。全学部全学科対象。2027年4月開始予定。既卒者への適用、浜松への配属と通勤を確認し、東京・静岡の枠と混同しない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.shigoto-hamamatsu.com/job/621/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -3991,6 +5730,36 @@
       "summary": "新卒要項では全学部対象、浜松を含む希望勤務地で採用。中途向け開発経験3年以上の条件とは分離する。新卒枠の既卒適用と正社員区分、正確な就業先・車通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.dcr.co.jp/recruit/requirements/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4043,6 +5812,7 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
+        "Web開発と設計運用知識、顧客対応業務経験が必須。接客と学生制作への適用を確認",
         "既卒・実務未経験での必須条件適合を未確認",
         "現在の募集継続・雇用形態の最終照合",
         "実際の配属先・車45分以内の経路を未確認",
@@ -4051,6 +5821,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index07.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index07.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index07.html",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "Web開発と設計運用知識、顧客対応業務経験が必須。接客と学生制作への適用を確認",
+          "url": "https://www.ymsl.co.jp/recruit/career/job/index07.html",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "磐田市"
       ],
@@ -4064,36 +5864,51 @@
       "category": "software",
       "address": "本社（浜松市浜名区新都田）もしくは客先（浜松市周辺）",
       "url": "https://www.rmany.co.jp/recruit/",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "応募資格",
-        "配属先",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "正社員・契約・パート等の併記から当該採用区分を確認",
+        "開発・関連経験年数は要相談。学習・個人開発への適用確認",
+        "初期配属・車45分以内の通勤経路"
       ],
       "summary": "開発経験3年以上。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
       "valid_through": null,
       "facts": [
-        {
-          "field": "location",
-          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "salary",
-          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
         {
           "field": "employment",
           "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
@@ -4102,18 +5917,32 @@
           "confirmed": false
         },
         {
-          "field": "hours",
-          "text": "9:00〜18:00・フレックス可",
+          "field": "salary",
+          "text": "正社員の場合：月給160,000〜300,000円（職種・経験等による掲載額）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "本社（浜松市浜名区新都田）または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・休憩12:00〜13:00。フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間129〜130日（要項内に表記差あり）",
+          "text": "土日祝・GW・夏季・冬季。現年度の年間休日数は未確認（原典に129/130日の記載）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -4135,6 +5964,36 @@
       "summary": "検索結果では未経験歓迎、Windows設定とEthernetの知識・普通免許・高卒以上・39歳以下を条件とする社内SEを発見。個別ページは404のため募集終了とは断定せず原票確認待ち。現行条件としては未確定。ハローワーク求人番号22021-02568761も再確認対象。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-464439-5-1-1/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
@@ -4202,6 +6061,36 @@
       "summary": "中途未経験可・学歴不問を確認。募集要項に正社員の明示がなく、実勤務地と雇用区分の確認を残す。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.a-system.jp/recruit/guideline/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4255,6 +6144,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/6zGdY-wsXRFp-",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/6zGdY-wsXRFp-",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/6zGdY-wsXRFp-",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/6zGdY-wsXRFp-",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -4277,6 +6196,7 @@
       "summary": "専修学校以上・35歳以下の募集。未経験、新卒・第二新卒も歓迎。IT資格は尚可で必須ではない。転勤なしの浜松センター勤務を確認したが、職歴がない場合の採用区分、車通勤条件と45分以内の経路を追加確認する。",
       "status": "review",
       "discovery_verified": false,
+      "screening": [],
       "regions": [],
       "valid_through": null,
       "facts": [
@@ -4327,20 +6247,76 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "職種別の開発・チーム経験年数",
-        "正社員区分",
-        "実勤務地",
-        "休日の適用年度",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "卒業済み・職務経歴なしも対象だが、Web開発とチーム制作の各2年以上の経験を別途確認",
+        "正社員での採用区分と浜松勤務・リモート条件を確認"
       ],
       "summary": "就業経験のない既卒も対象とする通年新卒募集。職種別の開発経験・チーム開発年数を照合する。休日数には2024年度の記載があり、現行年度の待遇と正社員・勤務場所の適用を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "卒業済みで職務経歴なしも募集対象",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
       "valid_through": null,
-      "facts": []
+      "facts": [
+        {
+          "field": "salary",
+          "text": "月給200,000円〜（学歴不問・能力等で決定）",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松／東京出社、リモート等。実就業条件未確定",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "フレックス・標準労働時間8時間。時間外労働あり",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "週休2日制・年末年始等。現年度の年間休日数は未確認（120日は2024年実績）",
+          "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
     },
     {
       "id": "c97186611b2dac1f62a9",
@@ -4360,6 +6336,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/22020-22149861",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-22149861",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/22020-22149861",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/22020-22149861",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -4384,6 +6390,36 @@
       "summary": "ゲームエンジニアの見出しとWeb開発研修の記載がある。実配属の仕事内容、研修中の業務、必須条件と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4444,6 +6480,36 @@
       "summary": "未経験向けITサポート募集。浜松市内という記載だけでは実就業先と通勤を確定できない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.baitoru.com/jobdetail/162681888",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.baitoru.com/jobdetail/162681888",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.baitoru.com/jobdetail/162681888",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.baitoru.com/jobdetail/162681888",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4477,6 +6543,36 @@
       "summary": "公式に実務未経験者向けのキャリア募集。PC基本操作・Linux基礎・簡単なPHPスクリプトが必要。業務としての開発経験は歓迎条件。PHP等の条件適合、正社員区分・給与内訳と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "実務は歓迎条件。Linux基礎・PHP等は別途照合",
+          "url": "https://www.asobou.co.jp/recruit/description/engineer/contract-development02/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4543,6 +6639,36 @@
       "summary": "既存のSE・PG枠とは別のヘルプデスク募集。未経験・既卒歓迎、基本PC操作で応募可。浜松またはリモート研修後に全国のプロジェクトから配属を決めるため、浜松拠点の表示だけで勤務地確定とは扱わない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/18446368/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18446368/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "既卒歓迎を記載",
+          "url": "https://en-gage.net/user/search/desc/18446368/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "実務未経験・基本PC操作での募集",
+          "url": "https://en-gage.net/user/search/desc/18446368/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4592,29 +6718,51 @@
       "category": "software",
       "address": "浜松市中央区十軒町3",
       "url": "https://www.staff-info.co.jp/recruit",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "配属先",
-        "通勤",
-        "条件全体の再確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "給与は年齢・経験により規程決定で金額未確認",
+        "中途枠の就業歴なし既卒への適用と募集継続",
+        "プロジェクトによる実勤務地・通勤"
       ],
       "summary": "中途正社員、専門・短大卒以上、現時点のスキルは不問。プロジェクトによって勤務先が変わるため実勤務地と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員（中途枠）",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "専門・短大卒以上で現時点のスキルは不問",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
       "valid_through": null,
       "facts": [
-        {
-          "field": "location",
-          "text": "中央区十軒町3（プロジェクトにより異なる）",
-          "url": "https://www.staff-info.co.jp/recruit",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
         {
           "field": "salary",
           "text": "年齢・経験により決定（金額の記載なし）",
@@ -4623,25 +6771,32 @@
           "confirmed": false
         },
         {
+          "field": "location",
+          "text": "中途枠：浜松市十軒町3。プロジェクトによって勤務地が異なる場合あり",
+          "url": "https://www.staff-info.co.jp/recruit",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
           "field": "employment",
           "text": "正社員（中途枠）",
           "url": "https://www.staff-info.co.jp/recruit",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00／フレックス・コア10:00〜15:00",
+          "text": "9:00〜18:00。フレックス10:00〜15:00コア・案件により異なる",
           "url": "https://www.staff-info.co.jp/recruit",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "2021年度実績120日。現行年度の数値は未確認",
+          "text": "会社カレンダーによるGW・夏季・年末年始。現在の年間休日数は未確認（120日は2021年度実績）",
           "url": "https://www.staff-info.co.jp/recruit",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -4652,36 +6807,51 @@
       "category": "software",
       "address": "本社（浜松市浜名区新都田）もしくは客先（浜松市周辺）",
       "url": "https://www.rmany.co.jp/recruit/",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "応募資格",
-        "配属先",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "正社員・契約・パート等の併記から当該採用区分を確認",
+        "開発・関連経験年数は要相談。学習・個人開発への適用確認",
+        "初期配属・車45分以内の通勤経路"
       ],
       "summary": "C/C++開発経験は要相談。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
       "valid_through": null,
       "facts": [
-        {
-          "field": "location",
-          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "salary",
-          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
         {
           "field": "employment",
           "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
@@ -4690,18 +6860,32 @@
           "confirmed": false
         },
         {
-          "field": "hours",
-          "text": "9:00〜18:00・フレックス可",
+          "field": "salary",
+          "text": "正社員の場合：月給160,000〜300,000円（職種・経験等による掲載額）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "本社（浜松市浜名区新都田）または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・休憩12:00〜13:00。フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間129〜130日（要項内に表記差あり）",
+          "text": "土日祝・GW・夏季・冬季。現年度の年間休日数は未確認（原典に129/130日の記載）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -4712,49 +6896,84 @@
       "category": "software",
       "address": "浜松営業所：中央区板屋町110-5（実配属未確認）",
       "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "詳細取得待ち",
-        "応募資格",
-        "配属先・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "掲載更新が2025年のため現在の募集継続を再確認",
+        "メーカー拠点への実配属と宮口からの通勤時間"
       ],
-      "summary": "学部卒等で業務経験がなくてもプログラミング技術があれば応募可の記載。原典詳細の取得に失敗したため、条件全文・初期配属・募集継続を確認する。",
-      "status": "discovery",
+      "summary": "学部卒等の未経験者はプログラミング技術があれば業務経験なしでも応募可。5年以上の開発経験は歓迎条件です。掲載更新は2025年5月のため募集継続と実配属・通勤は確認待ち。",
+      "status": "review",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "業務経験がなくてもプログラミング技術があれば応募可",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "浜松営業所：中央区板屋町110-5（実配属未確認）",
-          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "field": "salary",
+          "text": "月給285,000円〜＋各種手当（能力等を考慮）",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
-          "field": "salary",
-          "text": "月給28.5万円〜＋各種手当（検索表示・詳細取得待ち）",
-          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "field": "location",
+          "text": "募集欄：浜松営業所・中央区板屋町110-5。仕事内容は大手メーカー拠点での開発のため実配属先は確認待ち",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
-          "text": "正社員（検索表示）",
-          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "text": "正社員",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜17:00・実働7時間（検索表示）",
-          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm?from=top",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "text": "9:00〜17:00・実働7時間・休憩60分。残業月20時間程度",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "完全週休2日制（土日）・祝日・年間休日123日",
+          "url": "https://job-gear.net/hiphamamatsu2/A20415283172/MDkyujin_d.htm",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -4776,6 +6995,36 @@
       "summary": "公式要項の未経験者はハローワーク経由のトライアル制度。正社員・契約社員等が併記され、制度対象と雇用区分を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.variantsoft.co.jp/LinkData/recruitmentinfo.pdf",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.variantsoft.co.jp/LinkData/recruitmentinfo.pdf",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.variantsoft.co.jp/LinkData/recruitmentinfo.pdf",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.variantsoft.co.jp/LinkData/recruitmentinfo.pdf",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -4806,6 +7055,36 @@
       "summary": "中途枠の言語条件に加え、開発工程を独力で遂行する条件の適用を確認。2027年3月卒業見込み枠と混同しない。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://recruit.systec.co.jp/recruit/application.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://recruit.systec.co.jp/recruit/application.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://recruit.systec.co.jp/recruit/application.html",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://recruit.systec.co.jp/recruit/application.html",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
@@ -4838,6 +7117,36 @@
       "summary": "見出しはネットワーク職だが、検索本文にはAIの回答評価等が記載されている。実際の仕事内容・研修・雇用条件の整合を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/18004890/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18004890/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/18004890/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/18004890/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -4870,6 +7179,36 @@
       "summary": "媒体で正社員（既卒）・情報系学習の適用、2026年度休日を確認。派遣区分と実配属先・研修場所・通勤を引き続き確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "confirmed",
+          "detail": "正社員・既卒枠を記載",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.shigoto-hamamatsu.com/job/3754/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -4913,30 +7252,6 @@
       ]
     },
     {
-      "id": "efeee9ad9414c6f6a68a",
-      "company": "スズキ株式会社",
-      "title": "Web サイト統合・デジタルマーケティング ～顧客体験向上をリードする MarkeTech 担当～",
-      "category": "software",
-      "address": "浜松の本社・技術拠点・駅北オフィス等／職種別所在地の照合待ち",
-      "url": "https://job.axol.jp/qd/c/suzuki/public/job/detail/7esKXUGd7FQ132mOS",
-      "checked_at": "2026-11-02",
-      "stage": "discovery",
-      "reasons": [
-        "既卒・実務未経験での必須条件適合を未確認",
-        "現在の募集継続・雇用形態の最終照合",
-        "実際の配属先・車45分以内の経路を未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
-      ],
-      "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
-      "status": "discovery",
-      "discovery_verified": true,
-      "regions": [
-        "浜松市（区未確認）"
-      ],
-      "valid_through": null,
-      "facts": []
-    },
-    {
       "id": "f14173b3ba1ae1391e0b",
       "company": "アルテンジャパン株式会社",
       "title": "金融機関向けネットワーク運用保守（浜松）",
@@ -4954,6 +7269,36 @@
       "summary": "ネットワーク運用保守を発見。未経験タグと本文の経験者向け説明の適用、顧客先の所在地を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://en-gage.net/user/search/desc/11848844/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/11848844/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://en-gage.net/user/search/desc/11848844/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://en-gage.net/user/search/desc/11848844/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -4986,6 +7331,36 @@
       "summary": "PHP・Java・MySQLのいずれかの開発経験が必須で、2年以上は歓迎条件。学歴不問。学習・個人制作経験で必須条件を満たせるか、募集継続と正確な勤務地・通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],
@@ -5046,6 +7421,36 @@
       "summary": "会計とITの新卒SE枠。既卒対象への適用を未確認。旧住所の記載と2026年7月移転案内が併存するため現勤務地も確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.shigoto-hamamatsu.com/job/3203/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -5106,6 +7511,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.workport.co.jp/details/710939470/403536573/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.workport.co.jp/details/710939470/403536573/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.workport.co.jp/details/710939470/403536573/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.workport.co.jp/details/710939470/403536573/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -5126,9 +7561,39 @@
         "車通勤・通勤",
         "待遇の未確認項目：給与"
       ],
-      "summary": "大学卒・普通免許、未経験可の社内SE枠。給与欄の年収330〜425万円と月額30〜50万円に整合しない記載があり、金額の確定まで公開しない。",
+      "summary": "大学卒・普通免許、未経験可の社内SE枠。給与欄の年収330〜425万円と月額30〜50万円に整合しない記載があり、月給・年収の整合確認待ち。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "正社員・無期／試用3か月同条件",
+          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市天竜区"
       ],
@@ -5178,36 +7643,51 @@
       "category": "software",
       "address": "本社（浜松市浜名区新都田）もしくは客先（浜松市周辺）",
       "url": "https://www.rmany.co.jp/recruit/",
-      "checked_at": "2026-11-01",
+      "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "応募資格",
-        "配属先",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "正社員・契約・パート等の併記から当該採用区分を確認",
+        "開発・関連経験年数は要相談。学習・個人開発への適用確認",
+        "初期配属・車45分以内の通勤経路"
       ],
       "summary": "関連経験2年以上。経験に含められる範囲を確認する。本社または浜松周辺の顧客先勤務で初期配属も未確定。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市浜名区"
       ],
       "valid_through": null,
       "facts": [
-        {
-          "field": "location",
-          "text": "本社：浜名区新都田、または浜松市周辺の顧客先",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
-          "field": "salary",
-          "text": "正社員は月給16〜30万円（職種・経験等で決定）",
-          "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
         {
           "field": "employment",
           "text": "正社員／契約社員／パート等を併記・当該区分は要確認",
@@ -5216,18 +7696,32 @@
           "confirmed": false
         },
         {
-          "field": "hours",
-          "text": "9:00〜18:00・フレックス可",
+          "field": "salary",
+          "text": "正社員の場合：月給160,000〜300,000円（職種・経験等による掲載額）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "本社（浜松市浜名区新都田）または浜松市周辺の顧客先",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜18:00・休憩12:00〜13:00。フレックス可",
+          "url": "https://www.rmany.co.jp/recruit/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間129〜130日（要項内に表記差あり）",
+          "text": "土日祝・GW・夏季・冬季。現年度の年間休日数は未確認（原典に129/130日の記載）",
           "url": "https://www.rmany.co.jp/recruit/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -5249,6 +7743,36 @@
       "summary": "情報系の学歴・学習意欲があれば未経験相談可。相談結果、初期配属先と通勤を確認する。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://www.glinx.co.jp/recruit/requirements/01/",
+          "checked_at": "2026-11-01"
+        }
+      ],
       "regions": [
         "浜松市中央区"
       ],
@@ -5316,6 +7840,36 @@
       "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
       "status": "discovery",
       "discovery_verified": true,
+      "screening": [
+        {
+          "field": "it_role",
+          "result": "confirmed",
+          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "url": "https://job.goo.to/jobs/03010-19645561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "regular_employment",
+          "result": "unknown",
+          "detail": "正社員の当該募集区分を未確認",
+          "url": "https://job.goo.to/jobs/03010-19645561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "graduate",
+          "result": "unknown",
+          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "url": "https://job.goo.to/jobs/03010-19645561",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "unknown",
+          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "url": "https://job.goo.to/jobs/03010-19645561",
+          "checked_at": "2026-11-02"
+        }
+      ],
       "regions": [
         "浜松市（区未確認）"
       ],

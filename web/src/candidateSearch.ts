@@ -1,5 +1,6 @@
 import type {Job,ReviewCandidate} from './types';
-export type BrowseCandidate=Omit<ReviewCandidate,'status'> & {status:'eligible'|'review'|'discovery';verifiedMetrics?:{monthly:number|null;holidays:number|null;commute:number|null}};
+import {rankOpportunity} from './recommendation';
+export type BrowseCandidate=Omit<ReviewCandidate,'status'> & {status:'eligible'|'review'|'discovery';verifiedMetrics?:{monthly:number|null;holidays:number|null;commute:number|null};verifiedWorkstyle?:{overtime:number|null;transfer:'yes'|'no'|'unknown'}};
 export type BrowseFilters={query:string;category:string;region:string;status:string;stage:string;reason:string;sort:string};
 export function candidateRegions(j:Pick<ReviewCandidate,'regions'|'address'>):string[]{
  if(j.regions?.length)return j.regions;
@@ -10,20 +11,35 @@ export function candidateRegions(j:Pick<ReviewCandidate,'regions'|'address'>):st
 export function candidateMetrics(j:BrowseCandidate){
  if(j.verifiedMetrics)return j.verifiedMetrics;
  const fact=(field:string)=>j.facts?.find(f=>f.field===field&&f.confirmed)?.text.normalize('NFKC')??'';
- const salary=fact('salary'),holidays=fact('holidays'),commute=fact('commute');
+ const salary=fact('salary').replace(/(\d+)万([\d,]+)円/g,(_,man:string,yen:string)=>`${Number(man)*10000+Number(yen.replaceAll(',',''))}円`),holidays=fact('holidays'),commute=fact('commute');
  // Only explicit monthly pay; annual totals and model examples are never converted for sorting.
  const amount=salary.match(/月(?:給|額)\s*([\d,]+(?:\.\d+)?)\s*(?:[〜～~－-]\s*[\d,]+(?:\.\d+)?\s*)?(万)?円/);
- const monthly=amount&&!/不整合|整合未確認|金額未確認|単位未確認/.test(salary)?Number(amount[1].replaceAll(',',''))*(amount[2]?10000:1):null;
- const holiday=holidays.match(/年間(?:休日)?\s*(\d{2,3})\s*日/);
- const minutes=commute.match(/確認済み通勤(?:（予測上限）)?[：:]\s*(\d+(?:\.\d+)?)分/);
- return {monthly,holidays:holiday&&!/差|未確認|確認待ち/.test(holidays)?Number(holiday[1]):null,commute:minutes?Number(minutes[1]):null};
+ const monthly=amount&&!/不整合|整合未確認|金額未確認|単位未確認|モデル|月給例|年収例/.test(salary)?Number(amount[1].replaceAll(',',''))*(amount[2]?10000:1):null;
+ const holiday=holidays.match(/年間(?:休日(?:数)?)?\s*[:：]?\s*(\d{2,3})\s*日/);
+ const historical=[...holidays.matchAll(/(20\d{2})年/g)].some(m=>Number(m[1])<new Date().getFullYear());
+ const minutes=commute.match(/確認済み通勤(?:[（(]予測上限[）)])?[：:]\s*(\d+(?:\.\d+)?)分/);
+ return {monthly,holidays:holiday&&!historical&&!/差|未確認|確認待ち/.test(holidays)?Number(holiday[1]):null,commute:minutes?Number(minutes[1]):null};
+}
+export function candidateRecommendation(j:BrowseCandidate){
+ const metrics=candidateMetrics(j),facts=j.facts?.filter(f=>f.confirmed)??[];
+ const hours=facts.find(f=>f.field==='hours')?.text.normalize('NFKC')??'';
+ const match=hours.match(/(?:残業|時間外労働)\s*(?:月平均|月|平均)?\s*(\d+(?:\.\d+)?)\s*時間/);
+ const location=facts.find(f=>f.field==='location')?.text??'';
+ const conditions=(['regular_employment','graduate','experience'] as const).map(field=>j.screening?.find(c=>c.field===field)?.result);
+ const known=conditions.filter(s=>s==='confirmed').length;
+ const eligibility=j.status==='eligible'?1:known?known/3:null;
+ return rankOpportunity({...metrics,eligibility,overtime:j.verifiedWorkstyle?.overtime??(match&&!/モデル|固定残業|未確認/.test(hours)?Number(match[1]):null),transfer:j.verifiedWorkstyle?.transfer??(/転勤.*(?:未確認|不明)/.test(location)?'unknown':/転勤なし|転勤無し/.test(location)?'no':/転勤あり|転勤有り/.test(location)?'yes':'unknown')});
 }
 export function verifiedCandidate(j:Job):BrowseCandidate {
- return {id:j.id,company:j.company,title:j.title,category:j.category as ReviewCandidate['category'],address:j.location.address,regions:[j.location.region],url:j.sources[0].url,checked_at:j.last_checked_at,stage:'detail_review',reasons:['応募条件・募集・通勤の根拠を確認済み'],summary:j.description,status:'eligible',valid_through:j.recruitment.valid_through,facts:j.listing_facts,verifiedMetrics:{monthly:j.pay.monthly_total_min_jpy??j.pay.monthly_base_min_jpy,holidays:j.workstyle.annual_holidays,commute:j.commute.status==='verified'?j.commute.minutes:null}};
+ return {id:j.id,company:j.company,title:j.title,category:j.category as ReviewCandidate['category'],address:j.location.address,regions:[j.location.region],url:j.sources[0].url,checked_at:j.last_checked_at,stage:'detail_review',reasons:['応募条件・募集・通勤の根拠を確認済み'],summary:j.description,status:'eligible',valid_through:j.recruitment.valid_through,facts:j.listing_facts,verifiedWorkstyle:{overtime:j.workstyle.overtime_hours_month,transfer:j.workstyle.transfer},verifiedMetrics:{monthly:j.pay.monthly_total_min_jpy??j.pay.monthly_base_min_jpy,holidays:j.workstyle.annual_holidays,commute:j.commute.status==='verified'?j.commute.minutes:null}};
 }
 export function selectCandidates(jobs:BrowseCandidate[],f:BrowseFilters):BrowseCandidate[]{
  const terms=f.query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
  return jobs.filter(j=>(!f.category||j.category===f.category)&&(!f.region||candidateRegions(j).includes(f.region))&&(!f.status||j.status===f.status)&&(!f.stage||j.stage===f.stage)&&(!f.reason||j.reasons.includes(f.reason))&&terms.every(t=>`${j.company} ${j.title} ${j.address} ${j.summary} ${j.reasons.join(' ')} ${j.facts?.filter(x=>x.confirmed).map(x=>x.text).join(' ')??''}`.toLocaleLowerCase().includes(t))).sort((a,b)=>{
+  if(f.sort==='recommended'){
+   const x=candidateRecommendation(a),y=candidateRecommendation(b);
+   const n=x.commuteBand-y.commuteBand||y.score-x.score;if(n)return n;
+  }
   if(['monthly','holidays','commute'].includes(f.sort)){
    const key=f.sort as 'monthly'|'holidays'|'commute',x=candidateMetrics(a)[key],y=candidateMetrics(b)[key];
    if(x===null&&y!==null)return 1;if(y===null&&x!==null)return -1;

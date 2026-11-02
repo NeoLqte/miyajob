@@ -17,7 +17,7 @@ def require_all(node):
             if node.get('title') == 'ReviewFact':
                 node['required'].remove('confirmed')
             if node.get('title') == 'ReviewCandidate':
-                for field in ('facts', 'regions', 'discovery_verified'):
+                for field in ('facts', 'regions', 'discovery_verified', 'screening'):
                     node['required'].remove(field)
         for child in node.values():
             require_all(child)
