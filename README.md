@@ -71,19 +71,22 @@ reports/private/YYYY-MM-DD.md   URL付き差分・品質レポート（Git除外
 
 ```powershell
 # ルート、venv有効状態で実行
-python -m collector update --import data/internal/import.json
-python -m collector update --import data/internal/import.csv
-python -m collector update --network --sources config/sources.yaml
+python -m collector update --mode collect --import data/internal/import.json --discoveries data/internal/new-summaries.json
+python -m collector update --mode collect --network --sources config/sources.yaml
+python -m collector queue --limit 10
+python -m collector update --mode investigate --ids 対象ID --import data/internal/reviewed.json
 python -m collector validate
 python -m collector report
 ```
 
-CSVの列は `company,title,address,url,description,kind`（`kind`: official/job_board/other）。JSONは同等の候補配列か、完全な `Job` 配列です。JSON-LD、CSSセレクター付きHTML、JSON、CSVに対応。自動抽出で `active` や `eligible` に昇格することはありません。新しい候補は必ず保留です。
+既定は **求人収集モード collect**。プロフィール照合・通勤測定・既存求人の詳細再審査を行わず、確認済みファイルを変更しません。新規候補は内部へ保存し、企業・個別募集・IT職・対象地域・出典を簡易確認した公開要約を `--discoveries` で渡すと、待遇未確認のまま未審査一覧へ出せます。既存求人の詳細調査の終了を待ちません。具体的な手順は [2つの更新モード](docs/update-modes.md)。
+
+CSVの列は `company,title,address,url,description,kind`（`kind`: official/job_board/other）。JSONは同等の候補配列か、完全な `Job` 配列です。JSON-LD、CSSセレクター付きHTML、JSON、CSVに対応。抽出のみの候補・企業リンクは内部作業待ちであり、公開件数には含めません。未知の応募条件を不適合にせず、実在する個別求人の最低限の確認後に未審査で閲覧します。
 
 外部取得は明示的な `--network` が必要です。許可されたHTTPS範囲、利用条件の確認日、robotsを確認し、ドメインごとに最低10秒、URLごとに既定7日間隔を守ります。認証・CAPTCHA・制限回避はしません。robots取得失敗やリダイレクトは保留扱いで取得を中止します。403やタイムアウト、抽出0件を募集終了とは扱いません。取得失敗が1つでもあれば公開ファイル全体をそのまま保持します。再確認間隔前の取得も前回データ保持です。
 
-4. 非公開候補を手動確認し、根拠URL・短い位置情報・確認日・判定を記入。必須属性の照合ルールも設定して、修正した候補を再インポート。手順は [掲載審査ガイド](docs/review-guide.md)。
-5. 判定器がプロフィールを照合し、eligible / review / rejectedを再計算。出典間の差異は保留。同一企業・職種・勤務地・採用区分だけを重複統合します。
+4. **詳細調査モード investigate** を必要時だけ指定。`queue` で既知の実経路が短い求人を先に選び、時間不明なら近隣地域を優先（分数は推定しない）。既定上限10件、対象IDも指定可能。根拠URL・確認日・判定を記入し、選択した求人だけを再インポート。手順は [掲載審査ガイド](docs/review-guide.md)。コマンドは記録した根拠の再判定であり、外部への追加調査を代行したとは扱いません。
+5. 詳細調査で選択したIDのみプロフィールと照合し、eligible / review / rejectedを再計算。大学研究・個人開発を企業実務に置き換えません。出典間の差異は保留。収集では既存の安定キー・同一企業職種の出典URLで重複を検出し、既存の判定・確認日を上書きしません。
 6. eligible・現行募集・通勤検証済み・証拠一式ありの場合のみ、原子的に `jobs.json` を更新。内部レビュー記録・プロフィールは出力しません。別の確認待ちファイルには、明示的に編集した公開用の候補要約だけを出力します。実行入力がないときは失敗し、収集成功の表示をしません。
 
 手動経路確認は `collector.routing.ManualRouteProvider` に対応。目的地、実測分数、提供元、確認日、時間帯・車利用などの前提を登録します。API連携用の `RouteProvider` インターフェースも用意しています。地域帯から分数を計算する実装はありません。確実な地域内勤務を人が確認した場合の `local_verified` では分数を `null` のままにし、分数フィルターから除外します。
@@ -118,7 +121,7 @@ GitHub FreeでPagesを利用する場合は公開リポジトリが必要です�
 
 デプロイ前に公開データの再監査、Python / Webテスト、ビルド内容検査を実行します。募集期限・根拠の有効期限が切れた求人は再検証か掲載取り下げが必要です。経過30日だけなら確認記録を保持して警告します。ワークフロー定義の作成だけをデプロイ成功とは扱いません。
 
-`Review job update` は手動起動のみ。Secretsの `MIYAJOB_PROFILE_JSON` と `MIYAJOB_SOURCES_YAML` が必要です。公開候補の `jobs.json` だけを7日間のartifactとして保存し、自動コミット・自動デプロイはしません。自動抽出だけでは証拠が揃わないため、初回から求人が自動公開されることはありません。保留候補の人手監査はローカルで行います。週次／月次scheduleは既定無効です。
+`Collect new job candidates` は毎週月曜09:00 JSTと手動起動で **収集のみ** 実行します。`MIYAJOB_SOURCES_YAML` に許可済み情報源が必要です。未設定・空なら未実行と明記し、公開データを維持します。プロフィールは収集に不要。公開用2ファイルだけを7日間の提案artifactにし、自動コミット・自動デプロイはしません。抽出候補は最低限の確認後にローカルから早期登録でき、全件の詳細審査は待ちません。詳細調査は私有データのあるローカルで明示実行します。現在、許可済み自動取得先は未設定です。
 
 ## 残る作業
 

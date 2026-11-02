@@ -26,7 +26,7 @@ def write_jsonl(path: Path, rows):
     temp.replace(path)
 
 
-def update(root: Path, profile_path: Path, sources_path: Path | None = None, import_path: Path | None = None, network=False, today=None):
+def update(root: Path, profile_path: Path, sources_path: Path | None = None, import_path: Path | None = None, network=False, today=None, review_ids=None):
     today = today or date.today()
     profile = Profile.model_validate(yaml.safe_load(profile_path.read_text(encoding="utf-8-sig")))
     internal = root / "data/internal"
@@ -40,6 +40,8 @@ def update(root: Path, profile_path: Path, sources_path: Path | None = None, imp
         imported = import_records(import_path.read_text(encoding="utf-8-sig"), import_path.suffix.lstrip("."), today)
         # Explicit reviewed import replaces the previous version of the same stable key.
         incoming = {stable_id(j): j for j in imported}
+        if review_ids is not None and set(incoming) - set(review_ids):
+            raise ValueError('investigation import contains unselected IDs; use collect for new candidates')
         candidates = [j for j in candidates if stable_id(j) not in incoming] + list(incoming.values())
         discovered += len(imported)
         confirmed_companies.update(j.company for j in imported if any(e.field == "existence" and e.method == "official_page" and e.conclusion == "pass" for e in j.evidence))
@@ -91,7 +93,11 @@ def update(root: Path, profile_path: Path, sources_path: Path | None = None, imp
     if not network and not import_path and not candidates:
         raise ValueError("no_input: collection not performed; public data unchanged")
     merged, duplicates = deduplicate(candidates)
-    decisions = [(j, adjudicate(j, profile, today)) for j in merged]
+    if review_ids is None:
+        decisions = [(j, adjudicate(j, profile, today)) for j in merged]
+    else:
+        from .audit import Decision
+        decisions = [(j, adjudicate(j, profile, today) if j.id in review_ids else Decision(status=j.eligibility.status, reasons=['今回の詳細調査対象外・既存判定を維持'])) for j in merged]
     write_jsonl(internal / "candidates.jsonl", [j.model_dump(mode="json") for j, _ in decisions])
     write_jsonl(internal / "review.jsonl", [{"job":j.model_dump(mode="json"),"reasons":d.reasons} for j,d in decisions if d.status == "review"])
     write_jsonl(internal / "rejected.jsonl", [{"job":j.model_dump(mode="json"),"reasons":d.reasons} for j,d in decisions if d.status == "rejected"])
