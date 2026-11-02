@@ -88,6 +88,27 @@ def test_unknown_conditions_are_not_confirmed_by_presence(tmp_path,job):
     assert not review_payload(tmp_path,[job],TODAY).candidates
 
 
+def test_possible_review_keeps_missing_conditions_without_becoming_verified(tmp_path,job):
+    from collector.models import ScreeningCheck
+    job.eligibility.status='review'
+    path,candidate=prepare(tmp_path,job)
+    candidate.facts=[];candidate.discovery_verified=True;candidate.regions=['浜松市浜名区']
+    candidate.screening=[ScreeningCheck(field=f,result='unknown' if f=='graduate' else 'confirmed',detail='TEST ONLY source-backed check',url=job.sources[0].url,checked_at=TODAY) for f in ['it_role','regular_employment','graduate','experience']]
+    def export():
+        path.write_text(json.dumps([candidate.model_dump(mode='json')]),encoding='utf-8')
+        return review_payload(tmp_path,[job],TODAY).candidates
+    assert len(export())==1
+    assert job.eligibility.status=='review'
+    candidate.screening[-1].result='unknown'
+    assert not export()
+    candidate.screening[-1].result='confirmed'
+    candidate.screening[1].result='unknown'
+    assert not export()
+    candidate.screening[1].result='confirmed'
+    candidate.screening[-1].result='fail'
+    assert not export()
+
+
 @pytest.mark.parametrize("field", ["salary", "location", "employment", "holidays", "hours"])
 def test_verified_export_requires_five_conditions(job,profile,field):
     from collector.export import public_payload

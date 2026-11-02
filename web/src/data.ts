@@ -20,6 +20,12 @@ export function reviewNeedsRecheck(j:Pick<ReviewCandidate,'checked_at'|'facts'>,
 function safeURL(url:string) {try {const u=new URL(url);return u.protocol==='https:' && !u.username && !u.password && !/(^localhost$|^127\.|^\[::1\]$|\.(invalid|test|localhost)$)/.test(u.hostname);} catch{return false;}}
 export const requiredConditions=['salary','location','employment','holidays','hours'] as const;
 export function completeConditions(facts:ReviewFact[]=[]):boolean {return requiredConditions.every(field=>facts.some(f=>f.field===field&&f.confirmed===true));}
+export function possibleCandidate(j:ReviewCandidate):boolean {
+ const checks=new Map(j.screening?.map(c=>[c.field,c.result]));
+ return j.stage==='detail_review'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company)
+ && checks.size===4&&checks.get('it_role')==='confirmed'&&checks.get('regular_employment')==='confirmed'
+ && ['graduate','experience'].some(f=>checks.get(f as 'graduate'|'experience')==='confirmed');
+}
 export function publishable(j:Job,today=dayNow()):boolean {
  const fresh=(d:string|null)=>!!d && dayDiff(today,d)>=0;
  const validEvidence=(id:string,field:string)=>j.evidence.some(e=>e.id===id&&e.field===field&&e.conclusion==='pass'&&fresh(e.checked_at)&&(!e.valid_through||e.valid_through>=today)&&e.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===e.url&&e.checked_at<=s.checked_at));
@@ -50,5 +56,5 @@ export function parseReviews(input:unknown,today=dayNow()):ReviewData {
  if(input.candidates.some(j=>!safeURL(j.url)||j.checked_at>today||j.checked_at>input.updated_at))throw Error('確認待ちデータの原典・確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.facts?.map(f=>f.field)).size!==(j.facts?.length??0)||j.facts?.some(f=>!safeURL(f.url)||f.checked_at>j.checked_at)))throw Error('候補の条件・根拠の確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.screening?.map(c=>c.field)).size!==(j.screening?.length??0)||j.screening?.some(c=>!safeURL(c.url)||c.checked_at>j.checked_at)))throw Error('簡易チェックの根拠・確認日が不正です。');
- return {...input,candidates:input.candidates.filter(j=>!j.screening?.some(c=>c.result==='fail')&&(j.status==='review'?completeConditions(j.facts):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
+ return {...input,candidates:input.candidates.filter(j=>!j.screening?.some(c=>c.result==='fail')&&(j.status==='review'?(completeConditions(j.facts)||possibleCandidate(j)):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
 }

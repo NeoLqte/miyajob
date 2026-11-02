@@ -10,7 +10,13 @@ def visible_candidate(candidate):
     if any(c.result == 'fail' for c in candidate.screening):
         return False
     if candidate.status == 'review':
-        return complete_conditions(candidate.facts)
+        checks = {c.field: c.result for c in candidate.screening}
+        possible = (candidate.stage == 'detail_review' and candidate.discovery_verified
+                    and bool(candidate.regions) and not any(s in candidate.company for s in ('非公開', '未確認'))
+                    and set(checks) == {'it_role', 'regular_employment', 'graduate', 'experience'}
+                    and checks.get('it_role') == checks.get('regular_employment') == 'confirmed'
+                    and any(checks.get(f) == 'confirmed' for f in ('graduate', 'experience')))
+        return complete_conditions(candidate.facts) or possible
     return (candidate.stage == 'discovery' and candidate.discovery_verified
             and bool(candidate.regions) and not any(s in candidate.company for s in ('非公開', '未確認')))
 

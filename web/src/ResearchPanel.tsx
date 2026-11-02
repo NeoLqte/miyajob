@@ -9,6 +9,7 @@ import {rankingExplanation} from './recommendation';
 import type {Job,ReviewData} from './types';
 
 const labels={eligible:'確認済み',review:'保留・確認待ち',discovery:'未審査・新規候補'};
+
 type Mode=keyof typeof labels|'all';
 export default function ResearchPanel({verifiedCount,verifiedJobs=[],onModeChange,initialData}:{verifiedCount:number;verifiedJobs?:Job[];onModeChange:(pending:boolean)=>void;initialData?:ReviewData}){
  const [data,setData]=useState<ReviewData|null>(null),[error,setError]=useState(''),[mode,setMode]=useState<Mode>('eligible');
@@ -21,7 +22,7 @@ export default function ResearchPanel({verifiedCount,verifiedJobs=[],onModeChang
  const result=selectCandidates(candidates,{query,stage,category,reason,region,status,sort});
  const regions=[...new Set(candidates.flatMap(candidateRegions))].sort();
  return <section className="research-panel" aria-label="IT求人の確認状況"><div className="research-tabs" aria-label="表示する求人">{(['eligible','review','discovery','all'] as const).map(m=><button key={m} className={mode===m?'primary':'secondary'} aria-pressed={mode===m} onClick={()=>choose(m)}>{m==='eligible'?'応募可能・確認済み':m==='all'?'すべての候補':labels[m]} {m==='eligible'||data?`${counts[m]}件`:'…'}</button>)}</div>
- {mode!=='eligible'&&<div className="research-content"><h2>{mode==='review'?'保留・確認待ちのIT求人':mode==='discovery'?'未審査・新規候補':'すべてのIT求人・候補'} <span className="count">{result.length}<small>件</small></span></h2><p className="research-notice">{mode==='review'?'給与・勤務地・雇用形態・休日・勤務時間の5項目を確認できた保留求人です。応募可能とは未確認です。':'未審査・新規候補は企業・募集ページ・IT職種・対象地域を確認した発見段階です。応募可能とは未確認です。'} 未確認の給与・休日・勤務時間・通勤は推測せず「未確認」と表示します。募集継続・応募資格・車45分以内などの残る確認は、各求人の理由をご覧ください。</p><div className="research-controls">
+ {mode!=='eligible'&&<div className="research-content"><h2>{mode==='review'?'保留・確認待ちのIT求人':mode==='discovery'?'未審査・新規候補':'すべてのIT求人・候補'} <span className="count">{result.length}<small>件</small></span></h2><p className="research-notice">{mode==='review'?'簡易確認で応募の可能性がある求人や、詳細の追加確認が必要な求人です。待遇5項目が未確認の求人も含み、応募可能とは未確認です。':'未審査・新規候補は企業・募集ページ・IT職種・対象地域を確認した発見段階です。応募可能とは未確認です。'} 未確認の給与・休日・勤務時間・通勤は推測せず「未確認」と表示します。募集継続・応募資格・車45分以内などの残る確認は、各求人の理由をご覧ください。</p><div className="research-controls">
  <label className="field-label">候補を検索<div className="input-icon"><Search size={16}/><input placeholder="候補の会社・職種・保留理由" value={query} onChange={e=>setQuery(e.target.value)}/></div></label>
  <label className="field-label">確認状態<select aria-label="確認状態" value={status} onChange={e=>setStatus(e.target.value)}><option value="">すべての確認状態</option>{Object.entries(labels).map(([k,l])=><option key={k} value={k}>{l}</option>)}</select></label>
  <label className="field-label">勤務地<select aria-label="候補の勤務地" value={region} onChange={e=>setRegion(e.target.value)}><option value="">すべての地域</option>{regions.map(r=><option key={r}>{r}</option>)}</select></label>

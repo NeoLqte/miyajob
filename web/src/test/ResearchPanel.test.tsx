@@ -23,6 +23,17 @@ it('rejects profile fields, non-IT categories and false eligibility flags; filte
  expect(()=>parseReviews({...data,candidates:[{...data.candidates[0],status:'eligible'}]})).toThrow();
  expect(parseReviews({...data,candidates:[{...data.candidates[0],valid_through:'2020-01-01'}]}).candidates).toHaveLength(0);
 });
+
+it('keeps source-screened possible jobs with unknown pay visible only as pending',async()=>{
+ const candidate={...data.candidates[0],facts:[],discovery_verified:true,regions:['浜松市浜名区'],screening:(['it_role','regular_employment','graduate','experience'] as const).map(field=>({field,result:field==='graduate'?'unknown' as const:'confirmed' as const,detail:'TEST ONLY mandatory conditions',url:data.candidates[0].url,checked_at:dayNow()}))};
+ const user=userEvent.setup();render(<ResearchPanel verifiedCount={0} onModeChange={()=>{}} initialData={{...data,candidates:[candidate]}}/>);
+ await user.click(await screen.findByRole('button',{name:'保留・確認待ち 1件'}));
+ expect(within(screen.getByRole('article')).getByText('応募可能とは未確認')).toBeVisible();
+ expect(within(screen.getByRole('article')).getAllByText('不明・未確認')).toHaveLength(5);
+ expect(within(screen.getByRole('article')).getByText('月給不明・未確認')).toBeVisible();
+ expect(parseReviews({...data,candidates:[{...candidate,screening:candidate.screening.map(c=>c.field==='experience'?{...c,result:'unknown'}:c)}]}).candidates).toHaveLength(0);
+ expect(parseReviews({...data,candidates:[{...candidate,screening:candidate.screening.map(c=>c.field==='experience'?{...c,result:'fail'}:c)}]}).candidates).toHaveLength(0);
+});
 it('shows confirmed conditions and hides candidates missing any required field',async()=>{
  const detailed:ReviewData={...data,candidates:[{...data.candidates[0],facts:[...data.candidates[0].facts!.filter(f=>!['salary','location'].includes(f.field)),{confirmed:true,field:'salary',text:'TEST ONLY 月給24万円（手当込み）',url:'https://www.python.org/jobs/',checked_at:dayNow()},{confirmed:true,field:'location',text:'TEST ONLY 本社または客先',url:'https://www.python.org/jobs/',checked_at:dayNow()}]}]};
  const user=userEvent.setup();render(<ResearchPanel verifiedCount={4} onModeChange={()=>{}} initialData={detailed}/>);

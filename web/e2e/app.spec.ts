@@ -44,8 +44,14 @@ test('real IT review queue is separate, searchable and explains pending reasons'
  await expect(page.locator('.candidate-warning').first()).toBeVisible();
  await expect(page.locator('.research-card').first().getByRole('heading',{name:'保留理由・残る確認'})).toBeVisible();
  for(const candidate of data.candidates){
-  for(const field of ['salary','location','employment','holidays','hours']) expect(candidate.facts.some((f:{field:string;confirmed:boolean})=>f.field===field&&f.confirmed)).toBe(true);
+  expect(candidate.screening?.some((c:{result:string})=>c.result==='fail')??false).toBe(false);
  }
+ await page.getByPlaceholder('候補の会社・職種・保留理由').fill('ユニオンパーツ工業');
+ await expect(page.locator('.research-card')).toHaveCount(1);
+ await expect(page.locator('.research-card').getByText('月給不明・未確認',{exact:true})).toBeVisible();
+ await expect(page.locator('.research-card').getByText('応募可能とは未確認',{exact:true})).toBeVisible();
+ await page.getByLabel('候補の並び順',{exact:true}).selectOption('monthly');
+ await expect(page.locator('.research-card')).toHaveCount(1);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('ソフィックス');
  await expect(page.locator('.research-card')).toHaveCount(0);
  await page.getByPlaceholder('候補の会社・職種・保留理由').fill('');
