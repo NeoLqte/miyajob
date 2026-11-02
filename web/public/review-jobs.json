@@ -672,40 +672,39 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "正社員区分",
-        "既卒応募区分",
-        "車通勤・通勤",
-        "待遇の未確認項目：雇用形態"
+        "雇用形態は新卒表記のみで正社員区分を確認",
+        "就業歴なし既卒への新卒枠適用を確認",
+        "車通勤・実経路を確認"
       ],
-      "summary": "自社の労務管理システム開発。大学授業程度の知識で可。雇用区分に新卒とのみ記載され正社員区分・既卒の適用条件が未確定。",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。雇用形態は新卒表記のみで正社員区分を確認／就業歴なし既卒への新卒枠適用を確認／車通勤・実経路を確認",
       "status": "discovery",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
           "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "detail": "新卒表記のみ。正社員区分を未確認",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "detail": "新卒枠の既卒適用は未確認",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "未経験歓迎。授業での知識でも可",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02"
         }
@@ -717,28 +716,28 @@
       "facts": [
         {
           "field": "salary",
-          "text": "月給24.5万円〜",
+          "text": "月給245,000円〜",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "location",
-          "text": "浜松支社：浜松アクトタワー18階",
+          "text": "浜松支社：浜松アクトタワー18階。転勤なし",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:30〜17:30／実働7時間・休憩1時間",
+          "text": "9:30〜17:30・実働7時間・休憩1時間。残業月平均10時間",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "完全週休2日（土日祝）・年間120日以上",
+          "text": "年間休日120日以上・完全週休2日制（土日祝）",
           "url": "https://en-gage.net/user/search/desc/16770621/",
           "checked_at": "2026-11-02",
           "confirmed": true
@@ -985,13 +984,11 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "既卒の採用区分",
-        "現行給与・募集継続",
-        "実勤務地・通勤",
-        "任意保険条件",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "職歴なし既卒の採用区分を確認",
+        "給与の単位・現行額を確認",
+        "浜松・磐田の実就業先と通勤・任意保険条件を確認"
       ],
-      "summary": "必須は意欲、言語経験・評価経験・C言語経験は歓迎とする公式募集。新卒・中途双方の案内はあるが、既卒で就業歴がない場合の適用と現在の待遇を確認する。採用窓口住所を実就業先と断定しない。",
+      "summary": "歓迎条件を必須条件にしない。正社員・勤務時間・休日を補完。給与額の単位と既卒区分・実配属は確認待ち。",
       "status": "discovery",
       "discovery_verified": true,
       "screening": [
@@ -1003,13 +1000,6 @@
           "checked_at": "2026-11-02"
         },
         {
-          "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
-          "url": "https://www.i-commonsense.com/recruit",
-          "checked_at": "2026-11-02"
-        },
-        {
           "field": "graduate",
           "result": "unknown",
           "detail": "就業歴なしの既卒に適用する採用区分を未確認",
@@ -1017,9 +1007,16 @@
           "checked_at": "2026-11-02"
         },
         {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "公式のプログラマ職は正社員",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02"
+        },
+        {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "必須は意欲。言語・評価・C言語の経験は歓迎条件",
           "url": "https://www.i-commonsense.com/recruit",
           "checked_at": "2026-11-02"
         }
@@ -1044,32 +1041,32 @@
           "confirmed": false
         },
         {
-          "field": "employment",
-          "text": "正社員",
-          "url": "https://www.i-commonsense.com/recruit",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
-          "field": "hours",
-          "text": "8:30〜17:30・休憩1時間／フレックスのコア10:00〜15:00",
-          "url": "https://www.i-commonsense.com/recruit",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
-          "field": "holidays",
-          "text": "土日祝・夏季・年末年始など（年間日数未確認）",
-          "url": "https://www.i-commonsense.com/recruit",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
           "field": "commute",
           "text": "車通勤時は任意保険の対人・対物無制限が条件。就業先・駐車場・経路未確認",
           "url": "https://www.i-commonsense.com/recruit",
           "checked_at": "2026-11-02",
           "confirmed": false
+        },
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "8:30〜17:30・休憩1時間。フレックスのコア10:00〜15:00",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "土日祝・夏季・年末年始等。年間日数未確認",
+          "url": "https://www.i-commonsense.com/recruit",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -1255,44 +1252,43 @@
       "category": "infrastructure",
       "address": "浜松市中区（詳細未確定）",
       "url": "https://en-gage.net/user/search/desc/7411546/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "配属先",
-        "通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "実際の配属先・宮口から車45分以内の通勤を確認",
+        "現在の募集継続・採用区分の最終確認"
       ],
-      "summary": "既卒・社会人経験なしの受入記載があるが、案件ごとの勤務先と車通勤を確認する。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。実際の配属先・宮口から車45分以内の通勤を確認／現在の募集継続・採用区分の最終確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "confirmed",
-          "detail": "既卒・社会人経験なしの受入を記載",
+          "detail": "既卒・第二新卒歓迎と明記",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
           "result": "confirmed",
-          "detail": "社会人経験なしの受入を記載",
+          "detail": "未経験・スキル経験なし・正社員デビュー歓迎",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         }
       ],
       "regions": [
@@ -1301,39 +1297,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "浜松市中区（詳細未確定）（実配属・通勤の確認は別）",
-          "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "月給26〜46万円（基本給の内訳は未確認）",
+          "text": "月給260,000〜460,000円",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市旧中区北寺島町。番地・研修後の配属先は未確認",
+          "url": "https://en-gage.net/user/search/desc/7411546/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00",
+          "text": "9:00〜18:00・実働8時間・休憩1時間。掲載上は残業なし",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間120日以上・土日祝休み",
+          "text": "年間休日120日以上・完全週休2日制（土日祝）",
           "url": "https://en-gage.net/user/search/desc/7411546/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -2283,45 +2279,43 @@
       "category": "infrastructure",
       "address": "浜松市中央区（旧中区・実勤務地未確認）",
       "url": "https://en-gage.net/user/search/desc/3694514/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "実勤務地・通勤",
-        "募集継続・詳細未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "実際の配属先・宮口から車45分以内の通勤を確認",
+        "現在の募集継続・採用区分の最終確認"
       ],
-      "summary": "サーバー・ネットワーク運用監視や構築の募集。未経験可の表記を確認したが、案件別配属と応募条件全文は未確認。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。実際の配属先・宮口から車45分以内の通勤を確認／現在の募集継続・採用区分の最終確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
-          "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "result": "confirmed",
+          "detail": "既卒・第二新卒歓迎と明記",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "未経験歓迎・学歴不問",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         }
       ],
       "regions": [
@@ -2330,39 +2324,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "浜松市中央区（旧中区・実勤務地未確認）（実配属・通勤の確認は別）",
-          "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "月給19.5〜50万円（基本給の内訳は未確認）",
+          "text": "月給195,000〜500,000円",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市中央区板屋町111-2。実際のプロジェクト先は未確認",
+          "url": "https://en-gage.net/user/search/desc/3694514/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00",
+          "text": "9:00〜18:00・実働8時間・休憩1時間。配属先で変動、残業あり",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間122日・土日祝休み",
+          "text": "年間休日122日・土日祝",
           "url": "https://en-gage.net/user/search/desc/3694514/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -2727,45 +2721,44 @@
       "category": "software",
       "address": "浜松市中央区旭町6-1（旧中区表記）",
       "url": "https://en-gage.net/user/search/desc/5758975/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "応募資格",
-        "実勤務地・通勤",
-        "募集継続・詳細未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "約7か月の研修後の実配属先・勤務地条件を確認",
+        "企業更新表示が2024年のため現在の募集継続を確認",
+        "宮口からの車通勤を確認"
       ],
-      "summary": "未経験Webエンジニア募集を発見。研修と配属までの仕事内容、正社員条件全文、実勤務地・通勤を確認する。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。約7か月の研修後の実配属先・勤務地条件を確認／企業更新表示が2024年のため現在の募集継続を確認／宮口からの車通勤を確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
-          "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "result": "confirmed",
+          "detail": "既卒・第二新卒歓迎と明記",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "未経験歓迎・学歴不問",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         }
       ],
       "regions": [
@@ -2774,39 +2767,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "中央区旭町6-1（原典は旧中区表記・実配属確認待ち）",
-          "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "年俸350万円〜（支払回数・月給額は未確認）",
+          "text": "年収350万円〜。月給額は未確認（換算しない）",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市中央区旭町6-1。研修後の実配属先は未確認",
+          "url": "https://en-gage.net/user/search/desc/5758975/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:30〜18:30（プロジェクトにより変動）",
+          "text": "9:30〜18:30・実働8時間。配属プロジェクトで変動",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間120日以上",
+          "text": "年間休日120日以上・週休2日制",
           "url": "https://en-gage.net/user/search/desc/5758975/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -5310,43 +5303,41 @@
       "address": "中央区砂山町（番地・実就業先未確認）",
       "url": "https://en-gage.net/user/search/desc/16709886/",
       "checked_at": "2026-11-02",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
-        "応募条件全文",
-        "実勤務地・配属",
-        "給与内訳",
-        "車通勤・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "既卒応募条件・必須条件の全文を確認",
+        "実勤務地・通勤・現在の募集継続を確認",
+        "月給と併記年収の整合を確認"
       ],
-      "summary": "PC設定・問い合わせ対応・システム運用支援の未経験枠。研修から始める旨は確認できるが、資格・学歴等の応募条件全文と実際の配属先は不明。給与の月給上限と併記年収の関係、給与内訳も追加確認する。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。既卒応募条件・必須条件の全文を確認／実勤務地・通勤・現在の募集継続を確認／月給と併記年収の整合を確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "detail": "既卒者への適用の明記は未確認",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "未経験者向け研修を記載。必須条件の完全性は未確認",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02"
         }
@@ -5357,39 +5348,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "中央区砂山町（番地・実就業先未確認）",
-          "url": "https://en-gage.net/user/search/desc/16709886/",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "月給25〜40万円（原典掲載値・内訳未確認。想定年収350〜400万円との関係要確認）",
+          "text": "月給250,000〜400,000円。併記年収と整合確認待ち",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         },
         {
           "field": "employment",
-          "text": "正社員／試用3週間も雇用形態・給与同じ",
+          "text": "正社員・試用3週間同条件",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市中央区砂山町。番地・実就業先は未確認",
+          "url": "https://en-gage.net/user/search/desc/16709886/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00（実働最大8時間）",
+          "text": "9:00〜18:00・1日最大実働8時間",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "完全週休2日制（曜日・年間日数は未確認）",
+          "text": "完全週休2日制。年間休日数は未確認",
           "url": "https://en-gage.net/user/search/desc/16709886/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         }
       ]
     },
@@ -5590,12 +5581,11 @@
       "checked_at": "2026-11-02",
       "stage": "discovery",
       "reasons": [
-        "既卒・実務未経験での必須条件適合を未確認",
-        "現在の募集継続・雇用形態の最終照合",
-        "実際の配属先・車45分以内の経路を未確認",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "必須3項目中2項目への適合と既卒区分を確認",
+        "給与具体額は未記載。経験者のモデル月給を初任給へ転用しない",
+        "浜松への初期配属と車通勤を確認"
       ],
-      "summary": "IT職の募集ページと勤務地の対象地域を確認した初期調査候補です。応募資格・募集継続・通勤条件を含む詳細は未審査です。",
+      "summary": "必須は3項目中2項目。知識と顧客対応の組合せも対象となる可能性があり、IT実務未経験だけで除外しない。給与具体額・既卒区分・浜松配属は確認待ち。",
       "status": "discovery",
       "discovery_verified": true,
       "screening": [
@@ -5607,13 +5597,6 @@
           "checked_at": "2026-11-02"
         },
         {
-          "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
-          "url": "https://hrmos.co/pages/fms/jobs/1000052",
-          "checked_at": "2026-11-02"
-        },
-        {
           "field": "graduate",
           "result": "unknown",
           "detail": "就業歴なしの既卒に適用する採用区分を未確認",
@@ -5621,9 +5604,16 @@
           "checked_at": "2026-11-02"
         },
         {
+          "field": "regular_employment",
+          "result": "confirmed",
+          "detail": "企業の直接募集で正社員",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02"
+        },
+        {
           "field": "experience",
           "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "detail": "エンジニア経験・ネットワーク等の知識・顧客対応経験のうち2項目が必須。3項目全部や実務経験だけを要求する条件ではない",
           "url": "https://hrmos.co/pages/fms/jobs/1000052",
           "checked_at": "2026-11-02"
         }
@@ -5632,7 +5622,36 @@
         "浜松市中央区"
       ],
       "valid_through": null,
-      "facts": []
+      "facts": [
+        {
+          "field": "employment",
+          "text": "正社員",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "初任地は静岡または浜松（浜松：中央区常盤町145-1 大樹生命浜松ビル8F）。全国転勤あり",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "hours",
+          "text": "9:00〜17:40",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "holidays",
+          "text": "年間125日・完全週休2日制（土日祝）",
+          "url": "https://hrmos.co/pages/fms/jobs/1000052",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        }
+      ]
     },
     {
       "id": "b91c0e0c52bcf8534f59",
@@ -6294,45 +6313,43 @@
       "category": "software",
       "address": "浜松市中央区元魚町",
       "url": "https://en-gage.net/user/search/desc/13141352/",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "実配属の仕事内容",
-        "応募資格",
-        "実勤務地・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "研修後の仕事内容・配属先と車通勤を確認",
+        "月給と併記年収の整合・現在の募集継続を確認"
       ],
-      "summary": "ゲームエンジニアの見出しとWeb開発研修の記載がある。実配属の仕事内容、研修中の業務、必須条件と通勤を確認する。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。研修後の仕事内容・配属先と車通勤を確認／月給と併記年収の整合・現在の募集継続を確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
-          "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "result": "confirmed",
+          "detail": "既卒・第二新卒歓迎と明記",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "result": "confirmed",
+          "detail": "未経験歓迎。高校卒業以上が必須",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         }
       ],
       "regions": [
@@ -6341,39 +6358,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "浜松市中央区元魚町（実配属・通勤の確認は別）",
-          "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "月給27〜35万円（基本給の内訳は未確認）",
+          "text": "月給270,000〜350,000円。併記年収と整合確認待ち",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "浜松市中央区元魚町。番地・研修後配属先は未確認",
+          "url": "https://en-gage.net/user/search/desc/13141352/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "10:00〜19:00",
+          "text": "10:00〜19:00・実働8時間",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間120日以上・土日祝休み",
+          "text": "年間休日120日以上・完全週休2日制（土日祝）",
           "url": "https://en-gage.net/user/search/desc/13141352/",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -6545,41 +6562,40 @@
       "address": "研修拠点：中央区板屋町 浜松アクトタワー27階／配属先は別途決定",
       "url": "https://en-gage.net/user/search/desc/18446368/",
       "checked_at": "2026-11-02",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
-        "初期配属先",
-        "車通勤・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "研修後に浜松周辺へ配属できるか確認",
+        "配属先への車通勤45分以内を確認"
       ],
-      "summary": "既存のSE・PG枠とは別のヘルプデスク募集。未経験・既卒歓迎、基本PC操作で応募可。浜松またはリモート研修後に全国のプロジェクトから配属を決めるため、浜松拠点の表示だけで勤務地確定とは扱わない。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。研修後に浜松周辺へ配属できるか確認／配属先への車通勤45分以内を確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "confirmed",
-          "detail": "既卒歓迎を記載",
+          "detail": "既卒・第二新卒歓迎と明記",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
           "result": "confirmed",
-          "detail": "実務未経験・基本PC操作での募集",
+          "detail": "未経験歓迎。PC基本操作が必須、IT経験は優遇",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02"
         }
@@ -6590,39 +6606,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "研修拠点：中央区板屋町 浜松アクトタワー27階／配属先は別途決定",
-          "url": "https://en-gage.net/user/search/desc/18446368/",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "月給22〜30万円（時間外手当別途・内訳未確認）",
+          "text": "月給220,000〜300,000円。試用3か月同条件",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         },
         {
           "field": "employment",
-          "text": "正社員／試用3か月も雇用形態・給与同じ",
+          "text": "正社員",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "研修拠点：浜松アクトタワー27階またはオンライン。研修後は全国の配属先候補があり、浜松勤務保証は未確認",
+          "url": "https://en-gage.net/user/search/desc/18446368/",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00（休憩1時間・配属により変動）",
+          "text": "9:00〜18:00・実働8時間・休憩1時間。配属先で変動",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "年間120日以上・完全週休2日（配属により変動）",
+          "text": "年間休日120日以上・週休2日。配属先で変動",
           "url": "https://en-gage.net/user/search/desc/18446368/",
           "checked_at": "2026-11-02",
-          "confirmed": false
+          "confirmed": true
         }
       ]
     },
@@ -7250,45 +7266,44 @@
       "category": "software",
       "address": "浜松市（当該募集の就業先詳細は未確認）",
       "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-      "checked_at": "2026-11-01",
-      "stage": "discovery",
+      "checked_at": "2026-11-02",
+      "stage": "detail_review",
       "reasons": [
-        "開発経験の適用",
-        "募集継続",
-        "実勤務地・通勤",
-        "待遇の未確認項目：給与・勤務地・雇用形態・休日・勤務時間"
+        "必須開発経験に大学・個人制作が含まれるか確認",
+        "実勤務地・車通勤を確認",
+        "公式応募窓口の募集継続を最終確認"
       ],
-      "summary": "PHP・Java・MySQLのいずれかの開発経験が必須で、2年以上は歓迎条件。学歴不問。学習・個人制作経験で必須条件を満たせるか、募集継続と正確な勤務地・通勤を確認する。",
-      "status": "discovery",
+      "summary": "同一求人で待遇を補完。応募可能とは未判定。必須開発経験に大学・個人制作が含まれるか確認／実勤務地・車通勤を確認／公式応募窓口の募集継続を最終確認",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
+          "detail": "当該仕事内容がIT開発・運用・サポート",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
-          "result": "unknown",
-          "detail": "正社員の当該募集区分を未確認",
+          "result": "confirmed",
+          "detail": "正社員と明記",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
+          "detail": "職歴なし既卒への適用を未確認",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         },
         {
           "field": "experience",
           "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
+          "detail": "PHP・Java・MySQLのいずれかの開発経験が必須。2年以上は歓迎条件",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01"
+          "checked_at": "2026-11-02"
         }
       ],
       "regions": [
@@ -7297,39 +7312,39 @@
       "valid_through": null,
       "facts": [
         {
-          "field": "location",
-          "text": "浜松市（当該募集の就業先詳細は未確認）",
-          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01",
-          "confirmed": false
-        },
-        {
           "field": "salary",
-          "text": "年収350〜700万円（月給・賞与内訳未記載）",
+          "text": "年収350〜700万円。月給額は未確認（換算しない）",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "employment",
           "text": "正社員",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "静岡県浜松市。採用窓口住所と実勤務地の一致は未確認",
+          "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "hours",
-          "text": "9:00〜18:00（休憩60分）",
+          "text": "9:00〜18:00・休憩60分",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "完全週休2日（土日）・祝日・夏季・年末年始",
+          "text": "完全週休2日制（土日）・祝日・夏季・年末年始",
           "url": "https://www.naboo.co.jp/recruit.php?c=programer",
-          "checked_at": "2026-11-01",
-          "confirmed": false
+          "checked_at": "2026-11-02",
+          "confirmed": true
         }
       ]
     },
@@ -7483,84 +7498,84 @@
       "title": "社内SE（未経験可）",
       "category": "internal_it",
       "address": "天竜区二俣町二俣2396",
-      "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+      "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
       "checked_at": "2026-11-02",
-      "stage": "discovery",
+      "stage": "detail_review",
       "reasons": [
-        "給与の記載不整合",
-        "車通勤・通勤",
-        "待遇の未確認項目：給与"
+        "就業歴なし既卒への当該採用区分の適用を最終確認",
+        "宮口から実勤務地までの車通勤経路を確認",
+        "以前の紹介会社枠との対応は未確定。新しいメンバー募集の条件だけを表示"
       ],
-      "summary": "大学卒・普通免許、未経験可の社内SE枠。給与欄の年収330〜425万円と月額30〜50万円に整合しない記載があり、月給・年収の整合確認待ち。",
-      "status": "discovery",
+      "summary": "現行の社内SEメンバー募集を別出典で確認。以前の紹介会社枠の待遇を混ぜず、このページだけで5項目を表示。実務経験は必須ではないが、既卒区分と通勤は最終確認待ち。",
+      "status": "review",
       "discovery_verified": true,
       "screening": [
         {
           "field": "it_role",
           "result": "confirmed",
-          "detail": "保存済みの募集職種・仕事内容をIT職として照合。実配属の確約とは別。",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "detail": "社内ネットワーク・サーバー運用、クラウド監視、ITサポート",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02"
         },
         {
           "field": "regular_employment",
           "result": "confirmed",
-          "detail": "正社員・無期／試用3か月同条件",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "detail": "正社員・メンバークラス",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
+          "checked_at": "2026-11-02"
+        },
+        {
+          "field": "experience",
+          "result": "confirmed",
+          "detail": "必須はIT基礎知識（情報学系学部卒など）。実務経験の必須指定なし",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02"
         },
         {
           "field": "graduate",
           "result": "unknown",
-          "detail": "就業歴なしの既卒に適用する採用区分を未確認",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
-          "checked_at": "2026-11-02"
-        },
-        {
-          "field": "experience",
-          "result": "unknown",
-          "detail": "必須経験の全文・学習経験への適用を未確認。学習を実務として扱わない",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "detail": "大卒・30歳以下・普通免許の条件。職歴なし既卒への採用区分適用を最終照合",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02"
         }
       ],
       "regions": [
         "浜松市天竜区"
       ],
-      "valid_through": null,
+      "valid_through": "2027-01-14",
       "facts": [
         {
           "field": "salary",
-          "text": "年収330〜425万円／月額30〜50万円と併記され整合未確認",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
-          "checked_at": "2026-11-02",
-          "confirmed": false
-        },
-        {
-          "field": "location",
-          "text": "グローバル本社：二俣町二俣2396",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "text": "月給210,000〜260,000円。試用3か月同待遇。初年度年収330〜420万円",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "employment",
-          "text": "正社員・無期／試用3か月同条件",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "text": "正社員（社内SE・メンバークラス）",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
+          "checked_at": "2026-11-02",
+          "confirmed": true
+        },
+        {
+          "field": "location",
+          "text": "初任地：浜松市天竜区二俣町二俣2396。車通勤可。変更範囲は会社の各事業所",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "hours",
-          "text": "8:30〜17:00／休憩65分・コア10:00〜15:00",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "text": "フレックス・標準7時間45分／日。標準8:30〜17:00・休憩45分・コア10:00〜15:00。残業あり",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02",
           "confirmed": true
         },
         {
           "field": "holidays",
-          "text": "週休2日（土日）・年間120日",
-          "url": "https://www.jmsc.co.jp/career/job_detail/15654/?jobType=1",
+          "text": "年間休日120日・完全週休2日制（土日）・GW・夏季・年末年始",
+          "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
           "checked_at": "2026-11-02",
           "confirmed": true
         }
