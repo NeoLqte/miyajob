@@ -1,6 +1,41 @@
 import {test,expect} from '@playwright/test';
 import {dataset} from '../src/test/fixtures';
 
+test('bookmarks persist across reload and folder changes preserve saved jobs',async({page,isMobile})=>{
+ await page.goto('./');
+ const verified=page.locator('.job-card').first();
+ await verified.getByRole('button',{name:/をブックマークに保存$/}).click();
+ await expect(verified.getByRole('button',{name:/のブックマークを解除$/})).toHaveAttribute('aria-pressed','true');
+ await page.getByRole('button',{name:/^保留・確認待ち/}).click();
+ await page.locator('.research-card').first().getByRole('button',{name:/をブックマークに保存$/}).click();
+ await page.getByRole('button',{name:/^未審査・新規候補/}).click();
+ await page.locator('.research-card').first().getByRole('button',{name:/をブックマークに保存$/}).click();
+ await page.getByRole('button',{name:'ブックマーク 3件',exact:true}).click();
+ const manager=page.getByRole('region',{name:'ブックマーク',exact:true});
+ await manager.getByLabel('新しいフォルダ名',{exact:true}).fill('応募候補');
+ await manager.getByRole('button',{name:'フォルダを作成',exact:true}).click();
+ await manager.locator('.bookmark-card').first().getByText('保存先：未分類',{exact:true}).click();
+ await manager.locator('.bookmark-card').first().getByRole('checkbox',{name:'応募候補',exact:true}).check();
+ await manager.getByLabel('保存フォルダ',{exact:true}).selectOption({label:'応募候補'});
+ await expect(manager.locator('.bookmark-card')).toHaveCount(1);
+ await page.reload();
+ await page.getByRole('button',{name:'ブックマーク 3件',exact:true}).click();
+ await manager.getByLabel('保存フォルダ',{exact:true}).selectOption({label:'応募候補'});
+ await expect(manager.locator('.bookmark-card')).toHaveCount(1);
+ await manager.getByText('フォルダの名前変更・削除',{exact:true}).click();
+ await manager.getByLabel('応募候補の新しいフォルダ名',{exact:true}).fill('優先候補');
+ await manager.getByRole('button',{name:'名前を変更',exact:true}).click();
+ await expect(manager.getByLabel('保存フォルダ',{exact:true}).locator('option:checked')).toHaveText('優先候補');
+ await manager.scrollIntoViewIfNeeded();
+ await page.screenshot({path:`../artifacts/bookmarks-${isMobile?'mobile':'desktop'}.png`,fullPage:false});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await manager.getByRole('button',{name:'フォルダを削除（求人は残す）',exact:true}).click();
+ await manager.getByLabel('保存フォルダ',{exact:true}).selectOption('unfiled');
+ await expect(manager.locator('.bookmark-card')).toHaveCount(3);
+ await manager.locator('.bookmark-card').first().getByRole('button',{name:/のブックマークを解除$/}).click();
+ await expect(manager.locator('.bookmark-card')).toHaveCount(2);
+});
+
 test('knowledge and recruitment filters distinguish beginner, basics and graduate tracks',async({page,isMobile})=>{
  await page.goto('./');
  const verified=page.locator('.workspace');
