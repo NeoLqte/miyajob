@@ -1,3 +1,4 @@
+import {careerExcluded} from './recruitmentPolicy';
 import {matchesGuidance,skillLabels,audienceLabels} from './guidance';
 import type {Category, Job} from './types';
 import {rankOpportunity} from './recommendation';
@@ -31,7 +32,7 @@ export function selectJobs(jobs:Job[],f:Filters):Job[] {
  const flag=(on:boolean,value:unknown,pass:boolean)=>!on||(unknown(value)?f.includeUnknown:pass);
  const result=jobs.filter(j=>{
   const text=[j.company,j.title,j.location.address,j.description].join(' ').toLocaleLowerCase();
-  return matchesGuidance(j.id,f.skill,f.audience)&&f.q.toLocaleLowerCase().split(/\s+/).every(q=>text.includes(q))&&(!f.category||j.category===f.category)&&(!f.region||j.location.region===f.region)
+  return !careerExcluded(j)&&matchesGuidance(j.id,f.skill,f.audience)&&f.q.toLocaleLowerCase().split(/\s+/).every(q=>text.includes(q))&&(!f.category||j.category===f.category)&&(!f.region||j.location.region===f.region)
   &&(!f.commute||(j.commute.status==='verified'&&j.commute.minutes!==null&&j.commute.minutes<=Number(f.commute)))
   &&min(monthlyValue(j,f),f.monthly)&&min(annualValue(j,f),f.annual)
   &&flag(f.holidays,j.workstyle.annual_holidays,(j.workstyle.annual_holidays??0)>=120)

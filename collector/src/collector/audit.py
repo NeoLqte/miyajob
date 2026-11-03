@@ -3,6 +3,7 @@ from datetime import date
 from dataclasses import dataclass
 
 from .models import DIMENSIONS, SUPPORTED_REQUIREMENTS, MANDATORY_EVIDENCE, IT_CATEGORIES, Job, Profile
+from .recruitment_policy import career_excluded
 
 
 @dataclass
@@ -37,6 +38,8 @@ def compare(actual, operator, expected):
 def audit(job: Job, profile: Profile | None = None, today: date | None = None) -> Decision:
     today = today or date.today()
     reasons, failures = [], []
+    if career_excluded(job):
+        failures.append('career_recruitment_out_of_scope')
     if job.category not in IT_CATEGORIES:
         failures.append('not_it_role')
     sources = {s.url: s for s in job.sources}

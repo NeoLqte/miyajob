@@ -5,8 +5,12 @@ import json
 
 from .models import ReviewCandidate, ReviewData, IT_CATEGORIES
 from .listing import complete_conditions, complete_job
+from .recruitment_policy import career_excluded
 
 def visible_candidate(candidate):
+    from types import SimpleNamespace
+    if career_excluded(SimpleNamespace(id=candidate.id,title=candidate.title,recruitment_track='',sources=[SimpleNamespace(url=candidate.url)])):
+        return False
     if any(c.result == 'fail' for c in candidate.screening):
         return False
     if candidate.status == 'review':

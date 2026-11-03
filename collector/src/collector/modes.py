@@ -9,6 +9,7 @@ from .export import atomic_json, stable_id
 from .fetch import SafeFetcher, SourcePolicy
 from .models import Job, ReviewCandidate, IT_CATEGORIES, PublicData, ReviewData, Source
 from .public_review import review_payload
+from .recruitment_policy import career_excluded
 
 
 def collect(root: Path, sources_path=None, import_path=None, network=False, discoveries_path=None, today=None):
@@ -92,7 +93,7 @@ def collect(root: Path, sources_path=None, import_path=None, network=False, disc
             observations.append(dict(id=key, checked_at=str(today), status='duplicate_requires_no_new_listing', job=j.model_dump(mode='json')))
             continue  # Never overwrite, demote or update a reviewed record's dates.
         # Only explicit facts may exclude; unknown employment/skills stay staged.
-        reason = ('closed_or_expired' if j.recruitment.status == 'closed' or j.recruitment.valid_through and j.recruitment.valid_through < today
+        reason = ('career_recruitment_out_of_scope' if career_excluded(j) else 'closed_or_expired' if j.recruitment.status == 'closed' or j.recruitment.valid_through and j.recruitment.valid_through < today
                   else 'non_regular_employment' if j.employment_type in ('contract', 'part_time')
                   else 'non_it' if j.category not in (*IT_CATEGORIES, 'other') else None)
         j.id = key

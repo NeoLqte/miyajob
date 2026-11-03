@@ -60,3 +60,15 @@ it('rejects corrupted records and unsafe source URLs',()=>{
  expect(screen.getByRole('alert')).toHaveTextContent('既存データは上書きしていません');
 });
 
+it('keeps excluded career bookmarks stored but out of the visible bookmark list',async()=>{
+ const user=userEvent.setup();
+ const career={...job,id:'40edfed3440bbd03c97f',folder_ids:[]};
+ localStorage.setItem(bookmarkKey,JSON.stringify({version:1,folders:[],items:[career]}));
+ renderBookmarks([]);
+ await user.click(screen.getByRole('button',{name:'ブックマーク 0件'}));
+ const manager=within(screen.getByRole('region',{name:'ブックマーク'}));
+ expect(manager.queryByRole('article')).not.toBeInTheDocument();
+ expect(manager.getByText(/掲載対象外の保存求人は非表示/)).toBeVisible();
+ expect(parseBookmarks(localStorage.getItem(bookmarkKey)).items).toHaveLength(1);
+});
+

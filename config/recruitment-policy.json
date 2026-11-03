@@ -1,0 +1,31 @@
+{
+  "exclude_career": true,
+  "excluded_ids": [
+    "1881bdad2ba222433346",
+    "40edfed3440bbd03c97f",
+    "a57f5b2333b879895c82",
+    "fac7834dafdea4c27e19",
+    "6f4d36617c94ca4e36c1",
+    "3fbd17c02ac21666660f",
+    "58e9d62ac4eb84f62dbb",
+    "5b961c8a42d78c3324de",
+    "9e69048aaab9f6943898",
+    "bef92ff8b0dec6045c17",
+    "44a52bf16cd9a4df8cf3",
+    "48903e2d3850d80d2e2b",
+    "8db8d36afaf8af779e21",
+    "8e59be117d14b66ed3b7",
+    "b514cbab515d1e15fe8c",
+    "d0d1a99e41fbc5c869b4",
+    "d5ce6a81fbc8d3e21821",
+    "eaadd79c92617c23f465",
+    "ec9baed19ca8b9239e2b",
+    "c4aaaa0235f743f502f0"
+  ],
+  "career_source_prefixes": [
+    "https://www.ymsl.co.jp/recruit/career/",
+    "https://www.armonicos.co.jp/recruit/career/",
+    "https://recruit.morson.jp/career/",
+    "https://job.axol.jp/qd/c/suzuki/public/job/"
+  ]
+}

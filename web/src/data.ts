@@ -1,3 +1,4 @@
+import {careerExcluded} from './recruitmentPolicy.ts';
 import Ajv from 'ajv';
 import addFormats from 'ajv-formats';
 import schema from './public-data.schema.json' with {type:'json'};
@@ -31,7 +32,7 @@ export function publishable(j:Job,today=dayNow()):boolean {
  const validEvidence=(id:string,field:string)=>j.evidence.some(e=>e.id===id&&e.field===field&&e.conclusion==='pass'&&fresh(e.checked_at)&&(!e.valid_through||e.valid_through>=today)&&e.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===e.url&&e.checked_at<=s.checked_at));
  const fields=[...requiredEvidence,...j.eligibility.requirements.map(r=>r.field)];
  const c=j.commute;
- return completeConditions(j.listing_facts)&&new Set(j.listing_facts?.map(f=>f.field)).size===j.listing_facts?.length&&j.listing_facts!.every(f=>safeURL(f.url)&&fresh(f.checked_at)&&f.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===f.url&&f.checked_at<=s.checked_at))&&itCategories.includes(j.category)&&j.eligibility.status==='eligible'&&j.eligibility.graduate_eligibility==='pass'&&j.eligibility.professional_experience==='pass'
+ return !careerExcluded(j)&&completeConditions(j.listing_facts)&&new Set(j.listing_facts?.map(f=>f.field)).size===j.listing_facts?.length&&j.listing_facts!.every(f=>safeURL(f.url)&&fresh(f.checked_at)&&f.checked_at<=j.last_checked_at&&j.sources.some(s=>s.url===f.url&&f.checked_at<=s.checked_at))&&itCategories.includes(j.category)&&j.eligibility.status==='eligible'&&j.eligibility.graduate_eligibility==='pass'&&j.eligibility.professional_experience==='pass'
  && j.employment_type==='full_time_regular' && j.recruitment.status==='active' && (!j.recruitment.valid_through||j.recruitment.valid_through>=today)
  && (!j.recruitment.date_posted||j.recruitment.date_posted<=today) && fresh(j.last_checked_at)&&j.first_seen_at<=j.last_checked_at
  && j.sources.length>0&&j.sources.every(s=>safeURL(s.url)&&safeURL(s.original_url)&&fresh(s.checked_at)&&s.checked_at<=j.last_checked_at)
@@ -56,5 +57,5 @@ export function parseReviews(input:unknown,today=dayNow()):ReviewData {
  if(input.candidates.some(j=>!safeURL(j.url)||j.checked_at>today||j.checked_at>input.updated_at))throw Error('確認待ちデータの原典・確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.facts?.map(f=>f.field)).size!==(j.facts?.length??0)||j.facts?.some(f=>!safeURL(f.url)||f.checked_at>j.checked_at)))throw Error('候補の条件・根拠の確認日が不正です。');
  if(input.candidates.some(j=>new Set(j.screening?.map(c=>c.field)).size!==(j.screening?.length??0)||j.screening?.some(c=>!safeURL(c.url)||c.checked_at>j.checked_at)))throw Error('簡易チェックの根拠・確認日が不正です。');
- return {...input,candidates:input.candidates.filter(j=>!j.screening?.some(c=>c.result==='fail')&&(j.status==='review'?(completeConditions(j.facts)||possibleCandidate(j)):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
+ return {...input,candidates:input.candidates.filter(j=>!careerExcluded(j)&&!j.screening?.some(c=>c.result==='fail')&&(j.status==='review'?(completeConditions(j.facts)||possibleCandidate(j)):j.stage==='discovery'&&j.discovery_verified===true&&!!j.regions?.length&&!/非公開|未確認/.test(j.company))&&(!j.valid_through||j.valid_through>=today))};
 }
