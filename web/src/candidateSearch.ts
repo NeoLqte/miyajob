@@ -1,7 +1,8 @@
+import {matchesGuidance} from './guidance';
 import type {Job,ReviewCandidate} from './types';
 import {rankOpportunity} from './recommendation';
 export type BrowseCandidate=Omit<ReviewCandidate,'status'> & {status:'eligible'|'review'|'discovery';verifiedMetrics?:{monthly:number|null;holidays:number|null;commute:number|null};verifiedWorkstyle?:{overtime:number|null;transfer:'yes'|'no'|'unknown'}};
-export type BrowseFilters={query:string;category:string;region:string;status:string;stage:string;reason:string;sort:string};
+export type BrowseFilters={query:string;skill?:string;audience?:string;category:string;region:string;status:string;stage:string;reason:string;sort:string};
 export function candidateRegions(j:Pick<ReviewCandidate,'regions'|'address'>):string[]{
  if(j.regions?.length)return j.regions;
  const a=j.address,regions:string[]=[];
@@ -35,7 +36,7 @@ export function verifiedCandidate(j:Job):BrowseCandidate {
 }
 export function selectCandidates(jobs:BrowseCandidate[],f:BrowseFilters):BrowseCandidate[]{
  const terms=f.query.toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
- return jobs.filter(j=>(!f.category||j.category===f.category)&&(!f.region||candidateRegions(j).includes(f.region))&&(!f.status||j.status===f.status)&&(!f.stage||j.stage===f.stage)&&(!f.reason||j.reasons.includes(f.reason))&&terms.every(t=>`${j.company} ${j.title} ${j.address} ${j.summary} ${j.reasons.join(' ')} ${j.facts?.filter(x=>x.confirmed).map(x=>x.text).join(' ')??''}`.toLocaleLowerCase().includes(t))).sort((a,b)=>{
+ return jobs.filter(j=>matchesGuidance(j.id,f.skill,f.audience)&&(!f.category||j.category===f.category)&&(!f.region||candidateRegions(j).includes(f.region))&&(!f.status||j.status===f.status)&&(!f.stage||j.stage===f.stage)&&(!f.reason||j.reasons.includes(f.reason))&&terms.every(t=>`${j.company} ${j.title} ${j.address} ${j.summary} ${j.reasons.join(' ')} ${j.facts?.filter(x=>x.confirmed).map(x=>x.text).join(' ')??''}`.toLocaleLowerCase().includes(t))).sort((a,b)=>{
   if(f.sort==='recommended'){
    const x=candidateRecommendation(a),y=candidateRecommendation(b);
    const n=x.commuteBand-y.commuteBand||y.score-x.score;if(n)return n;

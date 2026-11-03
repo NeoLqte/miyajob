@@ -1,0 +1,206 @@
+{
+  "7a8f094d6ab6b9b7b91e": {
+    "skill": {
+      "value": "training",
+      "detail": "未経験者枠の応募資格は特段の条件なし。経験者枠の実務要件とは別。",
+      "url": "https://www.zillion.co.jp/recruit/",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "unknown",
+      "detail": "新規採用・未経験者の枠。「新規採用」だけで新卒専用とは判定しない。",
+      "url": "https://www.zillion.co.jp/recruit/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "62d36aed8ddd30ae66a9": {
+    "skill": {
+      "value": "training",
+      "detail": "応募資格全文は未経験歓迎、PC・プログラムへの関心と業務改善意識。具体的な技術知識の必須指定は保存根拠にない。",
+      "url": "https://en-gage.net/user/search/desc/15659230/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "1cb49731331a5bfb3078": {
+    "skill": {
+      "value": "training",
+      "detail": "必須は意欲。言語・評価・C言語経験は歓迎条件で、必須として扱わない。",
+      "url": "https://www.i-commonsense.com/recruit",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "unknown",
+      "detail": "新卒・中途双方の案内があるが、就業歴なし既卒への適用は確認待ち。",
+      "url": "https://www.i-commonsense.com/recruit",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "2d0a3783e849132c1803": {
+    "skill": {
+      "value": "basics",
+      "detail": "学生時代のプログラミング経験で可。Excel・Word・PowerPointの基本操作も必要。企業実務は必須ではない。",
+      "url": "https://xn--y8jl01a4dpd7176bvt3a.com/job/shizuoka/22020-19505861",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "40edfed3440bbd03c97f": {
+    "skill": {
+      "value": "basics",
+      "detail": "実務未経験可だが、プログラミングに触れ、資料を参照して利用できる程度の基礎が必要。",
+      "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "career",
+      "detail": "キャリア採用の枠。未経験受入のFAQもあり、中途向けを経験者限定とは扱わない。",
+      "url": "https://tegara.recruitment.jp/cr_job_detail/id=734",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "a57f5b2333b879895c82": {
+    "audience": {
+      "value": "career",
+      "detail": "キャリア採用の技術サポート枠。未経験受入と必要知識の水準は別に判断する。",
+      "url": "https://tegara.recruitment.jp/cr_job_detail/id=730",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "1881bdad2ba222433346": {
+    "skill": {
+      "value": "unknown",
+      "detail": "経験不問・IT学習者も対象。経験不問だけで知識ゼロを保証しない。",
+      "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "graduate",
+      "detail": "既卒・第二新卒歓迎を明記した中途の未経験枠。新卒専用ではない。",
+      "url": "https://wagasyade-saiyo.jp/202602190757omu/recruitment/detail/3849461/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "92dc1a9efbd586794cc6": {
+    "audience": {
+      "value": "graduate",
+      "detail": "2027新卒と卒業後概ね3年以内の既卒が対象。経験者キャリア枠とは分離。",
+      "url": "https://www.apnet.co.jp/company/recruit-new.html",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "a39741d22c11c2bb1f10": {
+    "audience": {
+      "value": "graduate",
+      "detail": "新卒・卒業後概ね3年以内の既卒採用。未経験の受入をFAQで確認。",
+      "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "707063548a27fea0c9fb": {
+    "skill": {
+      "value": "basics",
+      "detail": "実務未経験可。理工・情報系の学習、または独学を含む一定の知識技能等を対象とする。",
+      "url": "https://en-gage.net/user/search/desc/16423825/",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "graduate",
+      "detail": "2027新卒・既卒向け。既卒の入社時期相談を明記。静岡への一時通勤は別途確認待ち。",
+      "url": "https://en-gage.net/user/search/desc/16423825/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "fac7834dafdea4c27e19": {
+    "skill": {
+      "value": "basics",
+      "detail": "必須にIT分野の基本的知識（情報系学部卒など）。実務経験の必須指定はない。",
+      "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
+      "checked_at": "2026-11-02"
+    },
+    "audience": {
+      "value": "second",
+      "detail": "メンバークラスの中途募集で第二新卒歓迎。職歴なし既卒への適用は未確定。",
+      "url": "https://tenshoku.mynavi.jp/jobinfo-403118-5-29-1/?ty=0",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "6f4d36617c94ca4e36c1": {
+    "audience": {
+      "value": "second",
+      "detail": "第二新卒枠。自己学習者を対象とする記載はあるが、職歴なし既卒への適用は確認待ち。",
+      "url": "https://www.shigoto-hamamatsu.com/job/2960/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "f2675840ce99bc0b390d": {
+    "skill": {
+      "value": "specific",
+      "detail": "PHP・Java・MySQLいずれかの開発経験が必須。2年以上は歓迎条件。学習経験への適用は未確認。",
+      "url": "https://www.naboo.co.jp/recruit.php?c=programer",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "37cb2689248b039521fc": {
+    "skill": {
+      "value": "specific",
+      "detail": "未経験育成の記載と、設計・指示・コード読解等の能力欄が併存。未経験枠への適用関係を確認待ち。",
+      "url": "https://recruit.fuerubo.com/evoltech/job-offer/detail/893070",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "6bac619c3d8fbf98a634": {
+    "skill": {
+      "value": "specific",
+      "detail": "経験者のみ。業務システム・サーバー・クラウド・ネットワーク等の運用経験条件がある。",
+      "url": "https://en-gage.net/user/search/desc/18034924/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "eaadd79c92617c23f465": {
+    "skill": {
+      "value": "specific",
+      "detail": "C/C++/C#経験と開発プロセスの独力遂行が必要。学生制作への適用は確認待ち。",
+      "url": "https://recruit.systec.co.jp/recruit/application.html",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "3ba29440697647a1683a": {
+    "audience": {
+      "value": "graduate",
+      "detail": "就業経験のない既卒も対象とする通年新卒募集。通年という理由で中途枠にしない。職種別スキル条件は未確認。",
+      "url": "https://www.fourier.jp/recruit/fresh/frontend-engineer",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "c89cea11a48c66905419": {
+    "audience": {
+      "value": "graduate",
+      "detail": "就業経験のない既卒も対象とする通年新卒募集。通年という理由で中途枠にしない。職種別スキル条件は未確認。",
+      "url": "https://www.fourier.jp/recruit/fresh/application-engineer",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "b445b011d5722f04b9ef": {
+    "audience": {
+      "value": "graduate",
+      "detail": "2027採用・卒業後原則3年以内の既卒も対象。実配属先は別途確認待ち。",
+      "url": "https://job.mynavi.jp/27/pc/search/corp204721/employment.html",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "15a65c7184552f3af9f9": {
+    "audience": {
+      "value": "graduate",
+      "detail": "新卒枠。既卒への適用と正社員区分は未確認。新卒枠の表示は本人の応募可能性の確定とは別。",
+      "url": "https://en-gage.net/user/search/desc/16770621/",
+      "checked_at": "2026-11-02"
+    }
+  },
+  "987b5544e707f2bcb904": {
+    "audience": {
+      "value": "graduate",
+      "detail": "新卒募集。未経験可だが、既卒への適用は未確認。",
+      "url": "https://en-gage.net/user/search/desc/17311499/",
+      "checked_at": "2026-11-01"
+    }
+  }
+}

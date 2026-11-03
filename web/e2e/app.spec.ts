@@ -1,6 +1,33 @@
 import {test,expect} from '@playwright/test';
 import {dataset} from '../src/test/fixtures';
 
+test('knowledge and recruitment filters distinguish beginner, basics and graduate tracks',async({page,isMobile})=>{
+ await page.goto('./');
+ const verified=page.locator('.workspace');
+ await verified.getByLabel('応募時の知識',{exact:true}).selectOption('training');
+ await expect(verified.locator('.job-card')).toHaveCount(2);
+ await expect(verified.locator('.job-card').filter({hasText:'ジリオン浜松'})).toHaveCount(1);
+ await verified.getByLabel('応募時の知識',{exact:true}).selectOption('');
+ await verified.getByLabel('採用対象',{exact:true}).selectOption('graduate');
+ await expect(verified.locator('.job-card')).toHaveCount(3);
+ await page.getByRole('button',{name:/すべての候補/}).click();
+ const all=page.locator('.research-content');
+ await all.getByLabel('応募時の知識',{exact:true}).selectOption('basics');
+ await all.getByLabel('採用対象',{exact:true}).selectOption('second');
+ await expect(all.locator('.research-card')).toHaveCount(1);
+ await expect(all.locator('.research-card')).toContainText('ROKI');
+ await all.getByText('知識条件・採用区分の根拠',{exact:true}).click();
+ await expect(all.locator('.research-card')).toContainText('IT分野の基本的知識');
+ await all.getByLabel('候補の並び順',{exact:true}).selectOption('commute');
+ await expect(all.locator('.research-card')).toHaveCount(1);
+ await all.scrollIntoViewIfNeeded();
+ await page.screenshot({path:`../artifacts/entry-guidance-${isMobile?'mobile':'desktop'}.png`,fullPage:true});
+ expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true);
+ await page.getByRole('button',{name:'候補の絞り込みをクリア'}).click();
+ await expect(all.getByLabel('応募時の知識',{exact:true})).toHaveValue('');
+ await expect(all.getByLabel('採用対象',{exact:true})).toHaveValue('');
+});
+
 test('discovery and all-candidate views preserve unknowns, source links and combined filters',async({page,isMobile})=>{
  await page.goto('./');
  const data=await (await page.request.get(new URL('review-jobs.json',page.url()).toString())).json();

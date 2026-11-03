@@ -1,14 +1,17 @@
+import {matchesGuidance,skillLabels,audienceLabels} from './guidance';
 import type {Category, Job} from './types';
 import {rankOpportunity} from './recommendation';
 export const categories:Record<Category,string> = {software:'開発',infrastructure:'インフラ',internal_it:'社内SE',it_support:'ITサポート',technical:'技術職',office:'事務',other:'その他'};
-export type Filters = {q:string;category:string;region:string;commute:string;monthly:string;annual:string;payBasis:'base'|'total';annualBasis:'guaranteed'|'estimated';holidays:boolean;overtime:boolean;remote:boolean;flex:boolean;transfer:boolean;car:boolean;parking:boolean;client:boolean;includeUnknown:boolean;sort:string;view:'cards'|'table'};
-export const defaults:Filters={q:'',category:'',region:'',commute:'',monthly:'',annual:'',payBasis:'base',annualBasis:'guaranteed',holidays:false,overtime:false,remote:false,flex:false,transfer:false,car:false,parking:false,client:false,includeUnknown:false,sort:'recommended',view:'cards'};
+export type Filters = {q:string;skill:string;audience:string;category:string;region:string;commute:string;monthly:string;annual:string;payBasis:'base'|'total';annualBasis:'guaranteed'|'estimated';holidays:boolean;overtime:boolean;remote:boolean;flex:boolean;transfer:boolean;car:boolean;parking:boolean;client:boolean;includeUnknown:boolean;sort:string;view:'cards'|'table'};
+export const defaults:Filters={q:'',skill:'',audience:'',category:'',region:'',commute:'',monthly:'',annual:'',payBasis:'base',annualBasis:'guaranteed',holidays:false,overtime:false,remote:false,flex:false,transfer:false,car:false,parking:false,client:false,includeUnknown:false,sort:'recommended',view:'cards'};
 const flags=['holidays','overtime','remote','flex','transfer','car','parking','client','includeUnknown'] as const;
 export function readFilters(search:string):Filters {
  const p=new URLSearchParams(search),f={...defaults};
- for(const k of ['q','category','region','commute','monthly','annual','sort'] as const) f[k]=p.get(k)||defaults[k];
+ for(const k of ['q','skill','audience','category','region','commute','monthly','annual','sort'] as const) f[k]=p.get(k)||defaults[k];
  for(const k of flags) f[k]=p.get(k)==='1';
  f.payBasis=p.get('payBasis')==='total'?'total':'base';f.annualBasis=p.get('annualBasis')==='estimated'?'estimated':'guaranteed';f.view=p.get('view')==='table'?'table':'cards';
+ if(f.skill&&!(f.skill in skillLabels))f.skill='';
+ if(f.audience&&!(f.audience in audienceLabels))f.audience='';
  if(!(f.category in categories))f.category='';
  for(const k of ['monthly','annual'] as const)if(!/^\d{1,9}$/.test(f[k]))f[k]='';
  if(!['','15','30','45'].includes(f.commute))f.commute='';
@@ -28,7 +31,7 @@ export function selectJobs(jobs:Job[],f:Filters):Job[] {
  const flag=(on:boolean,value:unknown,pass:boolean)=>!on||(unknown(value)?f.includeUnknown:pass);
  const result=jobs.filter(j=>{
   const text=[j.company,j.title,j.location.address,j.description].join(' ').toLocaleLowerCase();
-  return f.q.toLocaleLowerCase().split(/\s+/).every(q=>text.includes(q))&&(!f.category||j.category===f.category)&&(!f.region||j.location.region===f.region)
+  return matchesGuidance(j.id,f.skill,f.audience)&&f.q.toLocaleLowerCase().split(/\s+/).every(q=>text.includes(q))&&(!f.category||j.category===f.category)&&(!f.region||j.location.region===f.region)
   &&(!f.commute||(j.commute.status==='verified'&&j.commute.minutes!==null&&j.commute.minutes<=Number(f.commute)))
   &&min(monthlyValue(j,f),f.monthly)&&min(annualValue(j,f),f.annual)
   &&flag(f.holidays,j.workstyle.annual_holidays,(j.workstyle.annual_holidays??0)>=120)

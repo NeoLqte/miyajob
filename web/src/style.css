@@ -19,3 +19,4 @@
 .candidate-warning{display:block;color:var(--muted);font-size:13px;margin:12px 0}.research-controls small{display:block;font-weight:normal;line-height:1.6;margin-top:6px}.research-tabs button{min-width:140px}
 
 .screening{border-top:1px solid var(--line);margin:16px 0;padding-top:12px;font-size:13px}.screening summary{cursor:pointer;font-weight:600}.screening li{margin:12px 0}.ranking-explanation{font-size:12px;color:var(--muted);line-height:1.8}
+ .entry-filters{display:flex;flex-wrap:wrap;gap:16px;margin:20px 0}.entry-filters label{flex:1;min-width:220px}.entry-filters p{flex-basis:100%;font-size:12px}.entry-guide{margin:14px 0;font-size:12px}.entry-tags{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.entry-guide details p{line-height:1.7}.entry-guide summary{cursor:pointer}
