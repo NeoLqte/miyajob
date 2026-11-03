@@ -5,8 +5,11 @@ test('knowledge and recruitment filters distinguish beginner, basics and graduat
  await page.goto('./');
  const verified=page.locator('.workspace');
  await verified.getByLabel('応募時の知識',{exact:true}).selectOption('training');
- await expect(verified.locator('.job-card')).toHaveCount(2);
+ await expect(verified.locator('.job-card')).toHaveCount(3);
  await expect(verified.locator('.job-card').filter({hasText:'ジリオン浜松'})).toHaveCount(1);
+ await verified.getByLabel('採用対象',{exact:true}).selectOption('graduate');
+ await expect(verified.locator('.job-card')).toHaveCount(1);
+ await expect(verified.locator('.job-card')).toContainText('リキシステム');
  await verified.getByLabel('応募時の知識',{exact:true}).selectOption('');
  await verified.getByLabel('採用対象',{exact:true}).selectOption('graduate');
  await expect(verified.locator('.job-card')).toHaveCount(3);

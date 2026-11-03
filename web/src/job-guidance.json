@@ -93,6 +93,12 @@
       "detail": "新卒・卒業後概ね3年以内の既卒採用。未経験の受入をFAQで確認。",
       "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
       "checked_at": "2026-11-02"
+    },
+    "skill": {
+      "value": "training",
+      "detail": "保存済みの当該新卒・既卒募集には、未経験者向け約1年の研修がある。入社後の学習は必要で、仕事が簡単という意味ではない。",
+      "url": "https://www.rikisys.co.jp/recruit/new-graduate/",
+      "checked_at": "2026-11-02"
     }
   },
   "707063548a27fea0c9fb": {
